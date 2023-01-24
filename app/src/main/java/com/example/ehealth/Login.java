@@ -54,6 +54,11 @@ public class Login extends AppCompatActivity {
         });
     }
 
+    private void clear(){
+        Email.getEditText().setText("");
+        Password.getEditText().setText("");
+    }
+
     private boolean validateEmail() {
         String val = Email.getEditText().getText().toString();
         if (val.isEmpty()) {
@@ -83,7 +88,7 @@ public class Login extends AppCompatActivity {
         String enteredPassword = Password.getEditText().getText().toString();
 
         DatabaseReference databaseReference = FirebaseDatabase.getInstance().getReference("users");
-        Query checkUser = databaseReference.orderByChild("email").equalTo(enteredEmail);
+        Query checkUser = databaseReference.orderByChild("phoneNumber").equalTo(enteredEmail);
         checkUser.addListenerForSingleValueEvent(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot snapshot) {
@@ -96,6 +101,8 @@ public class Login extends AppCompatActivity {
                     if (passwordFromDatabase.equals(enteredPassword)){
                         Intent intent = new Intent(Login.this,Home.class);
                         startActivity(intent);
+                        finish();
+                        clear();
                     }else{
                         Password.setError("wrong password.");
                         Password.requestFocus();

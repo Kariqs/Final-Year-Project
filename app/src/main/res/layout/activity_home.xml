@@ -4,155 +4,176 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Home"
+    android:background="#FF018786"
     android:orientation="vertical"
-    android:padding="15dp">
+    android:padding="15dp"
+    tools:context=".Home">
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="HELLO THERE, WELCOME."
-        android:textSize="30sp"
         android:fontFamily="@font/font1"
-        android:textColor="@color/black"/>
+        android:text="HELLO THERE, WELCOME."
+        android:textColor="@color/black"
+        android:textSize="30sp" />
+
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Start your weight loss journey. Get back your confidence."
-        android:textSize="20sp"
         android:fontFamily="@font/font2"
-        android:textColor="@color/black"/>
+        android:text="Start your weight loss journey. Get back your confidence."
+        android:textColor="@color/black"
+        android:textSize="20sp" />
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:layout_marginTop="20dp"
         android:orientation="horizontal"
-        android:padding="7dp"
-        android:layout_marginTop="20dp">
+        android:padding="7dp">
 
         <GridLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:rowCount="2"
-            android:columnCount="2">
+            android:columnCount="2"
+            android:rowCount="2">
 
             <androidx.cardview.widget.CardView
+                android:id="@+id/fast"
                 android:layout_width="0dp"
                 android:layout_height="0dp"
-                app:cardCornerRadius="15dp"
                 android:layout_rowWeight="1"
                 android:layout_columnWeight="1"
-                app:cardElevation="0dp"
-                android:layout_margin="5dp">
+                android:layout_margin="5dp"
+                app:cardCornerRadius="15dp"
+                app:cardElevation="0dp">
+
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:orientation="vertical">
+
                     <ImageView
-                        android:id="@+id/fast"
                         android:layout_width="match_parent"
                         android:layout_height="150dp"
-                        android:src="@drawable/fast"
-                        android:padding="5dp"/>
+                        android:padding="5dp"
+                        android:src="@drawable/fast" />
+
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:fontFamily="@font/font1"
+                        android:padding="5dp"
                         android:text="FASTING"
-                        android:textSize="38dp"
-                        android:textColor="@color/black"
-                        android:fontFamily="@font/font1"
                         android:textAlignment="center"
-                        android:padding="5dp"
-                        android:layout_marginTop="20dp"/>
+                        android:textColor="@color/black"
+                        android:textSize="38dp" />
                 </LinearLayout>
             </androidx.cardview.widget.CardView>
+
             <androidx.cardview.widget.CardView
-            android:layout_width="0dp"
-            android:layout_height="0dp"
-            app:cardCornerRadius="15dp"
-            android:layout_rowWeight="1"
-            app:cardElevation="0dp"
-            android:layout_columnWeight="1"
-            android:layout_margin="5dp">
+                android:id="@+id/workout"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:layout_margin="5dp"
+                app:cardCornerRadius="15dp"
+                app:cardElevation="0dp">
+
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:orientation="vertical">
+
                     <ImageView
-                        android:id="@+id/workout"
+
                         android:layout_width="match_parent"
                         android:layout_height="150dp"
-                        android:src="@drawable/train"
-                        android:padding="5dp"/>
+                        android:padding="5dp"
+                        android:src="@drawable/train" />
+
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:fontFamily="@font/font1"
+                        android:padding="5dp"
                         android:text="WORKOUT"
-                        android:textSize="38dp"
-                        android:textColor="@color/black"
-                        android:fontFamily="@font/font1"
                         android:textAlignment="center"
-                        android:padding="5dp"
-                        android:layout_marginTop="20dp"/>
+                        android:textColor="@color/black"
+                        android:textSize="38dp" />
                 </LinearLayout>
             </androidx.cardview.widget.CardView>
+
             <androidx.cardview.widget.CardView
+                android:id="@+id/diet"
                 android:layout_width="0dp"
                 android:layout_height="0dp"
-                app:cardCornerRadius="15dp"
                 android:layout_rowWeight="1"
-                app:cardElevation="0dp"
                 android:layout_columnWeight="1"
-                android:layout_margin="5dp">
+                android:layout_margin="5dp"
+                app:cardCornerRadius="15dp"
+                app:cardElevation="0dp">
+
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:orientation="vertical">
+
                     <ImageView
-                        android:id="@+id/diet"
+
                         android:layout_width="match_parent"
                         android:layout_height="150dp"
-                        android:src="@drawable/diet"
-                        android:padding="5dp"/>
+                        android:padding="5dp"
+                        android:src="@drawable/diet" />
+
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:fontFamily="@font/font1"
+                        android:padding="5dp"
                         android:text="DIET"
-                        android:textSize="38dp"
-                        android:textColor="@color/black"
-                        android:fontFamily="@font/font1"
                         android:textAlignment="center"
-                        android:padding="5dp"
-                        android:layout_marginTop="20dp"/>
+                        android:textColor="@color/black"
+                        android:textSize="38dp" />
                 </LinearLayout>
             </androidx.cardview.widget.CardView>
+
             <androidx.cardview.widget.CardView
+                android:id="@+id/results"
                 android:layout_width="0dp"
                 android:layout_height="0dp"
-                app:cardCornerRadius="15dp"
                 android:layout_rowWeight="1"
-                app:cardElevation="0dp"
                 android:layout_columnWeight="1"
-                android:layout_margin="5dp">
+                android:layout_margin="5dp"
+                app:cardCornerRadius="15dp"
+                app:cardElevation="0dp">
+
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:orientation="vertical">
+
                     <ImageView
-                        android:id="@+id/results"
+
                         android:layout_width="match_parent"
                         android:layout_height="150dp"
-                        android:src="@drawable/results"
-                        android:padding="5dp"/>
+                        android:padding="5dp"
+                        android:src="@drawable/results" />
+
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="RESULTS"
-                        android:textSize="38dp"
-                        android:textColor="@color/black"
+                        android:layout_marginTop="20dp"
                         android:fontFamily="@font/font1"
-                        android:textAlignment="center"
                         android:padding="5dp"
-                        android:layout_marginTop="20dp"/>
+                        android:text="RESULTS"
+                        android:textAlignment="center"
+                        android:textColor="@color/black"
+                        android:textSize="38dp" />
                 </LinearLayout>
             </androidx.cardview.widget.CardView>
 

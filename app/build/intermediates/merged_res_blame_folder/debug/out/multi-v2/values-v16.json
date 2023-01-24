@@ -4,7 +4,7 @@
             "outputFile": "com.example.ehealth.app-mergeDebugResources-26:/values-v16/values-v16.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\User\\.gradle\\caches\\transforms-3\\3aade53a7b7f6f46f1b9b1793599bc6e\\transformed\\core-1.7.0\\res\\values-v16\\values-v16.xml",
+                    "source": "/home/kariuki/.gradle/caches/transforms-3/3aade53a7b7f6f46f1b9b1793599bc6e/transformed/core-1.7.0/res/values-v16/values-v16.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
@@ -14,7 +14,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\User\\.gradle\\caches\\transforms-3\\eea11bc9a74c3e0cdbaf6ff8b065e3aa\\transformed\\appcompat-1.4.1\\res\\values-v16\\values-v16.xml",
+                    "source": "/home/kariuki/.gradle/caches/transforms-3/eea11bc9a74c3e0cdbaf6ff8b065e3aa/transformed/appcompat-1.4.1/res/values-v16/values-v16.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",

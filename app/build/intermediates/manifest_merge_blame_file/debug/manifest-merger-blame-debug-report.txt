@@ -6,209 +6,209 @@
 6
 7    <uses-sdk
 8        android:minSdkVersion="21"
-8-->C:\Users\User\AndroidStudioProjects\eHealth2\app\src\main\AndroidManifest.xml
+8-->/home/kariuki/Desktop/eHealth2/app/src/main/AndroidManifest.xml
 9        android:targetSdkVersion="32" />
-9-->C:\Users\User\AndroidStudioProjects\eHealth2\app\src\main\AndroidManifest.xml
+9-->/home/kariuki/Desktop/eHealth2/app/src/main/AndroidManifest.xml
 10
 11    <!-- Although the *SdkVersion is captured in gradle build files, this is required for non gradle builds -->
 12    <!-- <uses-sdk android:minSdkVersion="14"/> -->
 13    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
-13-->[com.google.firebase:firebase-database:20.0.4] C:\Users\User\.gradle\caches\transforms-3\2a4f28dd1934774b9d5631c66a766843\transformed\firebase-database-20.0.4\AndroidManifest.xml:25:5-79
-13-->[com.google.firebase:firebase-database:20.0.4] C:\Users\User\.gradle\caches\transforms-3\2a4f28dd1934774b9d5631c66a766843\transformed\firebase-database-20.0.4\AndroidManifest.xml:25:22-76
+13-->[com.google.firebase:firebase-database:20.0.4] /home/kariuki/.gradle/caches/transforms-3/2a4f28dd1934774b9d5631c66a766843/transformed/firebase-database-20.0.4/AndroidManifest.xml:25:5-79
+13-->[com.google.firebase:firebase-database:20.0.4] /home/kariuki/.gradle/caches/transforms-3/2a4f28dd1934774b9d5631c66a766843/transformed/firebase-database-20.0.4/AndroidManifest.xml:25:22-76
 14    <uses-permission android:name="android.permission.INTERNET" />
-14-->[com.google.firebase:firebase-database:20.0.4] C:\Users\User\.gradle\caches\transforms-3\2a4f28dd1934774b9d5631c66a766843\transformed\firebase-database-20.0.4\AndroidManifest.xml:26:5-67
-14-->[com.google.firebase:firebase-database:20.0.4] C:\Users\User\.gradle\caches\transforms-3\2a4f28dd1934774b9d5631c66a766843\transformed\firebase-database-20.0.4\AndroidManifest.xml:26:22-64
+14-->[com.google.firebase:firebase-database:20.0.4] /home/kariuki/.gradle/caches/transforms-3/2a4f28dd1934774b9d5631c66a766843/transformed/firebase-database-20.0.4/AndroidManifest.xml:26:5-67
+14-->[com.google.firebase:firebase-database:20.0.4] /home/kariuki/.gradle/caches/transforms-3/2a4f28dd1934774b9d5631c66a766843/transformed/firebase-database-20.0.4/AndroidManifest.xml:26:22-64
 15
 16    <application
-16-->C:\Users\User\AndroidStudioProjects\eHealth2\app\src\main\AndroidManifest.xml:5:5-70:19
+16-->/home/kariuki/Desktop/eHealth2/app/src/main/AndroidManifest.xml:5:5-70:19
 17        android:allowBackup="true"
-17-->C:\Users\User\AndroidStudioProjects\eHealth2\app\src\main\AndroidManifest.xml:6:9-35
+17-->/home/kariuki/Desktop/eHealth2/app/src/main/AndroidManifest.xml:6:9-35
 18        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
-18-->[androidx.core:core:1.7.0] C:\Users\User\.gradle\caches\transforms-3\3aade53a7b7f6f46f1b9b1793599bc6e\transformed\core-1.7.0\AndroidManifest.xml:24:18-86
+18-->[androidx.core:core:1.7.0] /home/kariuki/.gradle/caches/transforms-3/3aade53a7b7f6f46f1b9b1793599bc6e/transformed/core-1.7.0/AndroidManifest.xml:24:18-86
 19        android:dataExtractionRules="@xml/data_extraction_rules"
-19-->C:\Users\User\AndroidStudioProjects\eHealth2\app\src\main\AndroidManifest.xml:7:9-65
+19-->/home/kariuki/Desktop/eHealth2/app/src/main/AndroidManifest.xml:7:9-65
 20        android:debuggable="true"
 21        android:fullBackupContent="@xml/backup_rules"
-21-->C:\Users\User\AndroidStudioProjects\eHealth2\app\src\main\AndroidManifest.xml:8:9-54
+21-->/home/kariuki/Desktop/eHealth2/app/src/main/AndroidManifest.xml:8:9-54
 22        android:icon="@mipmap/ic_launcher"
-22-->C:\Users\User\AndroidStudioProjects\eHealth2\app\src\main\AndroidManifest.xml:9:9-43
+22-->/home/kariuki/Desktop/eHealth2/app/src/main/AndroidManifest.xml:9:9-43
 23        android:label="@string/app_name"
-23-->C:\Users\User\AndroidStudioProjects\eHealth2\app\src\main\AndroidManifest.xml:10:9-41
+23-->/home/kariuki/Desktop/eHealth2/app/src/main/AndroidManifest.xml:10:9-41
 24        android:roundIcon="@mipmap/ic_launcher_round"
-24-->C:\Users\User\AndroidStudioProjects\eHealth2\app\src\main\AndroidManifest.xml:11:9-54
+24-->/home/kariuki/Desktop/eHealth2/app/src/main/AndroidManifest.xml:11:9-54
 25        android:supportsRtl="true"
-25-->C:\Users\User\AndroidStudioProjects\eHealth2\app\src\main\AndroidManifest.xml:12:9-35
+25-->/home/kariuki/Desktop/eHealth2/app/src/main/AndroidManifest.xml:12:9-35
 26        android:testOnly="true"
 27        android:theme="@style/Theme.EHealth" >
-27-->C:\Users\User\AndroidStudioProjects\eHealth2\app\src\main\AndroidManifest.xml:13:9-45
+27-->/home/kariuki/Desktop/eHealth2/app/src/main/AndroidManifest.xml:13:9-45
 28        <activity
-28-->C:\Users\User\AndroidStudioProjects\eHealth2\app\src\main\AndroidManifest.xml:15:9-21:20
+28-->/home/kariuki/Desktop/eHealth2/app/src/main/AndroidManifest.xml:15:9-21:20
 29            android:name="com.example.ehealth.Results"
-29-->C:\Users\User\AndroidStudioProjects\eHealth2\app\src\main\AndroidManifest.xml:16:13-36
+29-->/home/kariuki/Desktop/eHealth2/app/src/main/AndroidManifest.xml:16:13-36
 30            android:exported="false" >
-30-->C:\Users\User\AndroidStudioProjects\eHealth2\app\src\main\AndroidManifest.xml:17:13-37
+30-->/home/kariuki/Desktop/eHealth2/app/src/main/AndroidManifest.xml:17:13-37
 31            <meta-data
-31-->C:\Users\User\AndroidStudioProjects\eHealth2\app\src\main\AndroidManifest.xml:18:13-20:36
+31-->/home/kariuki/Desktop/eHealth2/app/src/main/AndroidManifest.xml:18:13-20:36
 32                android:name="android.app.lib_name"
-32-->C:\Users\User\AndroidStudioProjects\eHealth2\app\src\main\AndroidManifest.xml:19:17-52
+32-->/home/kariuki/Desktop/eHealth2/app/src/main/AndroidManifest.xml:19:17-52
 33                android:value="" />
-33-->C:\Users\User\AndroidStudioProjects\eHealth2\app\src\main\AndroidManifest.xml:20:17-33
+33-->/home/kariuki/Desktop/eHealth2/app/src/main/AndroidManifest.xml:20:17-33
 34        </activity>
 35        <activity
-35-->C:\Users\User\AndroidStudioProjects\eHealth2\app\src\main\AndroidManifest.xml:22:9-28:20
+35-->/home/kariuki/Desktop/eHealth2/app/src/main/AndroidManifest.xml:22:9-28:20
 36            android:name="com.example.ehealth.Diet"
-36-->C:\Users\User\AndroidStudioProjects\eHealth2\app\src\main\AndroidManifest.xml:23:13-33
+36-->/home/kariuki/Desktop/eHealth2/app/src/main/AndroidManifest.xml:23:13-33
 37            android:exported="false" >
-37-->C:\Users\User\AndroidStudioProjects\eHealth2\app\src\main\AndroidManifest.xml:24:13-37
+37-->/home/kariuki/Desktop/eHealth2/app/src/main/AndroidManifest.xml:24:13-37
 38            <meta-data
-38-->C:\Users\User\AndroidStudioProjects\eHealth2\app\src\main\AndroidManifest.xml:18:13-20:36
+38-->/home/kariuki/Desktop/eHealth2/app/src/main/AndroidManifest.xml:18:13-20:36
 39                android:name="android.app.lib_name"
-39-->C:\Users\User\AndroidStudioProjects\eHealth2\app\src\main\AndroidManifest.xml:19:17-52
+39-->/home/kariuki/Desktop/eHealth2/app/src/main/AndroidManifest.xml:19:17-52
 40                android:value="" />
-40-->C:\Users\User\AndroidStudioProjects\eHealth2\app\src\main\AndroidManifest.xml:20:17-33
+40-->/home/kariuki/Desktop/eHealth2/app/src/main/AndroidManifest.xml:20:17-33
 41        </activity>
 42        <activity
-42-->C:\Users\User\AndroidStudioProjects\eHealth2\app\src\main\AndroidManifest.xml:29:9-35:20
+42-->/home/kariuki/Desktop/eHealth2/app/src/main/AndroidManifest.xml:29:9-35:20
 43            android:name="com.example.ehealth.Workout"
-43-->C:\Users\User\AndroidStudioProjects\eHealth2\app\src\main\AndroidManifest.xml:30:13-36
+43-->/home/kariuki/Desktop/eHealth2/app/src/main/AndroidManifest.xml:30:13-36
 44            android:exported="false" >
-44-->C:\Users\User\AndroidStudioProjects\eHealth2\app\src\main\AndroidManifest.xml:31:13-37
+44-->/home/kariuki/Desktop/eHealth2/app/src/main/AndroidManifest.xml:31:13-37
 45            <meta-data
-45-->C:\Users\User\AndroidStudioProjects\eHealth2\app\src\main\AndroidManifest.xml:18:13-20:36
+45-->/home/kariuki/Desktop/eHealth2/app/src/main/AndroidManifest.xml:18:13-20:36
 46                android:name="android.app.lib_name"
-46-->C:\Users\User\AndroidStudioProjects\eHealth2\app\src\main\AndroidManifest.xml:19:17-52
+46-->/home/kariuki/Desktop/eHealth2/app/src/main/AndroidManifest.xml:19:17-52
 47                android:value="" />
-47-->C:\Users\User\AndroidStudioProjects\eHealth2\app\src\main\AndroidManifest.xml:20:17-33
+47-->/home/kariuki/Desktop/eHealth2/app/src/main/AndroidManifest.xml:20:17-33
 48        </activity>
 49        <activity
-49-->C:\Users\User\AndroidStudioProjects\eHealth2\app\src\main\AndroidManifest.xml:36:9-42:20
+49-->/home/kariuki/Desktop/eHealth2/app/src/main/AndroidManifest.xml:36:9-42:20
 50            android:name="com.example.ehealth.Fast"
-50-->C:\Users\User\AndroidStudioProjects\eHealth2\app\src\main\AndroidManifest.xml:37:13-33
+50-->/home/kariuki/Desktop/eHealth2/app/src/main/AndroidManifest.xml:37:13-33
 51            android:exported="false" >
-51-->C:\Users\User\AndroidStudioProjects\eHealth2\app\src\main\AndroidManifest.xml:38:13-37
+51-->/home/kariuki/Desktop/eHealth2/app/src/main/AndroidManifest.xml:38:13-37
 52            <meta-data
-52-->C:\Users\User\AndroidStudioProjects\eHealth2\app\src\main\AndroidManifest.xml:18:13-20:36
+52-->/home/kariuki/Desktop/eHealth2/app/src/main/AndroidManifest.xml:18:13-20:36
 53                android:name="android.app.lib_name"
-53-->C:\Users\User\AndroidStudioProjects\eHealth2\app\src\main\AndroidManifest.xml:19:17-52
+53-->/home/kariuki/Desktop/eHealth2/app/src/main/AndroidManifest.xml:19:17-52
 54                android:value="" />
-54-->C:\Users\User\AndroidStudioProjects\eHealth2\app\src\main\AndroidManifest.xml:20:17-33
+54-->/home/kariuki/Desktop/eHealth2/app/src/main/AndroidManifest.xml:20:17-33
 55        </activity>
 56        <activity
-56-->C:\Users\User\AndroidStudioProjects\eHealth2\app\src\main\AndroidManifest.xml:43:9-49:20
+56-->/home/kariuki/Desktop/eHealth2/app/src/main/AndroidManifest.xml:43:9-49:20
 57            android:name="com.example.ehealth.Home"
-57-->C:\Users\User\AndroidStudioProjects\eHealth2\app\src\main\AndroidManifest.xml:44:13-33
+57-->/home/kariuki/Desktop/eHealth2/app/src/main/AndroidManifest.xml:44:13-33
 58            android:exported="false" >
-58-->C:\Users\User\AndroidStudioProjects\eHealth2\app\src\main\AndroidManifest.xml:45:13-37
+58-->/home/kariuki/Desktop/eHealth2/app/src/main/AndroidManifest.xml:45:13-37
 59            <meta-data
-59-->C:\Users\User\AndroidStudioProjects\eHealth2\app\src\main\AndroidManifest.xml:18:13-20:36
+59-->/home/kariuki/Desktop/eHealth2/app/src/main/AndroidManifest.xml:18:13-20:36
 60                android:name="android.app.lib_name"
-60-->C:\Users\User\AndroidStudioProjects\eHealth2\app\src\main\AndroidManifest.xml:19:17-52
+60-->/home/kariuki/Desktop/eHealth2/app/src/main/AndroidManifest.xml:19:17-52
 61                android:value="" />
-61-->C:\Users\User\AndroidStudioProjects\eHealth2\app\src\main\AndroidManifest.xml:20:17-33
+61-->/home/kariuki/Desktop/eHealth2/app/src/main/AndroidManifest.xml:20:17-33
 62        </activity>
 63        <activity
-63-->C:\Users\User\AndroidStudioProjects\eHealth2\app\src\main\AndroidManifest.xml:50:9-56:20
+63-->/home/kariuki/Desktop/eHealth2/app/src/main/AndroidManifest.xml:50:9-56:20
 64            android:name="com.example.ehealth.Signup"
-64-->C:\Users\User\AndroidStudioProjects\eHealth2\app\src\main\AndroidManifest.xml:51:13-35
+64-->/home/kariuki/Desktop/eHealth2/app/src/main/AndroidManifest.xml:51:13-35
 65            android:exported="false" >
-65-->C:\Users\User\AndroidStudioProjects\eHealth2\app\src\main\AndroidManifest.xml:52:13-37
+65-->/home/kariuki/Desktop/eHealth2/app/src/main/AndroidManifest.xml:52:13-37
 66            <meta-data
-66-->C:\Users\User\AndroidStudioProjects\eHealth2\app\src\main\AndroidManifest.xml:18:13-20:36
+66-->/home/kariuki/Desktop/eHealth2/app/src/main/AndroidManifest.xml:18:13-20:36
 67                android:name="android.app.lib_name"
-67-->C:\Users\User\AndroidStudioProjects\eHealth2\app\src\main\AndroidManifest.xml:19:17-52
+67-->/home/kariuki/Desktop/eHealth2/app/src/main/AndroidManifest.xml:19:17-52
 68                android:value="" />
-68-->C:\Users\User\AndroidStudioProjects\eHealth2\app\src\main\AndroidManifest.xml:20:17-33
+68-->/home/kariuki/Desktop/eHealth2/app/src/main/AndroidManifest.xml:20:17-33
 69        </activity>
 70        <activity
-70-->C:\Users\User\AndroidStudioProjects\eHealth2\app\src\main\AndroidManifest.xml:57:9-69:20
+70-->/home/kariuki/Desktop/eHealth2/app/src/main/AndroidManifest.xml:57:9-69:20
 71            android:name="com.example.ehealth.Login"
-71-->C:\Users\User\AndroidStudioProjects\eHealth2\app\src\main\AndroidManifest.xml:58:13-34
+71-->/home/kariuki/Desktop/eHealth2/app/src/main/AndroidManifest.xml:58:13-34
 72            android:exported="true" >
-72-->C:\Users\User\AndroidStudioProjects\eHealth2\app\src\main\AndroidManifest.xml:59:13-36
+72-->/home/kariuki/Desktop/eHealth2/app/src/main/AndroidManifest.xml:59:13-36
 73            <intent-filter>
-73-->C:\Users\User\AndroidStudioProjects\eHealth2\app\src\main\AndroidManifest.xml:60:13-64:29
+73-->/home/kariuki/Desktop/eHealth2/app/src/main/AndroidManifest.xml:60:13-64:29
 74                <action android:name="android.intent.action.MAIN" />
-74-->C:\Users\User\AndroidStudioProjects\eHealth2\app\src\main\AndroidManifest.xml:61:17-69
-74-->C:\Users\User\AndroidStudioProjects\eHealth2\app\src\main\AndroidManifest.xml:61:25-66
+74-->/home/kariuki/Desktop/eHealth2/app/src/main/AndroidManifest.xml:61:17-69
+74-->/home/kariuki/Desktop/eHealth2/app/src/main/AndroidManifest.xml:61:25-66
 75
 76                <category android:name="android.intent.category.LAUNCHER" />
-76-->C:\Users\User\AndroidStudioProjects\eHealth2\app\src\main\AndroidManifest.xml:63:17-77
-76-->C:\Users\User\AndroidStudioProjects\eHealth2\app\src\main\AndroidManifest.xml:63:27-74
+76-->/home/kariuki/Desktop/eHealth2/app/src/main/AndroidManifest.xml:63:17-77
+76-->/home/kariuki/Desktop/eHealth2/app/src/main/AndroidManifest.xml:63:27-74
 77            </intent-filter>
 78
 79            <meta-data
-79-->C:\Users\User\AndroidStudioProjects\eHealth2\app\src\main\AndroidManifest.xml:18:13-20:36
+79-->/home/kariuki/Desktop/eHealth2/app/src/main/AndroidManifest.xml:18:13-20:36
 80                android:name="android.app.lib_name"
-80-->C:\Users\User\AndroidStudioProjects\eHealth2\app\src\main\AndroidManifest.xml:19:17-52
+80-->/home/kariuki/Desktop/eHealth2/app/src/main/AndroidManifest.xml:19:17-52
 81                android:value="" />
-81-->C:\Users\User\AndroidStudioProjects\eHealth2\app\src\main\AndroidManifest.xml:20:17-33
+81-->/home/kariuki/Desktop/eHealth2/app/src/main/AndroidManifest.xml:20:17-33
 82        </activity>
 83
 84        <service
-84-->[com.google.firebase:firebase-database:20.0.4] C:\Users\User\.gradle\caches\transforms-3\2a4f28dd1934774b9d5631c66a766843\transformed\firebase-database-20.0.4\AndroidManifest.xml:29:9-35:19
+84-->[com.google.firebase:firebase-database:20.0.4] /home/kariuki/.gradle/caches/transforms-3/2a4f28dd1934774b9d5631c66a766843/transformed/firebase-database-20.0.4/AndroidManifest.xml:29:9-35:19
 85            android:name="com.google.firebase.components.ComponentDiscoveryService"
-85-->[com.google.firebase:firebase-database:20.0.4] C:\Users\User\.gradle\caches\transforms-3\2a4f28dd1934774b9d5631c66a766843\transformed\firebase-database-20.0.4\AndroidManifest.xml:30:13-84
+85-->[com.google.firebase:firebase-database:20.0.4] /home/kariuki/.gradle/caches/transforms-3/2a4f28dd1934774b9d5631c66a766843/transformed/firebase-database-20.0.4/AndroidManifest.xml:30:13-84
 86            android:directBootAware="true"
-86-->[com.google.firebase:firebase-common:20.1.0] C:\Users\User\.gradle\caches\transforms-3\e59c4a1d6af1099f4d18fe6433eff849\transformed\firebase-common-20.1.0\AndroidManifest.xml:35:13-43
+86-->[com.google.firebase:firebase-common:20.1.0] /home/kariuki/.gradle/caches/transforms-3/e59c4a1d6af1099f4d18fe6433eff849/transformed/firebase-common-20.1.0/AndroidManifest.xml:35:13-43
 87            android:exported="false" >
-87-->[com.google.firebase:firebase-database:20.0.4] C:\Users\User\.gradle\caches\transforms-3\2a4f28dd1934774b9d5631c66a766843\transformed\firebase-database-20.0.4\AndroidManifest.xml:31:13-37
+87-->[com.google.firebase:firebase-database:20.0.4] /home/kariuki/.gradle/caches/transforms-3/2a4f28dd1934774b9d5631c66a766843/transformed/firebase-database-20.0.4/AndroidManifest.xml:31:13-37
 88            <meta-data
-88-->[com.google.firebase:firebase-database:20.0.4] C:\Users\User\.gradle\caches\transforms-3\2a4f28dd1934774b9d5631c66a766843\transformed\firebase-database-20.0.4\AndroidManifest.xml:32:13-34:85
+88-->[com.google.firebase:firebase-database:20.0.4] /home/kariuki/.gradle/caches/transforms-3/2a4f28dd1934774b9d5631c66a766843/transformed/firebase-database-20.0.4/AndroidManifest.xml:32:13-34:85
 89                android:name="com.google.firebase.components:com.google.firebase.database.DatabaseRegistrar"
-89-->[com.google.firebase:firebase-database:20.0.4] C:\Users\User\.gradle\caches\transforms-3\2a4f28dd1934774b9d5631c66a766843\transformed\firebase-database-20.0.4\AndroidManifest.xml:33:17-109
+89-->[com.google.firebase:firebase-database:20.0.4] /home/kariuki/.gradle/caches/transforms-3/2a4f28dd1934774b9d5631c66a766843/transformed/firebase-database-20.0.4/AndroidManifest.xml:33:17-109
 90                android:value="com.google.firebase.components.ComponentRegistrar" />
-90-->[com.google.firebase:firebase-database:20.0.4] C:\Users\User\.gradle\caches\transforms-3\2a4f28dd1934774b9d5631c66a766843\transformed\firebase-database-20.0.4\AndroidManifest.xml:34:17-82
+90-->[com.google.firebase:firebase-database:20.0.4] /home/kariuki/.gradle/caches/transforms-3/2a4f28dd1934774b9d5631c66a766843/transformed/firebase-database-20.0.4/AndroidManifest.xml:34:17-82
 91        </service>
 92
 93        <activity
-93-->[com.google.android.gms:play-services-base:18.0.1] C:\Users\User\.gradle\caches\transforms-3\26b3666345201c303a3333024bb53271\transformed\play-services-base-18.0.1\AndroidManifest.xml:20:9-22:45
+93-->[com.google.android.gms:play-services-base:18.0.1] /home/kariuki/.gradle/caches/transforms-3/26b3666345201c303a3333024bb53271/transformed/play-services-base-18.0.1/AndroidManifest.xml:20:9-22:45
 94            android:name="com.google.android.gms.common.api.GoogleApiActivity"
-94-->[com.google.android.gms:play-services-base:18.0.1] C:\Users\User\.gradle\caches\transforms-3\26b3666345201c303a3333024bb53271\transformed\play-services-base-18.0.1\AndroidManifest.xml:20:19-85
+94-->[com.google.android.gms:play-services-base:18.0.1] /home/kariuki/.gradle/caches/transforms-3/26b3666345201c303a3333024bb53271/transformed/play-services-base-18.0.1/AndroidManifest.xml:20:19-85
 95            android:exported="false"
-95-->[com.google.android.gms:play-services-base:18.0.1] C:\Users\User\.gradle\caches\transforms-3\26b3666345201c303a3333024bb53271\transformed\play-services-base-18.0.1\AndroidManifest.xml:22:19-43
+95-->[com.google.android.gms:play-services-base:18.0.1] /home/kariuki/.gradle/caches/transforms-3/26b3666345201c303a3333024bb53271/transformed/play-services-base-18.0.1/AndroidManifest.xml:22:19-43
 96            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
-96-->[com.google.android.gms:play-services-base:18.0.1] C:\Users\User\.gradle\caches\transforms-3\26b3666345201c303a3333024bb53271\transformed\play-services-base-18.0.1\AndroidManifest.xml:21:19-78
+96-->[com.google.android.gms:play-services-base:18.0.1] /home/kariuki/.gradle/caches/transforms-3/26b3666345201c303a3333024bb53271/transformed/play-services-base-18.0.1/AndroidManifest.xml:21:19-78
 97
 98        <provider
-98-->[com.google.firebase:firebase-common:20.1.0] C:\Users\User\.gradle\caches\transforms-3\e59c4a1d6af1099f4d18fe6433eff849\transformed\firebase-common-20.1.0\AndroidManifest.xml:26:9-31:39
+98-->[com.google.firebase:firebase-common:20.1.0] /home/kariuki/.gradle/caches/transforms-3/e59c4a1d6af1099f4d18fe6433eff849/transformed/firebase-common-20.1.0/AndroidManifest.xml:26:9-31:39
 99            android:name="com.google.firebase.provider.FirebaseInitProvider"
-99-->[com.google.firebase:firebase-common:20.1.0] C:\Users\User\.gradle\caches\transforms-3\e59c4a1d6af1099f4d18fe6433eff849\transformed\firebase-common-20.1.0\AndroidManifest.xml:27:13-77
+99-->[com.google.firebase:firebase-common:20.1.0] /home/kariuki/.gradle/caches/transforms-3/e59c4a1d6af1099f4d18fe6433eff849/transformed/firebase-common-20.1.0/AndroidManifest.xml:27:13-77
 100            android:authorities="com.example.ehealth.firebaseinitprovider"
-100-->[com.google.firebase:firebase-common:20.1.0] C:\Users\User\.gradle\caches\transforms-3\e59c4a1d6af1099f4d18fe6433eff849\transformed\firebase-common-20.1.0\AndroidManifest.xml:28:13-72
+100-->[com.google.firebase:firebase-common:20.1.0] /home/kariuki/.gradle/caches/transforms-3/e59c4a1d6af1099f4d18fe6433eff849/transformed/firebase-common-20.1.0/AndroidManifest.xml:28:13-72
 101            android:directBootAware="true"
-101-->[com.google.firebase:firebase-common:20.1.0] C:\Users\User\.gradle\caches\transforms-3\e59c4a1d6af1099f4d18fe6433eff849\transformed\firebase-common-20.1.0\AndroidManifest.xml:29:13-43
+101-->[com.google.firebase:firebase-common:20.1.0] /home/kariuki/.gradle/caches/transforms-3/e59c4a1d6af1099f4d18fe6433eff849/transformed/firebase-common-20.1.0/AndroidManifest.xml:29:13-43
 102            android:exported="false"
-102-->[com.google.firebase:firebase-common:20.1.0] C:\Users\User\.gradle\caches\transforms-3\e59c4a1d6af1099f4d18fe6433eff849\transformed\firebase-common-20.1.0\AndroidManifest.xml:30:13-37
+102-->[com.google.firebase:firebase-common:20.1.0] /home/kariuki/.gradle/caches/transforms-3/e59c4a1d6af1099f4d18fe6433eff849/transformed/firebase-common-20.1.0/AndroidManifest.xml:30:13-37
 103            android:initOrder="100" />
-103-->[com.google.firebase:firebase-common:20.1.0] C:\Users\User\.gradle\caches\transforms-3\e59c4a1d6af1099f4d18fe6433eff849\transformed\firebase-common-20.1.0\AndroidManifest.xml:31:13-36
+103-->[com.google.firebase:firebase-common:20.1.0] /home/kariuki/.gradle/caches/transforms-3/e59c4a1d6af1099f4d18fe6433eff849/transformed/firebase-common-20.1.0/AndroidManifest.xml:31:13-36
 104
 105        <meta-data
-105-->[com.google.android.gms:play-services-basement:18.0.0] C:\Users\User\.gradle\caches\transforms-3\b284489ed66026c2cdd1d7c33585e62e\transformed\play-services-basement-18.0.0\AndroidManifest.xml:21:9-23:69
+105-->[com.google.android.gms:play-services-basement:18.0.0] /home/kariuki/.gradle/caches/transforms-3/b284489ed66026c2cdd1d7c33585e62e/transformed/play-services-basement-18.0.0/AndroidManifest.xml:21:9-23:69
 106            android:name="com.google.android.gms.version"
-106-->[com.google.android.gms:play-services-basement:18.0.0] C:\Users\User\.gradle\caches\transforms-3\b284489ed66026c2cdd1d7c33585e62e\transformed\play-services-basement-18.0.0\AndroidManifest.xml:22:13-58
+106-->[com.google.android.gms:play-services-basement:18.0.0] /home/kariuki/.gradle/caches/transforms-3/b284489ed66026c2cdd1d7c33585e62e/transformed/play-services-basement-18.0.0/AndroidManifest.xml:22:13-58
 107            android:value="@integer/google_play_services_version" />
-107-->[com.google.android.gms:play-services-basement:18.0.0] C:\Users\User\.gradle\caches\transforms-3\b284489ed66026c2cdd1d7c33585e62e\transformed\play-services-basement-18.0.0\AndroidManifest.xml:23:13-66
+107-->[com.google.android.gms:play-services-basement:18.0.0] /home/kariuki/.gradle/caches/transforms-3/b284489ed66026c2cdd1d7c33585e62e/transformed/play-services-basement-18.0.0/AndroidManifest.xml:23:13-66
 108
 109        <provider
-109-->[androidx.emoji2:emoji2:1.0.0] C:\Users\User\.gradle\caches\transforms-3\dd8d034f2ef3bb750af774315540fdc2\transformed\emoji2-1.0.0\AndroidManifest.xml:26:9-34:20
+109-->[androidx.emoji2:emoji2:1.0.0] /home/kariuki/.gradle/caches/transforms-3/dd8d034f2ef3bb750af774315540fdc2/transformed/emoji2-1.0.0/AndroidManifest.xml:26:9-34:20
 110            android:name="androidx.startup.InitializationProvider"
-110-->[androidx.emoji2:emoji2:1.0.0] C:\Users\User\.gradle\caches\transforms-3\dd8d034f2ef3bb750af774315540fdc2\transformed\emoji2-1.0.0\AndroidManifest.xml:27:13-67
+110-->[androidx.emoji2:emoji2:1.0.0] /home/kariuki/.gradle/caches/transforms-3/dd8d034f2ef3bb750af774315540fdc2/transformed/emoji2-1.0.0/AndroidManifest.xml:27:13-67
 111            android:authorities="com.example.ehealth.androidx-startup"
-111-->[androidx.emoji2:emoji2:1.0.0] C:\Users\User\.gradle\caches\transforms-3\dd8d034f2ef3bb750af774315540fdc2\transformed\emoji2-1.0.0\AndroidManifest.xml:28:13-68
+111-->[androidx.emoji2:emoji2:1.0.0] /home/kariuki/.gradle/caches/transforms-3/dd8d034f2ef3bb750af774315540fdc2/transformed/emoji2-1.0.0/AndroidManifest.xml:28:13-68
 112            android:exported="false" >
-112-->[androidx.emoji2:emoji2:1.0.0] C:\Users\User\.gradle\caches\transforms-3\dd8d034f2ef3bb750af774315540fdc2\transformed\emoji2-1.0.0\AndroidManifest.xml:29:13-37
+112-->[androidx.emoji2:emoji2:1.0.0] /home/kariuki/.gradle/caches/transforms-3/dd8d034f2ef3bb750af774315540fdc2/transformed/emoji2-1.0.0/AndroidManifest.xml:29:13-37
 113            <meta-data
-113-->[androidx.emoji2:emoji2:1.0.0] C:\Users\User\.gradle\caches\transforms-3\dd8d034f2ef3bb750af774315540fdc2\transformed\emoji2-1.0.0\AndroidManifest.xml:31:13-33:52
+113-->[androidx.emoji2:emoji2:1.0.0] /home/kariuki/.gradle/caches/transforms-3/dd8d034f2ef3bb750af774315540fdc2/transformed/emoji2-1.0.0/AndroidManifest.xml:31:13-33:52
 114                android:name="androidx.emoji2.text.EmojiCompatInitializer"
-114-->[androidx.emoji2:emoji2:1.0.0] C:\Users\User\.gradle\caches\transforms-3\dd8d034f2ef3bb750af774315540fdc2\transformed\emoji2-1.0.0\AndroidManifest.xml:32:17-75
+114-->[androidx.emoji2:emoji2:1.0.0] /home/kariuki/.gradle/caches/transforms-3/dd8d034f2ef3bb750af774315540fdc2/transformed/emoji2-1.0.0/AndroidManifest.xml:32:17-75
 115                android:value="androidx.startup" />
-115-->[androidx.emoji2:emoji2:1.0.0] C:\Users\User\.gradle\caches\transforms-3\dd8d034f2ef3bb750af774315540fdc2\transformed\emoji2-1.0.0\AndroidManifest.xml:33:17-49
+115-->[androidx.emoji2:emoji2:1.0.0] /home/kariuki/.gradle/caches/transforms-3/dd8d034f2ef3bb750af774315540fdc2/transformed/emoji2-1.0.0/AndroidManifest.xml:33:17-49
 116            <meta-data
-116-->[androidx.lifecycle:lifecycle-process:2.4.0] C:\Users\User\.gradle\caches\transforms-3\e1acb8a47af4616b7f57c12b903cf6df\transformed\lifecycle-process-2.4.0\AndroidManifest.xml:31:13-33:52
+116-->[androidx.lifecycle:lifecycle-process:2.4.0] /home/kariuki/.gradle/caches/transforms-3/e1acb8a47af4616b7f57c12b903cf6df/transformed/lifecycle-process-2.4.0/AndroidManifest.xml:31:13-33:52
 117                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
-117-->[androidx.lifecycle:lifecycle-process:2.4.0] C:\Users\User\.gradle\caches\transforms-3\e1acb8a47af4616b7f57c12b903cf6df\transformed\lifecycle-process-2.4.0\AndroidManifest.xml:32:17-78
+117-->[androidx.lifecycle:lifecycle-process:2.4.0] /home/kariuki/.gradle/caches/transforms-3/e1acb8a47af4616b7f57c12b903cf6df/transformed/lifecycle-process-2.4.0/AndroidManifest.xml:32:17-78
 118                android:value="androidx.startup" />
-118-->[androidx.lifecycle:lifecycle-process:2.4.0] C:\Users\User\.gradle\caches\transforms-3\e1acb8a47af4616b7f57c12b903cf6df\transformed\lifecycle-process-2.4.0\AndroidManifest.xml:33:17-49
+118-->[androidx.lifecycle:lifecycle-process:2.4.0] /home/kariuki/.gradle/caches/transforms-3/e1acb8a47af4616b7f57c12b903cf6df/transformed/lifecycle-process-2.4.0/AndroidManifest.xml:33:17-49
 119        </provider>
 120    </application>
 121

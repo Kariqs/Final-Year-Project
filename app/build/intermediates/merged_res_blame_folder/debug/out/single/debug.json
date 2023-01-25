@@ -44,12 +44,20 @@
         "source": "/home/kariuki/.gradle/daemon/7.4/com.example.ehealth.app-main-30:/font/font2.ttf"
     },
     {
+        "merged": "com.example.ehealth.app-merged_res-28:/layout_activity_login.xml.flat",
+        "source": "com.example.ehealth.app-main-30:/layout/activity_login.xml"
+    },
+    {
         "merged": "/home/kariuki/.gradle/daemon/7.4/com.example.ehealth.app-merged_res-28:/mipmap-hdpi_ic_launcher.webp.flat",
         "source": "/home/kariuki/.gradle/daemon/7.4/com.example.ehealth.app-main-30:/mipmap-hdpi/ic_launcher.webp"
     },
     {
         "merged": "/home/kariuki/.gradle/daemon/7.4/com.example.ehealth.app-merged_res-28:/xml_data_extraction_rules.xml.flat",
         "source": "/home/kariuki/.gradle/daemon/7.4/com.example.ehealth.app-main-30:/xml/data_extraction_rules.xml"
+    },
+    {
+        "merged": "com.example.ehealth.app-merged_res-28:/layout_activity_signup.xml.flat",
+        "source": "com.example.ehealth.app-main-30:/layout/activity_signup.xml"
     },
     {
         "merged": "/home/kariuki/.gradle/daemon/7.4/com.example.ehealth.app-merged_res-28:/drawable_results.jpg.flat",

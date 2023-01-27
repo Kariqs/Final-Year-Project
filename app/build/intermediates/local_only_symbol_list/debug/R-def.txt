@@ -20,6 +20,7 @@ id diet
 id dontHaveAccount
 id email
 id fast
+id greetings
 id login
 id password
 id results

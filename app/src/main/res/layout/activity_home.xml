@@ -10,10 +10,10 @@
     tools:context=".Home">
 
     <TextView
+        android:id="@+id/greetings"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:fontFamily="@font/font1"
-        android:text="HELLO THERE, WELCOME."
         android:textColor="@color/black"
         android:textSize="30sp" />
 

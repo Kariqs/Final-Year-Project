@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#ffff"
+    android:background="#DCDBD8"
     android:orientation="vertical"
     android:padding="15dp"
     tools:context=".Home">
@@ -25,6 +25,16 @@
         android:textColor="@color/black"
         android:textSize="20sp" />
 
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:fontFamily="@font/font2"
+        android:text="Weight loss is a process that
+involves several practises-Fasting,Working out and Dieting. You can select where you need to be guided below.
+The results of others can also motivate you to work on yourself. Click Results to see how others have gone with weight loss."
+        android:textColor="@color/black"
+        android:textSize="20sp" />
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -34,12 +44,11 @@
 
         <GridLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="450dp"
             android:columnCount="2"
             android:rowCount="2">
 
             <androidx.cardview.widget.CardView
-                app:cardBackgroundColor="#B55CC5"
                 android:id="@+id/fast"
                 android:layout_width="0dp"
                 android:layout_height="0dp"
@@ -63,18 +72,16 @@
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_marginTop="20dp"
                         android:fontFamily="@font/font1"
                         android:padding="5dp"
                         android:text="FASTING"
                         android:textAlignment="center"
                         android:textColor="@color/black"
-                        android:textSize="38dp" />
+                        android:textSize="30sp" />
                 </LinearLayout>
             </androidx.cardview.widget.CardView>
 
             <androidx.cardview.widget.CardView
-                app:cardBackgroundColor="#5C6BC3"
                 android:id="@+id/workout"
                 android:layout_width="0dp"
                 android:layout_height="0dp"
@@ -99,18 +106,16 @@
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_marginTop="20dp"
                         android:fontFamily="@font/font1"
                         android:padding="5dp"
                         android:text="WORKOUT"
                         android:textAlignment="center"
                         android:textColor="@color/black"
-                        android:textSize="38dp" />
+                        android:textSize="30sp" />
                 </LinearLayout>
             </androidx.cardview.widget.CardView>
 
             <androidx.cardview.widget.CardView
-                app:cardBackgroundColor="#69D36D"
                 android:id="@+id/diet"
                 android:layout_width="0dp"
                 android:layout_height="0dp"
@@ -135,18 +140,16 @@
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_marginTop="20dp"
                         android:fontFamily="@font/font1"
                         android:padding="5dp"
                         android:text="DIET"
                         android:textAlignment="center"
                         android:textColor="@color/black"
-                        android:textSize="38dp" />
+                        android:textSize="30sp" />
                 </LinearLayout>
             </androidx.cardview.widget.CardView>
 
             <androidx.cardview.widget.CardView
-                app:cardBackgroundColor="#E86035"
                 android:id="@+id/results"
                 android:layout_width="0dp"
                 android:layout_height="0dp"
@@ -171,13 +174,12 @@
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_marginTop="20dp"
                         android:fontFamily="@font/font1"
                         android:padding="5dp"
                         android:text="RESULTS"
                         android:textAlignment="center"
                         android:textColor="@color/black"
-                        android:textSize="38dp" />
+                        android:textSize="30sp" />
                 </LinearLayout>
             </androidx.cardview.widget.CardView>
 

@@ -15,7 +15,7 @@
     <string name="google_crash_reporting_api_key" translatable="false">AIzaSyC0OVxW_asVZt3QiXfXiLU60WMroXfLTxY</string>
     <string name="google_storage_bucket" translatable="false">ehealth-ebdcc.appspot.com</string>
     <string name="project_id" translatable="false">ehealth-ebdcc</string>
-    <style name="Theme.EHealth" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+    <style name="Theme.EHealth" parent="Theme.MaterialComponents.DayNight.NoActionBar">
         
         <item name="colorPrimary">@color/purple_500</item>
         <item name="colorPrimaryVariant">@color/purple_700</item>

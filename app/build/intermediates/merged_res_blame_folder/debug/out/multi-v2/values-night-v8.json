@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "com.example.ehealth.app-mergeDebugResources-26:/values-night-v8/values-night-v8.xml",
+            "outputFile": "/home/kariuki/.gradle/daemon/7.4/com.example.ehealth.app-mergeDebugResources-26:/values-night-v8/values-night-v8.xml",
             "map": [
                 {
                     "source": "/home/kariuki/.gradle/caches/transforms-3/eea11bc9a74c3e0cdbaf6ff8b065e3aa/transformed/appcompat-1.4.1/res/values-night-v8/values-night-v8.xml",
@@ -54,6 +54,60 @@
                         "startOffsets": "1267,1342,1453,1542,1643,1750,1857,1956,2059,2147,2271,2373,2475,2591,2693,2807,2935,3051,3173,3309,3429,3563,3683,3795,4010,4127,4251,4381,4503,4641,4775,4891",
                         "endColumns": "74,110,88,100,106,106,98,102,87,123,101,101,115,101,113,127,115,121,135,119,133,119,111,125,116,123,129,121,137,133,115,119",
                         "endOffsets": "1337,1448,1537,1638,1745,1852,1951,2054,2142,2266,2368,2470,2586,2688,2802,2930,3046,3168,3304,3424,3558,3678,3790,3916,4122,4246,4376,4498,4636,4770,4886,5006"
+                    }
+                }
+            ]
+        },
+        {
+            "outputFile": "com.example.ehealth.app-mergeDebugResources-26:/values-night-v8/values-night-v8.xml",
+            "map": [
+                {
+                    "source": "/home/kariuki/.gradle/caches/transforms-3/eea11bc9a74c3e0cdbaf6ff8b065e3aa/transformed/appcompat-1.4.1/res/values-night-v8/values-night-v8.xml",
+                    "from": {
+                        "startLines": "-1,-1,-1,-1,-1,-1,-1,-1",
+                        "startColumns": "-1,-1,-1,-1,-1,-1,-1,-1",
+                        "startOffsets": "-1,-1,-1,-1,-1,-1,-1,-1"
+                    },
+                    "to": {
+                        "startLines": "2,3,4,5,6,7,8,46",
+                        "startColumns": "4,4,4,4,4,4,4,4",
+                        "startOffsets": "55,125,209,293,389,491,593,3919",
+                        "endColumns": "69,83,83,95,101,101,93,88",
+                        "endOffsets": "120,204,288,384,486,588,682,4003"
+                    }
+                },
+                {
+                    "source": "/home/kariuki/Desktop/eHealth2/app/src/main/res/values-night/themes.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "100",
+                        "endLines": "14",
+                        "endColumns": "12",
+                        "endOffsets": "794"
+                    },
+                    "to": {
+                        "startLines": "9",
+                        "startColumns": "4",
+                        "startOffsets": "687",
+                        "endLines": "21",
+                        "endColumns": "12",
+                        "endOffsets": "1260"
+                    }
+                },
+                {
+                    "source": "/home/kariuki/.gradle/caches/transforms-3/17011b707252402a7c103058d0df9e8c/transformed/material-1.5.0/res/values-night-v8/values-night-v8.xml",
+                    "from": {
+                        "startLines": "-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1",
+                        "startColumns": "-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1",
+                        "startOffsets": "-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1"
+                    },
+                    "to": {
+                        "startLines": "22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,47,48,49,50,51,52,53,54",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "1265,1340,1451,1540,1641,1748,1855,1954,2057,2145,2269,2371,2473,2589,2691,2805,2933,3049,3171,3307,3427,3561,3681,3793,4008,4125,4249,4379,4501,4639,4773,4889",
+                        "endColumns": "74,110,88,100,106,106,98,102,87,123,101,101,115,101,113,127,115,121,135,119,133,119,111,125,116,123,129,121,137,133,115,119",
+                        "endOffsets": "1335,1446,1535,1636,1743,1850,1949,2052,2140,2264,2366,2468,2584,2686,2800,2928,3044,3166,3302,3422,3556,3676,3788,3914,4120,4244,4374,4496,4634,4768,4884,5004"
                     }
                 }
             ]

@@ -2501,6 +2501,7 @@ drawable ic_mtrl_checked_circle
 drawable ic_mtrl_chip_checked_black
 drawable ic_mtrl_chip_checked_circle
 drawable ic_mtrl_chip_close_circle
+drawable imf
 drawable m3_appbar_background
 drawable m3_popupmenu_background_overlay
 drawable m3_radiobutton_ripple
@@ -2542,12 +2543,15 @@ drawable notification_template_icon_bg
 drawable notification_template_icon_low_bg
 drawable notification_tile_bg
 drawable notify_panel_notification_icon_bg
+drawable omad
 drawable results
+drawable sixteeneight
 drawable test_custom_background
 drawable test_level_drawable
 drawable tooltip_frame_dark
 drawable tooltip_frame_light
 drawable train
+drawable twentyfour
 font font1
 font font2
 id ALT
@@ -2640,6 +2644,7 @@ id auto
 id autoComplete
 id autoCompleteToEnd
 id autoCompleteToStart
+id autophagy
 id barrier
 id baseline
 id beginOnFirstDraw
@@ -2687,6 +2692,7 @@ id contiguous
 id continuousVelocity
 id coordinator
 id cos
+id countDownTime
 id counterclockwise
 id currentState
 id custom
@@ -2874,6 +2880,7 @@ id notification_background
 id notification_main_column
 id notification_main_column_container
 id off
+id omad
 id on
 id onInterceptTouchReturnSwipe
 id outline
@@ -2941,6 +2948,7 @@ id signUpEmail
 id signUpPassword
 id signUpPhoneNo
 id sin
+id sixteenEight
 id skipCollapsed
 id skipped
 id slide
@@ -2962,6 +2970,7 @@ id src_in
 id src_over
 id standard
 id start
+id startEnd
 id startHorizontal
 id startToEnd
 id startVertical
@@ -3022,6 +3031,7 @@ id transition_position
 id transition_scene_layoutid_cache
 id transition_transform
 id triangle
+id twentyFour
 id unchecked
 id uniform
 id unlabeled

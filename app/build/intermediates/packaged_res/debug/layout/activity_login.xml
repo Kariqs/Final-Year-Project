@@ -9,9 +9,9 @@
     android:padding="20dp">
 
     <TextView
+        android:id="@+id/greetings"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Welcome, Login to continue."
         android:textSize="40sp"
         android:textColor="@color/black"
         android:fontFamily="@font/font1"

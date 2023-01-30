@@ -14,12 +14,12 @@ import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 
 public class Signup extends AppCompatActivity {
-TextInputLayout Email,PhoneNumber,Password;
-Button Go;
-TextView AlreadyHaveAccount;
+    TextInputLayout Email, PhoneNumber, Password;
+    Button Go;
+    TextView AlreadyHaveAccount;
 
-FirebaseDatabase firebaseDatabase;
-DatabaseReference databaseReference;
+    FirebaseDatabase firebaseDatabase;
+    DatabaseReference databaseReference;
 
 
     @Override
@@ -33,14 +33,15 @@ DatabaseReference databaseReference;
         Go = findViewById(R.id.signUpButton);
         AlreadyHaveAccount = findViewById(R.id.alreadyHaveAccount);
 
+
         Go.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-               if (!validateEmail() | !validatePhoneNumber() | !validatePassword()){
-                   return;
-               }else{
-                   registerUser();
-               }
+                if (!validateEmail() | !validatePhoneNumber() | !validatePassword()) {
+                    return;
+                } else {
+                    registerUser();
+                }
             }
         });
 
@@ -48,7 +49,7 @@ DatabaseReference databaseReference;
         AlreadyHaveAccount.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent i = new Intent(Signup.this,Login.class);
+                Intent i = new Intent(Signup.this, Login.class);
                 startActivity(i);
                 finish();
             }
@@ -56,40 +57,43 @@ DatabaseReference databaseReference;
 
     }
 
-    private  boolean validateEmail(){
+    private boolean validateEmail() {
         String value = Email.getEditText().getText().toString();
-        if (value.isEmpty()){
+        if (value.isEmpty()) {
             Email.setError("Field cannot be empty");
             return false;
-        }else{
+        } else {
             Email.setError(null);
             Email.setErrorEnabled(false);
             return true;
         }
     }
-    private  boolean validatePhoneNumber(){
+
+    private boolean validatePhoneNumber() {
         String value = PhoneNumber.getEditText().getText().toString();
-        if (value.isEmpty()){
+        if (value.isEmpty()) {
             PhoneNumber.setError("Field cannot be empty");
             return false;
-        }else{
+        } else {
             PhoneNumber.setError(null);
             PhoneNumber.setErrorEnabled(false);
             return true;
         }
     }
-    private  boolean validatePassword(){
+
+    private boolean validatePassword() {
         String value = Password.getEditText().getText().toString();
-        if (value.isEmpty()){
+        if (value.isEmpty()) {
             Password.setError("Field cannot be empty");
             return false;
-        }else{
+        } else {
             Password.setError(null);
             Password.setErrorEnabled(false);
             return true;
         }
     }
-    private void registerUser(){
+
+    private void registerUser() {
         String EMAIL = Email.getEditText().getText().toString();
         String PHONENUMBER = PhoneNumber.getEditText().getText().toString();
         String PASSWORD = Password.getEditText().getText().toString();
@@ -97,7 +101,7 @@ DatabaseReference databaseReference;
         firebaseDatabase = FirebaseDatabase.getInstance();
         databaseReference = firebaseDatabase.getReference("users");
 
-        userHelperClass userhelper = new userHelperClass(EMAIL,PHONENUMBER,PASSWORD);
+        userHelperClass userhelper = new userHelperClass(EMAIL, PHONENUMBER, PASSWORD);
 
         databaseReference.child(PHONENUMBER).setValue(userhelper);
 
@@ -105,7 +109,7 @@ DatabaseReference databaseReference;
         Email.getEditText().setText("");
         PhoneNumber.getEditText().setText("");
         Password.getEditText().setText("");
-        Intent i = new Intent(Signup.this,Login.class);
+        Intent i = new Intent(Signup.this, Login.class);
         startActivity(i);
         finish();
     }

@@ -1,9 +1,13 @@
 package com.example.ehealth;
 
+import static java.time.LocalTime.now;
+
 import androidx.annotation.NonNull;
+import androidx.annotation.RequiresApi;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.os.Build;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -18,20 +22,33 @@ import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.Query;
 import com.google.firebase.database.ValueEventListener;
 
+import java.time.LocalTime;
+
 public class Login extends AppCompatActivity {
+    TextView Greetings;
     TextInputLayout Email, Password;
     Button Go;
     TextView dontHaveAccount;
 
 
+    @RequiresApi(api = Build.VERSION_CODES.O)
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
+        Greetings = findViewById(R.id.greetings);
         Email = findViewById(R.id.email);
         Password = findViewById(R.id.password);
         Go = findViewById(R.id.login);
         dontHaveAccount = findViewById(R.id.dontHaveAccount);
+
+        if (now().isBefore(LocalTime.of(12,00))){
+            Greetings.setText("Good Morning, Login to continue.");
+        }else if (now().isAfter(LocalTime.of(12,00)) && now().isBefore(LocalTime.of(16,00))){
+            Greetings.setText("Good Afternoon, Login to continue");
+        }else if (now().isAfter(LocalTime.of(16,00))){
+            Greetings.setText("Good Evening, Login to continue.");
+        }
 
         Go.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -108,7 +125,7 @@ public class Login extends AppCompatActivity {
                         Password.requestFocus();
                     }
                 }else{
-                    Email.setError("The email doesn't exist.");
+                    Email.setError("The phone number doesn't exist.");
                     Email.requestFocus();
                 }
             }

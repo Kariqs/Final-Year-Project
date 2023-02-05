@@ -8,12 +8,11 @@ import android.os.CountDownTimer;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import java.util.Locale;
 
 public class Fast extends AppCompatActivity {
-
-    int duration;
     TextView Countdown;
     Button StartEnd;
     CardView SixteenEight, Omad, TwentyFour, Autophagy;
@@ -21,7 +20,7 @@ public class Fast extends AppCompatActivity {
     CountDownTimer countDownTimer;
     boolean TimerRunning;
 
-    int TimeLeftInMillis;
+    long TimeLeftInMillis;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -37,26 +36,47 @@ public class Fast extends AppCompatActivity {
         StartEnd.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
+             countDownTimer.start();
+             StartEnd.setText("END FAST");
             }
         });
         SixteenEight.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-            duration = 5760000;
-            TimeLeftInMillis = duration;
-            updateCountDownText();
+                Countdown.setText("16:00:00");
+                TimeLeftInMillis =  57600000;
+                countDownTimer = new CountDownTimer(TimeLeftInMillis,1000) {
+                    @Override
+                    public void onTick(long l) {
+                    TimeLeftInMillis = l;
+                    updateCountDownText();
+                    }
+
+                    @Override
+                    public void onFinish() {
+                     TimerRunning = false;
+                     StartEnd.setVisibility(View.INVISIBLE );
+                    }
+                };
+                TimerRunning = true;
+
+                //StartEnd.setVisibility(View.VISIBLE);
             }
         });
     }
-    public void updateCountDownText(){
-        int hours = (int) (TimeLeftInMillis/1000)/360;
-        int minutes = (int)(TimeLeftInMillis/1000)%60;
-        int seconds = (int)(TimeLeftInMillis/1000)%60;
 
-        String timeLeftFormated = String.format(Locale.getDefault(),"%02d:%02d:%02d",hours,minutes,seconds);
+    public void updateCountDownText() {
+        long seconds = TimeLeftInMillis / 1000;
+        long minutes = seconds / 60;
+        long hours = minutes / 60;
+
+        minutes = minutes % 60;
+        seconds = seconds % 60;
+
+        String timeLeftFormated = String.format(Locale.getDefault(), "%02d:%02d:%02d",hours, minutes, seconds);
         Countdown.setText(timeLeftFormated);
 
 
     }
+
 }

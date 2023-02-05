@@ -12,6 +12,10 @@
         "source": "/home/kariuki/.gradle/daemon/7.4/com.example.ehealth.app-main-30:/font/font1.ttf"
     },
     {
+        "merged": "com.example.ehealth.app-merged_res-28:/layout_activity_fast.xml.flat",
+        "source": "com.example.ehealth.app-main-30:/layout/activity_fast.xml"
+    },
+    {
         "merged": "/home/kariuki/.gradle/daemon/7.4/com.example.ehealth.app-merged_res-28:/mipmap-xxhdpi_ic_launcher.webp.flat",
         "source": "/home/kariuki/.gradle/daemon/7.4/com.example.ehealth.app-main-30:/mipmap-xxhdpi/ic_launcher.webp"
     },
@@ -72,10 +76,6 @@
         "source": "/home/kariuki/.gradle/daemon/7.4/com.example.ehealth.app-main-30:/drawable/imf.jpeg"
     },
     {
-        "merged": "com.example.ehealth.app-merged_res-28:/drawable_train.jpg.flat",
-        "source": "com.example.ehealth.app-main-30:/drawable/train.jpg"
-    },
-    {
         "merged": "/home/kariuki/.gradle/daemon/7.4/com.example.ehealth.app-merged_res-28:/mipmap-anydpi-v26_ic_launcher.xml.flat",
         "source": "/home/kariuki/.gradle/daemon/7.4/com.example.ehealth.app-main-30:/mipmap-anydpi-v26/ic_launcher.xml"
     },
@@ -112,12 +112,12 @@
         "source": "/home/kariuki/.gradle/daemon/7.4/com.example.ehealth.app-main-30:/mipmap-xxxhdpi/ic_launcher_round.webp"
     },
     {
-        "merged": "/home/kariuki/.gradle/daemon/7.4/com.example.ehealth.app-merged_res-28:/mipmap-xhdpi_ic_launcher.webp.flat",
-        "source": "/home/kariuki/.gradle/daemon/7.4/com.example.ehealth.app-main-30:/mipmap-xhdpi/ic_launcher.webp"
-    },
-    {
         "merged": "/home/kariuki/.gradle/daemon/7.4/com.example.ehealth.app-merged_res-28:/drawable_train.jpg.flat",
         "source": "/home/kariuki/.gradle/daemon/7.4/com.example.ehealth.app-main-30:/drawable/train.jpg"
+    },
+    {
+        "merged": "/home/kariuki/.gradle/daemon/7.4/com.example.ehealth.app-merged_res-28:/mipmap-xhdpi_ic_launcher.webp.flat",
+        "source": "/home/kariuki/.gradle/daemon/7.4/com.example.ehealth.app-main-30:/mipmap-xhdpi/ic_launcher.webp"
     },
     {
         "merged": "/home/kariuki/.gradle/daemon/7.4/com.example.ehealth.app-merged_res-28:/drawable_fast.jpg.flat",

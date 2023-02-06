@@ -25,6 +25,8 @@ id countDownTime
 id diet
 id dontHaveAccount
 id email
+id enterHours
+id explain
 id fast
 id greetings
 id login

@@ -31,6 +31,7 @@
             android:layout_width="match_parent"
             android:layout_height="50dp"
             android:textSize="40dp"
+            android:text="00:00:00"
             android:textColor="@color/black"
             android:textAlignment="center"
             android:textStyle="bold"/>
@@ -60,8 +61,7 @@
         android:layout_height="100dp"
         android:text="Below are fasting plans. 16/8 means
 you fast for 16hrs and eat within the 8hrs window. For OMAD you only eat one meal a day.
-For 20/4 plan, you fast for 20hrs and eat within 4hrs window. You can also fast for more than 24hrs. This is called autophagy marathon.
-It can go up to 120hrs.
+For 20/4 plan, you fast for 20hrs and eat within 4hrs window. You can also fast for 48hrs, this is called Autophagy Marathon.
 "
         android:fontFamily="@font/font2"
         android:textColor="@color/black"
@@ -210,7 +210,7 @@ It can go up to 120hrs.
                         android:layout_height="wrap_content"
                         android:fontFamily="@font/font1"
                         android:padding="5dp"
-                        android:text=">24 HOURS"
+                        android:text="48 HOURS PLAN"
                         android:textAlignment="center"
                         android:textColor="@color/black"
                         android:textSize="20sp" />

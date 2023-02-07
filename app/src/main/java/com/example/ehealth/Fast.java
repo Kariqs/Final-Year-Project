@@ -1,29 +1,22 @@
 package com.example.ehealth;
 
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.cardview.widget.CardView;
-
 import android.os.Bundle;
 import android.os.CountDownTimer;
-import android.view.View;
 import android.widget.Button;
-import android.widget.EditText;
-import android.widget.ProgressBar;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.cardview.widget.CardView;
 
 import java.util.Locale;
 
 public class Fast extends AppCompatActivity {
-    ProgressBar Progress;
     TextView Countdown, Explain;
     Button StartEnd;
-    EditText EnterHours;
     CardView SixteenEight, Omad, TwentyFour, Autophagy;
-
     CountDownTimer countDownTimer;
     boolean TimerRunning;
-
     long TimeLeftInMillis;
 
     @Override
@@ -31,7 +24,6 @@ public class Fast extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_fast);
 
-        EnterHours = findViewById(R.id.enterHours);
         Explain = findViewById(R.id.explain);
         Countdown = findViewById(R.id.countDownTime);
         StartEnd = findViewById(R.id.startEnd);
@@ -40,40 +32,76 @@ public class Fast extends AppCompatActivity {
         TwentyFour = findViewById(R.id.twentyFour);
         Autophagy = findViewById(R.id.autophagy);
 
-        StartEnd.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
+        StartEnd.setOnClickListener(view -> {
+            String time = Countdown.getText().toString();
+            if (!TimerRunning && !time.equals("00:00:00")) {
                 Explain.setText("YOUR FAST HAS STARTED, GOOD LUCK.");
                 countDownTimer.start();
                 StartEnd.setText("END FAST");
+            } else if(TimerRunning){
+              countDownTimer.cancel();
+              Countdown.setText("00:00:00");
+              StartEnd.setText("START FAST");
+              Explain.setText("SELECT A FASTING PLAN AND CLICK START FAST TO CONTINUE WITH YOUR FAST.");
+              TimerRunning=false;
+            }else {
+                Toast.makeText(this, "Please select a fasting plan to continue.", Toast.LENGTH_SHORT).show();
             }
         });
-        SixteenEight.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Countdown.setText("16:00:00");
-                TimeLeftInMillis = 57600000;
-                countDownTimer = new CountDownTimer(TimeLeftInMillis, 1000) {
-                    @Override
-                    public void onTick(long l) {
-                        TimeLeftInMillis = l;
-                        updateCountDownText();
-                    }
-
-                    @Override
-                    public void onFinish() {
-                        TimerRunning = false;
-                        StartEnd.setVisibility(View.INVISIBLE);
-                    }
-                };
-                TimerRunning = true;
-
-                //StartEnd.setVisibility(View.VISIBLE);
+        SixteenEight.setOnClickListener(view -> {
+           if (TimerRunning){
+               toastMessage();
+           }else {
+               Countdown.setText("16:00:00");
+               TimeLeftInMillis = 57600000;
+               countDown();
+           }
+        });
+        Omad.setOnClickListener(view -> {
+           if (TimerRunning){
+               toastMessage();
+           }else {
+               Countdown.setText("23:00:00");
+               TimeLeftInMillis = 82800000;
+               countDown();
+           }
+        });
+        Autophagy.setOnClickListener(view -> {
+            if (TimerRunning){
+                toastMessage();
+            }else{
+                Countdown.setText("48:00:00");
+                TimeLeftInMillis = 172800000;
+                countDown();
             }
         });
-
+        TwentyFour.setOnClickListener(view -> {
+           if (TimerRunning){
+               toastMessage();
+           }else{
+               Countdown.setText("20:00:00");
+               TimeLeftInMillis = 72000000;
+               countDown();
+           }
+        });
     }
+    private void toastMessage(){
+        Toast.makeText(this, "Kindly end the ongoing fast to start another fast.", Toast.LENGTH_SHORT).show();
+    }
+    public void countDown(){
+        countDownTimer = new CountDownTimer(TimeLeftInMillis, 1000) {
+        @Override
+        public void onTick(long l) {
+            TimeLeftInMillis = l;
+            updateCountDownText();
+            TimerRunning = true;
+        }
 
+        @Override
+        public void onFinish() {
+            countDownTimer.cancel();
+        }
+    };}
     public void updateCountDownText() {
         long seconds = TimeLeftInMillis / 1000;
         long minutes = seconds / 60;
@@ -87,5 +115,4 @@ public class Fast extends AppCompatActivity {
 
 
     }
-
 }

@@ -2740,7 +2740,6 @@ int id end 0x7f0900b7
 int id endToStart 0x7f0900b8
 int id enterAlways 0x7f0900b9
 int id enterAlwaysCollapsed 0x7f0900ba
-int id enterHours 0x7f0901f8
 int id exitUntilCollapsed 0x7f0900bb
 int id expand_activities_button 0x7f0900bc
 int id expanded_menu 0x7f0900bd

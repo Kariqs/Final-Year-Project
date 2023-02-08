@@ -29,22 +29,12 @@
         <TextView
             android:id="@+id/countDownTime"
             android:layout_width="match_parent"
-            android:layout_height="50dp"
+            android:layout_height="70dp"
             android:textSize="40dp"
             android:text="00:00:00"
             android:textColor="@color/black"
             android:textAlignment="center"
             android:textStyle="bold"/>
-        <EditText
-            android:id="@+id/enterHours"
-            android:textSize="5sp"
-            android:hint="Enter number of hours."
-            android:layout_width="match_parent"
-            android:layout_height="20dp"
-            android:fontFamily="@font/font2"
-            android:textAlignment="center"
-            android:textColor="@color/black"
-            android:visibility="invisible"/>
         <Button
             android:id="@+id/startEnd"
             android:layout_width="match_parent"

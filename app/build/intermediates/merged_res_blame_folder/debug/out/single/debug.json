@@ -8,6 +8,10 @@
         "source": "/home/kariuki/.gradle/daemon/7.4/com.example.ehealth.app-main-30:/mipmap-xxxhdpi/ic_launcher.webp"
     },
     {
+        "merged": "/home/kariuki/.gradle/daemon/7.4/com.example.ehealth.app-merged_res-28:/drawable_imf.png.flat",
+        "source": "/home/kariuki/.gradle/daemon/7.4/com.example.ehealth.app-main-30:/drawable/imf.png"
+    },
+    {
         "merged": "/home/kariuki/.gradle/daemon/7.4/com.example.ehealth.app-merged_res-28:/font_font1.ttf.flat",
         "source": "/home/kariuki/.gradle/daemon/7.4/com.example.ehealth.app-main-30:/font/font1.ttf"
     },

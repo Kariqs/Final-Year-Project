@@ -2481,6 +2481,7 @@ drawable common_google_signin_btn_text_light
 drawable common_google_signin_btn_text_light_focused
 drawable common_google_signin_btn_text_light_normal
 drawable common_google_signin_btn_text_light_normal_background
+drawable deadlift
 drawable design_fab_background
 drawable design_ic_visibility
 drawable design_ic_visibility_off
@@ -2706,6 +2707,7 @@ id decor_content_parent
 id default_activity_button
 id deltaRelative
 id dependency_ordering
+id description
 id design_bottom_sheet
 id design_menu_item_action_area
 id design_menu_item_action_area_stub
@@ -2757,6 +2759,7 @@ id flip
 id floating
 id forever
 id fragment_container_view_tag
+id frame_layout
 id frost
 id ghost_view
 id ghost_view_holder
@@ -2862,6 +2865,7 @@ id mtrl_picker_text_input_range_start
 id mtrl_picker_title_text
 id mtrl_view_tag_bottom_padding
 id multiply
+id name
 id navigation_bar_item_active_indicator_view
 id navigation_bar_item_icon_container
 id navigation_bar_item_icon_view
@@ -2907,6 +2911,7 @@ id progress_horizontal
 id radio
 id ratio
 id rectangles
+id recyclerview
 id results
 id reverseSawtooth
 id right
@@ -3051,6 +3056,8 @@ id wide
 id withText
 id withinBounds
 id workout
+id workoutTab
+id workoutViewPager
 id wrap
 id wrap_content
 id wrap_content_constrained
@@ -3166,6 +3173,8 @@ layout design_navigation_menu
 layout design_navigation_menu_item
 layout design_text_input_end_icon
 layout design_text_input_start_icon
+layout fragment_home
+layout fragment_work_out
 layout m3_alert_dialog
 layout m3_alert_dialog_actions
 layout m3_alert_dialog_title
@@ -3237,6 +3246,7 @@ layout text_view_with_line_height_from_layout
 layout text_view_with_line_height_from_style
 layout text_view_with_theme_line_height
 layout text_view_without_line_height
+layout workout_item_design
 menu example_menu
 menu example_menu2
 mipmap ic_launcher
@@ -3298,6 +3308,7 @@ string common_open_on_phone
 string common_signin_button_text
 string common_signin_button_text_long
 string default_web_client_id
+string description1
 string error_icon_content_description
 string exposed_dropdown_menu_content_description
 string fab_transformation_scrim_behavior
@@ -3391,6 +3402,7 @@ string mtrl_picker_toggle_to_day_selection
 string mtrl_picker_toggle_to_text_input_mode
 string mtrl_picker_toggle_to_year_selection
 string mtrl_timepicker_confirm
+string name1
 string password_toggle_content_description
 string path_password_eye
 string path_password_eye_mask_strike_through

@@ -19,6 +19,6 @@
         android:id="@+id/recyclerView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        tools:listitem="@layout/workout_item_design"/>
+        tools:listitem="@layout/workout_item"/>
 
 </LinearLayout>

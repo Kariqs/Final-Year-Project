@@ -26,6 +26,13 @@
         android:testOnly="true"
         android:theme="@style/Theme.EHealth" >
         <activity
+            android:name="com.example.ehealth.WorkoutPlan"
+            android:exported="false" >
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
             android:name="com.example.ehealth.Results"
             android:exported="false" >
             <meta-data

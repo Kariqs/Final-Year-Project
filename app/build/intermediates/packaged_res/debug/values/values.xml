@@ -9,13 +9,11 @@
     <color name="white">#FFFFFFFF</color>
     <string name="app_name">eHealth</string>
     <string name="default_web_client_id" translatable="false">894437555434-ep4qrj5qbhvonbj1o40eactoei8rt7tc.apps.googleusercontent.com</string>
-    <string name="description1">The deadlift is a movement in which your hips hinge backward to lower down and pick up a weighted barbell or kettlebell from the floor. Your back is flat throughout the movement. Some benefits of performing deadlifts include strengthening and gaining more definition in your upper and lower back, glutes, and hamstrings.</string>
     <string name="gcm_defaultSenderId" translatable="false">894437555434</string>
     <string name="google_api_key" translatable="false">AIzaSyC0OVxW_asVZt3QiXfXiLU60WMroXfLTxY</string>
     <string name="google_app_id" translatable="false">1:894437555434:android:2654a47824052aa44dab93</string>
     <string name="google_crash_reporting_api_key" translatable="false">AIzaSyC0OVxW_asVZt3QiXfXiLU60WMroXfLTxY</string>
     <string name="google_storage_bucket" translatable="false">ehealth-ebdcc.appspot.com</string>
-    <string name="name1">The DeadLift</string>
     <string name="project_id" translatable="false">ehealth-ebdcc</string>
     <style name="Theme.EHealth" parent="Theme.MaterialComponents.DayNight.NoActionBar">
         

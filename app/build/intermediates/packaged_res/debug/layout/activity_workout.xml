@@ -9,25 +9,16 @@
     android:padding="2dp"
     tools:context=".Workout">
 
-<com.google.android.material.tabs.TabLayout
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:id="@+id/workoutTab"
-    android:background="#DCDBD8">
-    <com.google.android.material.tabs.TabItem
+    <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Home"
+        android:text="VIEW WORKOUT PLANS"
+        android:fontFamily="@font/font2"
         />
-    <com.google.android.material.tabs.TabItem
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="WORKOUTS"
-        />
-</com.google.android.material.tabs.TabLayout>
-    <androidx.viewpager2.widget.ViewPager2
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:id="@+id/workoutViewPager"/>
+        tools:listitem="@layout/workout_item"/>
 
 </LinearLayout>

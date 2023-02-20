@@ -56,6 +56,10 @@
         "source": "com.example.ehealth.app-main-30:/layout/activity_home.xml"
     },
     {
+        "merged": "com.example.ehealth.app-merged_res-28:/layout_activity_workout_plan.xml.flat",
+        "source": "com.example.ehealth.app-main-30:/layout/activity_workout_plan.xml"
+    },
+    {
         "merged": "com.example.ehealth.app-merged_res-28:/mipmap-anydpi-v26_ic_launcher.xml.flat",
         "source": "com.example.ehealth.app-main-30:/mipmap-anydpi-v26/ic_launcher.xml"
     },
@@ -70,10 +74,6 @@
     {
         "merged": "com.example.ehealth.app-merged_res-28:/font_font1.ttf.flat",
         "source": "com.example.ehealth.app-main-30:/font/font1.ttf"
-    },
-    {
-        "merged": "com.example.ehealth.app-merged_res-28:/layout_fragment_home.xml.flat",
-        "source": "com.example.ehealth.app-main-30:/layout/fragment_home.xml"
     },
     {
         "merged": "com.example.ehealth.app-merged_res-28:/layout_activity_results.xml.flat",
@@ -96,20 +96,12 @@
         "source": "com.example.ehealth.app-main-30:/mipmap-xxxhdpi/ic_launcher_round.webp"
     },
     {
-        "merged": "com.example.ehealth.app-merged_res-28:/layout_fragment_work_out.xml.flat",
-        "source": "com.example.ehealth.app-main-30:/layout/fragment_work_out.xml"
-    },
-    {
         "merged": "com.example.ehealth.app-merged_res-28:/mipmap-mdpi_ic_launcher.webp.flat",
         "source": "com.example.ehealth.app-main-30:/mipmap-mdpi/ic_launcher.webp"
     },
     {
         "merged": "com.example.ehealth.app-merged_res-28:/layout_activity_signup.xml.flat",
         "source": "com.example.ehealth.app-main-30:/layout/activity_signup.xml"
-    },
-    {
-        "merged": "com.example.ehealth.app-merged_res-28:/layout_workout_item_design.xml.flat",
-        "source": "com.example.ehealth.app-main-30:/layout/workout_item_design.xml"
     },
     {
         "merged": "com.example.ehealth.app-merged_res-28:/drawable_train.jpg.flat",
@@ -134,6 +126,10 @@
     {
         "merged": "com.example.ehealth.app-merged_res-28:/drawable_omad.jpg.flat",
         "source": "com.example.ehealth.app-main-30:/drawable/omad.jpg"
+    },
+    {
+        "merged": "com.example.ehealth.app-merged_res-28:/layout_workout_item.xml.flat",
+        "source": "com.example.ehealth.app-main-30:/layout/workout_item.xml"
     },
     {
         "merged": "com.example.ehealth.app-merged_res-28:/xml_backup_rules.xml.flat",

@@ -9,9 +9,14 @@
     android:padding="2dp"
     tools:context=".Workout">
 
-    <Button
+    <TextView
+        android:id="@+id/workoutPlan"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="40dp"
+        android:textAlignment="center"
+        android:textSize="30dp"
+        android:background="@color/black"
+        android:textColor="@color/white"
         android:text="VIEW WORKOUT PLANS"
         android:fontFamily="@font/font2"
         />

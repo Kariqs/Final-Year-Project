@@ -29,6 +29,7 @@ id dontHaveAccount
 id email
 id explain
 id fast
+id goBack
 id greetings
 id image
 id login
@@ -45,6 +46,7 @@ id sixteenEight
 id startEnd
 id twentyFour
 id workout
+id workoutPlan
 layout activity_diet
 layout activity_fast
 layout activity_home

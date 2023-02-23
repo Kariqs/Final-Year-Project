@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "com.example.ehealth.app-mergeDebugResources-26:/values/values.xml",
+            "outputFile": "com.example.ehealth.app-mergeDebugResources-27:/values/values.xml",
             "map": [
                 {
                     "source": "/home/kariuki/.gradle/caches/transforms-3/fbdabed7b1884b491e9be7b0114d8617/transformed/startup-runtime-1.0.0/res/values/values.xml",
@@ -111,6 +111,23 @@
                         "endLines": "8020,8026,8036,11314,11318",
                         "endColumns": "24,24,24,24,24",
                         "endOffsets": "532969,533147,533431,651941,652068"
+                    }
+                },
+                {
+                    "source": "/home/kariuki/.gradle/caches/transforms-3/0ccd676f36a88f843cf47f86b0f66e38/transformed/play-services-basement-18.1.0/res/values/values.xml",
+                    "from": {
+                        "startLines": "4,7",
+                        "startColumns": "0,0",
+                        "startOffsets": "243,406",
+                        "endColumns": "63,166",
+                        "endOffsets": "306,572"
+                    },
+                    "to": {
+                        "startLines": "1531,1619",
+                        "startColumns": "4,4",
+                        "startOffsets": "92901,99612",
+                        "endColumns": "67,166",
+                        "endOffsets": "92964,99774"
                     }
                 },
                 {
@@ -255,23 +272,6 @@
                         "endLines": "5580",
                         "endColumns": "12",
                         "endOffsets": "376610"
-                    }
-                },
-                {
-                    "source": "/home/kariuki/.gradle/caches/transforms-3/b284489ed66026c2cdd1d7c33585e62e/transformed/play-services-basement-18.0.0/res/values/values.xml",
-                    "from": {
-                        "startLines": "4,7",
-                        "startColumns": "0,0",
-                        "startOffsets": "243,406",
-                        "endColumns": "63,166",
-                        "endOffsets": "306,572"
-                    },
-                    "to": {
-                        "startLines": "1531,1619",
-                        "startColumns": "4,4",
-                        "startOffsets": "92901,99612",
-                        "endColumns": "67,166",
-                        "endOffsets": "92964,99774"
                     }
                 },
                 {

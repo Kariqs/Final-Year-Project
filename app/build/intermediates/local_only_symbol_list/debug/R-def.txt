@@ -22,9 +22,11 @@ font font1
 font font2
 id alreadyHaveAccount
 id autophagy
+id caption
 id countDownTime
 id description
 id diet
+id display
 id dontHaveAccount
 id email
 id explain
@@ -36,6 +38,9 @@ id login
 id name
 id omad
 id password
+id pickImage
+id plan
+id post
 id recyclerView
 id results
 id signUpButton
@@ -45,6 +50,8 @@ id signUpPhoneNo
 id sixteenEight
 id startEnd
 id twentyFour
+id uploadProgress
+id uploadResult
 id workout
 id workoutPlan
 layout activity_diet
@@ -53,9 +60,11 @@ layout activity_home
 layout activity_login
 layout activity_results
 layout activity_signup
+layout activity_upload_results
 layout activity_workout
 layout activity_workout_plan
 layout workout_item
+layout workoutplan_item
 mipmap ic_launcher
 mipmap ic_launcher_round
 string app_name

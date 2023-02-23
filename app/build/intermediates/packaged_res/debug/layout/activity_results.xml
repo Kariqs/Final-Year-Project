@@ -1,10 +1,27 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/white"
+    android:background="#DCDBD8"
+    android:orientation="vertical"
+    android:padding="10dp"
     tools:context=".Results">
+   <TextView
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:text="Below are posts of the results of persons before and after the started their weight loss journey. Click upload my result to post your own results. Be inspired."
+       android:textColor="@color/black"
+       android:fontFamily="@font/font2"/>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <Button
+        android:id="@+id/uploadResult"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="UPLOAD MY RESULTS"/>
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>

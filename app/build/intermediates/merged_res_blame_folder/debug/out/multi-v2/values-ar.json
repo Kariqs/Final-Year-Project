@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "com.example.ehealth.app-mergeDebugResources-26:/values-ar/values-ar.xml",
+            "outputFile": "com.example.ehealth.app-mergeDebugResources-27:/values-ar/values-ar.xml",
             "map": [
                 {
-                    "source": "/home/kariuki/.gradle/caches/transforms-3/b284489ed66026c2cdd1d7c33585e62e/transformed/play-services-basement-18.0.0/res/values-ar/values.xml",
+                    "source": "/home/kariuki/.gradle/caches/transforms-3/0ccd676f36a88f843cf47f86b0f66e38/transformed/play-services-basement-18.1.0/res/values-ar/values.xml",
                     "from": {
                         "startLines": "4",
                         "startColumns": "0",

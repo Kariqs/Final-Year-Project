@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "com.example.ehealth.app-mergeDebugResources-26:/values-sk/values-sk.xml",
+            "outputFile": "com.example.ehealth.app-mergeDebugResources-27:/values-sk/values-sk.xml",
             "map": [
                 {
                     "source": "/home/kariuki/.gradle/caches/transforms-3/26b3666345201c303a3333024bb53271/transformed/play-services-base-18.0.1/res/values-sk/values.xml",
@@ -74,7 +74,7 @@
                     }
                 },
                 {
-                    "source": "/home/kariuki/.gradle/caches/transforms-3/b284489ed66026c2cdd1d7c33585e62e/transformed/play-services-basement-18.0.0/res/values-sk/values.xml",
+                    "source": "/home/kariuki/.gradle/caches/transforms-3/0ccd676f36a88f843cf47f86b0f66e38/transformed/play-services-basement-18.1.0/res/values-sk/values.xml",
                     "from": {
                         "startLines": "4",
                         "startColumns": "0",

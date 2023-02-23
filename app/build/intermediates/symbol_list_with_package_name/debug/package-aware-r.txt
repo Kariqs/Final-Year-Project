@@ -2661,6 +2661,7 @@ id buttonPanel
 id cache_measures
 id callMeasure
 id cancel_button
+id caption
 id carryVelocity
 id center
 id center_horizontal
@@ -2722,6 +2723,7 @@ id disableIntraAutoTransition
 id disablePostScroll
 id disableScroll
 id disjoint
+id display
 id dontHaveAccount
 id dragAnticlockwise
 id dragClockwise
@@ -2903,8 +2905,11 @@ id path
 id pathRelative
 id peekHeight
 id percent
+id pickImage
 id pin
+id plan
 id position
+id post
 id postLayout
 id progress_circular
 id progress_horizontal
@@ -3042,6 +3047,8 @@ id unchecked
 id uniform
 id unlabeled
 id up
+id uploadProgress
+id uploadResult
 id useLogo
 id vertical_only
 id view_offset_helper
@@ -3155,6 +3162,7 @@ layout activity_home
 layout activity_login
 layout activity_results
 layout activity_signup
+layout activity_upload_results
 layout activity_workout
 layout activity_workout_plan
 layout custom_dialog
@@ -3245,11 +3253,13 @@ layout text_view_with_line_height_from_style
 layout text_view_with_theme_line_height
 layout text_view_without_line_height
 layout workout_item
+layout workoutplan_item
 menu example_menu
 menu example_menu2
 mipmap ic_launcher
 mipmap ic_launcher_round
 plurals mtrl_badge_content_description
+raw firebase_common_keep
 string abc_action_bar_home_description
 string abc_action_bar_up_description
 string abc_action_menu_overflow_description

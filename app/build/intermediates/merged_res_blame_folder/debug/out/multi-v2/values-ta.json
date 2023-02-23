@@ -1,25 +1,8 @@
 {
     "logs": [
         {
-            "outputFile": "com.example.ehealth.app-mergeDebugResources-26:/values-ta/values-ta.xml",
+            "outputFile": "com.example.ehealth.app-mergeDebugResources-27:/values-ta/values-ta.xml",
             "map": [
-                {
-                    "source": "/home/kariuki/.gradle/caches/transforms-3/b284489ed66026c2cdd1d7c33585e62e/transformed/play-services-basement-18.0.0/res/values-ta/values.xml",
-                    "from": {
-                        "startLines": "4",
-                        "startColumns": "0",
-                        "startOffsets": "195",
-                        "endColumns": "156",
-                        "endOffsets": "351"
-                    },
-                    "to": {
-                        "startLines": "45",
-                        "startColumns": "4",
-                        "startOffsets": "4422",
-                        "endColumns": "160",
-                        "endOffsets": "4578"
-                    }
-                },
                 {
                     "source": "/home/kariuki/.gradle/caches/transforms-3/eea11bc9a74c3e0cdbaf6ff8b065e3aa/transformed/appcompat-1.4.1/res/values-ta/values-ta.xml",
                     "from": {
@@ -52,6 +35,23 @@
                         "startOffsets": "9845",
                         "endColumns": "100",
                         "endOffsets": "9941"
+                    }
+                },
+                {
+                    "source": "/home/kariuki/.gradle/caches/transforms-3/0ccd676f36a88f843cf47f86b0f66e38/transformed/play-services-basement-18.1.0/res/values-ta/values.xml",
+                    "from": {
+                        "startLines": "4",
+                        "startColumns": "0",
+                        "startOffsets": "195",
+                        "endColumns": "156",
+                        "endOffsets": "351"
+                    },
+                    "to": {
+                        "startLines": "45",
+                        "startColumns": "4",
+                        "startOffsets": "4422",
+                        "endColumns": "160",
+                        "endOffsets": "4578"
                     }
                 },
                 {

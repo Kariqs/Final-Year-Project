@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "com.example.ehealth.app-mergeDebugResources-26:/values-nl/values-nl.xml",
+            "outputFile": "com.example.ehealth.app-mergeDebugResources-27:/values-nl/values-nl.xml",
             "map": [
                 {
                     "source": "/home/kariuki/.gradle/caches/transforms-3/3aade53a7b7f6f46f1b9b1793599bc6e/transformed/core-1.7.0/res/values-nl/values-nl.xml",
@@ -18,6 +18,23 @@
                         "startOffsets": "9745",
                         "endColumns": "100",
                         "endOffsets": "9841"
+                    }
+                },
+                {
+                    "source": "/home/kariuki/.gradle/caches/transforms-3/0ccd676f36a88f843cf47f86b0f66e38/transformed/play-services-basement-18.1.0/res/values-nl/values.xml",
+                    "from": {
+                        "startLines": "4",
+                        "startColumns": "0",
+                        "startOffsets": "195",
+                        "endColumns": "138",
+                        "endOffsets": "333"
+                    },
+                    "to": {
+                        "startLines": "45",
+                        "startColumns": "4",
+                        "startOffsets": "4398",
+                        "endColumns": "142",
+                        "endOffsets": "4536"
                     }
                 },
                 {
@@ -71,23 +88,6 @@
                         "endLines": "5,33,34,35,36,55,56,57,58,59,60,61,62,63,64,65,66,67,68,69,70,71,72,73,74,75,76,77,78,79,80,81,82,83,84,85,86,87,88,89,90,91,92,93,94,95,96,97,98,99,100,101,102,103,104",
                         "endColumns": "12,76,96,121,80,63,92,78,62,92,65,57,72,63,55,121,56,61,55,75,133,84,85,107,80,78,89,66,65,77,82,87,74,78,72,70,93,77,88,89,73,80,86,52,66,80,83,61,63,62,107,100,101,102,80",
                         "endOffsets": "269,3068,3165,3287,3368,5734,5827,5906,5969,6062,6128,6186,6259,6323,6379,6501,6558,6620,6676,6752,6886,6971,7057,7165,7246,7325,7415,7482,7548,7626,7709,7797,7872,7951,8024,8095,8189,8267,8356,8446,8520,8601,8688,8741,8808,8889,8973,9035,9099,9162,9270,9371,9473,9576,9657"
-                    }
-                },
-                {
-                    "source": "/home/kariuki/.gradle/caches/transforms-3/b284489ed66026c2cdd1d7c33585e62e/transformed/play-services-basement-18.0.0/res/values-nl/values.xml",
-                    "from": {
-                        "startLines": "4",
-                        "startColumns": "0",
-                        "startOffsets": "195",
-                        "endColumns": "138",
-                        "endOffsets": "333"
-                    },
-                    "to": {
-                        "startLines": "45",
-                        "startColumns": "4",
-                        "startOffsets": "4398",
-                        "endColumns": "142",
-                        "endOffsets": "4536"
                     }
                 }
             ]

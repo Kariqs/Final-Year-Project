@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "com.example.ehealth.app-mergeDebugResources-26:/values-or/values-or.xml",
+            "outputFile": "com.example.ehealth.app-mergeDebugResources-27:/values-or/values-or.xml",
             "map": [
                 {
                     "source": "/home/kariuki/.gradle/caches/transforms-3/17011b707252402a7c103058d0df9e8c/transformed/material-1.5.0/res/values-or/values-or.xml",
@@ -40,6 +40,23 @@
                     }
                 },
                 {
+                    "source": "/home/kariuki/.gradle/caches/transforms-3/0ccd676f36a88f843cf47f86b0f66e38/transformed/play-services-basement-18.1.0/res/values-or/values.xml",
+                    "from": {
+                        "startLines": "4",
+                        "startColumns": "0",
+                        "startOffsets": "195",
+                        "endColumns": "135",
+                        "endOffsets": "330"
+                    },
+                    "to": {
+                        "startLines": "45",
+                        "startColumns": "4",
+                        "startOffsets": "4431",
+                        "endColumns": "139",
+                        "endOffsets": "4566"
+                    }
+                },
+                {
                     "source": "/home/kariuki/.gradle/caches/transforms-3/26b3666345201c303a3333024bb53271/transformed/play-services-base-18.0.1/res/values-or/values.xml",
                     "from": {
                         "startLines": "4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20",
@@ -54,23 +71,6 @@
                         "startOffsets": "3396,3507,3668,3800,3917,4072,4207,4321,4571,4738,4851,5012,5145,5295,5452,5517,5589",
                         "endColumns": "110,160,131,116,154,134,113,109,166,112,160,132,149,156,64,71,86",
                         "endOffsets": "3502,3663,3795,3912,4067,4202,4316,4426,4733,4846,5007,5140,5290,5447,5512,5584,5671"
-                    }
-                },
-                {
-                    "source": "/home/kariuki/.gradle/caches/transforms-3/b284489ed66026c2cdd1d7c33585e62e/transformed/play-services-basement-18.0.0/res/values-or/values.xml",
-                    "from": {
-                        "startLines": "4",
-                        "startColumns": "0",
-                        "startOffsets": "195",
-                        "endColumns": "135",
-                        "endOffsets": "330"
-                    },
-                    "to": {
-                        "startLines": "45",
-                        "startColumns": "4",
-                        "startOffsets": "4431",
-                        "endColumns": "139",
-                        "endOffsets": "4566"
                     }
                 },
                 {

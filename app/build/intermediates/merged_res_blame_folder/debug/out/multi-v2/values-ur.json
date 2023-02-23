@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "com.example.ehealth.app-mergeDebugResources-26:/values-ur/values-ur.xml",
+            "outputFile": "com.example.ehealth.app-mergeDebugResources-27:/values-ur/values-ur.xml",
             "map": [
                 {
                     "source": "/home/kariuki/.gradle/caches/transforms-3/eea11bc9a74c3e0cdbaf6ff8b065e3aa/transformed/appcompat-1.4.1/res/values-ur/values-ur.xml",
@@ -21,23 +21,6 @@
                     }
                 },
                 {
-                    "source": "/home/kariuki/.gradle/caches/transforms-3/b284489ed66026c2cdd1d7c33585e62e/transformed/play-services-basement-18.0.0/res/values-ur/values.xml",
-                    "from": {
-                        "startLines": "4",
-                        "startColumns": "0",
-                        "startOffsets": "195",
-                        "endColumns": "147",
-                        "endOffsets": "342"
-                    },
-                    "to": {
-                        "startLines": "45",
-                        "startColumns": "4",
-                        "startOffsets": "4363",
-                        "endColumns": "151",
-                        "endOffsets": "4510"
-                    }
-                },
-                {
                     "source": "/home/kariuki/.gradle/caches/transforms-3/17011b707252402a7c103058d0df9e8c/transformed/material-1.5.0/res/values-ur/values-ur.xml",
                     "from": {
                         "startLines": "2,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59",
@@ -54,6 +37,23 @@
                         "endLines": "5,33,34,35,36,55,56,57,58,59,60,61,62,63,64,65,66,67,68,69,70,71,72,73,74,75,76,77,78,79,80,81,82,83,84,85,86,87,88,89,90,91,92,93,94,95,96,97,98,99,100,101,102,103,104",
                         "endColumns": "12,77,99,118,82,64,92,69,58,89,68,57,68,59,63,111,58,58,54,74,122,79,83,102,81,80,86,66,65,74,79,84,66,74,76,63,93,69,88,92,73,74,89,55,66,83,83,61,63,62,99,106,93,108,79",
                         "endOffsets": "259,3064,3164,3283,3366,5670,5763,5833,5892,5982,6051,6109,6178,6238,6302,6414,6473,6532,6587,6662,6785,6865,6949,7052,7134,7215,7302,7369,7435,7510,7590,7675,7742,7817,7894,7958,8052,8122,8211,8304,8378,8453,8543,8599,8666,8750,8834,8896,8960,9023,9123,9230,9324,9433,9513"
+                    }
+                },
+                {
+                    "source": "/home/kariuki/.gradle/caches/transforms-3/0ccd676f36a88f843cf47f86b0f66e38/transformed/play-services-basement-18.1.0/res/values-ur/values.xml",
+                    "from": {
+                        "startLines": "4",
+                        "startColumns": "0",
+                        "startOffsets": "195",
+                        "endColumns": "147",
+                        "endOffsets": "342"
+                    },
+                    "to": {
+                        "startLines": "45",
+                        "startColumns": "4",
+                        "startOffsets": "4363",
+                        "endColumns": "151",
+                        "endOffsets": "4510"
                     }
                 },
                 {

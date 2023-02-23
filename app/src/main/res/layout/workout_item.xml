@@ -12,7 +12,7 @@
         <TextView
             android:id="@+id/name"
             android:layout_width="match_parent"
-            android:layout_height="50dp"
+            android:layout_height="wrap_content"
             android:text="DEAD LIFT"
             android:textAlignment="textStart"
             android:textColor="@color/black"
@@ -22,7 +22,7 @@
         <TextView
             android:id="@+id/description"
             android:layout_width="match_parent"
-            android:layout_height="190dp"
+            android:layout_height="wrap_content"
             android:fontFamily="@font/font2"
             android:textColor="@color/black"
             android:textSize="20sp"
@@ -33,7 +33,6 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:src="@drawable/deadlift"/>
-
     </LinearLayout>
 
 </LinearLayout>

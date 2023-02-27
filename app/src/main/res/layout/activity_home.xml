@@ -37,7 +37,7 @@ The results of others can also motivate you to work on yourself. Click Results t
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
         android:orientation="horizontal"
         android:padding="7dp">
@@ -60,7 +60,7 @@ The results of others can also motivate you to work on yourself. Click Results t
 
                 <LinearLayout
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent"
+                    android:layout_height="wrap_content"
                     android:orientation="vertical">
 
                     <ImageView
@@ -93,7 +93,7 @@ The results of others can also motivate you to work on yourself. Click Results t
 
                 <LinearLayout
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent"
+                    android:layout_height="wrap_content"
                     android:orientation="vertical">
 
                     <ImageView
@@ -127,7 +127,7 @@ The results of others can also motivate you to work on yourself. Click Results t
 
                 <LinearLayout
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent"
+                    android:layout_height="wrap_content"
                     android:orientation="vertical">
 
                     <ImageView

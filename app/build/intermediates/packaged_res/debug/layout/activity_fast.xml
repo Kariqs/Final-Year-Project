@@ -12,7 +12,7 @@
     <TextView
         android:id="@+id/explain"
         android:layout_width="match_parent"
-        android:layout_height="40dp"
+        android:layout_height="wrap_content"
         android:fontFamily="@font/font2"
         android:textStyle="bold"
         android:textAlignment="center"
@@ -29,7 +29,7 @@
         <TextView
             android:id="@+id/countDownTime"
             android:layout_width="match_parent"
-            android:layout_height="70dp"
+            android:layout_height="wrap_content"
             android:textSize="40dp"
             android:text="00:00:00"
             android:textColor="@color/black"
@@ -48,7 +48,7 @@
 
     <TextView
         android:layout_width="match_parent"
-        android:layout_height="100dp"
+        android:layout_height="wrap_content"
         android:text="Below are fasting plans. 16/8 means
 you fast for 16hrs and eat within the 8hrs window. For OMAD you only eat one meal a day.
 For 20/4 plan, you fast for 20hrs and eat within 4hrs window. You can also fast for 48hrs, this is called Autophagy Marathon.

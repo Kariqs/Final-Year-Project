@@ -3051,6 +3051,8 @@ id uploadProgress
 id uploadResult
 id useLogo
 id vertical_only
+id view_description
+id view_image
 id view_offset_helper
 id view_transition
 id view_tree_lifecycle_owner
@@ -3233,6 +3235,7 @@ layout notification_template_custom_big
 layout notification_template_icon_group
 layout notification_template_part_chronometer
 layout notification_template_part_time
+layout results_item
 layout select_dialog_item_material
 layout select_dialog_multichoice_material
 layout select_dialog_singlechoice_material

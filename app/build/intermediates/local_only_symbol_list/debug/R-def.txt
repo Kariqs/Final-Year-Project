@@ -52,6 +52,8 @@ id startEnd
 id twentyFour
 id uploadProgress
 id uploadResult
+id view_description
+id view_image
 id workout
 id workoutPlan
 layout activity_diet
@@ -63,6 +65,7 @@ layout activity_signup
 layout activity_upload_results
 layout activity_workout
 layout activity_workout_plan
+layout results_item
 layout workout_item
 layout workoutplan_item
 mipmap ic_launcher

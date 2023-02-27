@@ -14,14 +14,15 @@
        android:text="Below are posts of the results of persons before and after the started their weight loss journey. Click upload my result to post your own results. Be inspired."
        android:textColor="@color/black"
        android:fontFamily="@font/font2"/>
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/recyclerView"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
     <Button
         android:id="@+id/uploadResult"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="UPLOAD MY RESULTS"/>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
 
 </LinearLayout>

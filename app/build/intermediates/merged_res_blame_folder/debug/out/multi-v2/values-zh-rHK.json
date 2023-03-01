@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "com.example.ehealth.app-mergeDebugResources-27:/values-zh-rHK/values-zh-rHK.xml",
+            "outputFile": "com.example.ehealth.app-mergeDebugResources-28:/values-zh-rHK/values-zh-rHK.xml",
             "map": [
                 {
                     "source": "/home/kariuki/.gradle/caches/transforms-3/3aade53a7b7f6f46f1b9b1793599bc6e/transformed/core-1.7.0/res/values-zh-rHK/values-zh-rHK.xml",

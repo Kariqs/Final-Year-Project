@@ -8,6 +8,7 @@ import android.view.ViewGroup;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.bumptech.glide.Glide;
 import com.squareup.picasso.Picasso;
 
 import java.util.List;
@@ -30,12 +31,10 @@ public class ResultsAdapter extends RecyclerView.Adapter<ResultsViewHolder> {
 
     @Override
     public void onBindViewHolder(@NonNull ResultsViewHolder holder, int position) {
-     Upload upload = uploadList.get(position);
-     holder.Description.setText(upload.getDescription());
-        Picasso.get()
-                .load(upload.getImageUrl())
-                .fit()
-                .centerCrop()
+     holder.Description.setText(uploadList.get(position).getDescription());
+
+        Glide.with(context)
+                .load(uploadList.get(position).getImageUrl())
                 .into(holder.Image);
     }
 

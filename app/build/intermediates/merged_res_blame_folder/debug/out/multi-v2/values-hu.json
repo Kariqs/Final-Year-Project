@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "com.example.ehealth.app-mergeDebugResources-27:/values-hu/values-hu.xml",
+            "outputFile": "com.example.ehealth.app-mergeDebugResources-28:/values-hu/values-hu.xml",
             "map": [
                 {
                     "source": "/home/kariuki/.gradle/caches/transforms-3/26b3666345201c303a3333024bb53271/transformed/play-services-base-18.0.1/res/values-hu/values.xml",

@@ -16,7 +16,7 @@ public class CheckBmi extends AppCompatActivity {
     private TextInputLayout Weight, Height;
     private Button CheckBmi,Continue;
     private TextView BmiDescription;
-    private LinearLayout BmiLayout;
+    private LinearLayout CheckLayout,BmiLayout;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -29,6 +29,7 @@ public class CheckBmi extends AppCompatActivity {
         Continue = findViewById(R.id.bmiContinue);
         BmiDescription = findViewById(R.id.bmiDescription);
         BmiLayout = findViewById(R.id.bmiLayout);
+        CheckLayout = findViewById(R.id.checkLayout);
 
 
         CheckBmi.setOnClickListener(new View.OnClickListener() {
@@ -40,15 +41,11 @@ public class CheckBmi extends AppCompatActivity {
         Continue.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                continueToHome();
+                Intent intent = new Intent(CheckBmi.this,Home.class);
+                startActivity(intent);
             }
         });
 
-    }
-
-    private void continueToHome() {
-        Intent intent = new Intent(CheckBmi.this,Home.class);
-        startActivity(intent);
     }
 
     private void checkBmi() {
@@ -56,6 +53,7 @@ public class CheckBmi extends AppCompatActivity {
         double getHeight = Double.parseDouble(Height.getEditText().getText().toString());
         double BMI = getWeight / (getHeight * getHeight);
         if (BMI<18.5){
+            CheckLayout.setVisibility(View.INVISIBLE);
             BmiLayout.setVisibility(View.VISIBLE);
             BmiDescription.setText("Your BMI is "+BMI+". This indicates that you are underweight and you need to add some " +
                     "weight. You wil be required to do short time fasting such as the 18/6 and 20/4 , check on your diet and " +

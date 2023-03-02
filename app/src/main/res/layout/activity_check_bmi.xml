@@ -7,11 +7,16 @@
     android:orientation="vertical"
     android:padding="12dp"
     tools:context=".CheckBmi">
-
+<LinearLayout
+    android:id="@+id/checkLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:fontFamily="@font/font2"
+        android:textStyle="bold"
         android:text="LET'S CHECK YOUR BMI"
         android:textAlignment="center"
         android:textColor="@color/black"
@@ -55,6 +60,7 @@
         android:text="CHECK BMI"
         android:textSize="20dp" />
 
+</LinearLayout>
     <LinearLayout
         android:id="@+id/bmiLayout"
         android:layout_width="match_parent"
@@ -67,6 +73,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:fontFamily="@font/font2"
+            android:textSize="27dp"
+            android:textStyle="bold"
             android:textColor="@color/black" />
 
         <Button

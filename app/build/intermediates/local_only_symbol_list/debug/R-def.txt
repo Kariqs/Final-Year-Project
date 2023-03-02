@@ -33,6 +33,7 @@ id bmiDescription
 id bmiLayout
 id caption
 id checkBmi
+id checkLayout
 id countDownTime
 id description
 id diet

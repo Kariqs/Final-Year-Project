@@ -28,7 +28,11 @@ font font1
 font font2
 id alreadyHaveAccount
 id autophagy
+id bmiContinue
+id bmiDescription
+id bmiLayout
 id caption
+id checkBmi
 id countDownTime
 id description
 id diet
@@ -39,6 +43,7 @@ id explain
 id fast
 id goBack
 id greetings
+id height
 id image
 id login
 id name
@@ -60,8 +65,10 @@ id uploadProgress
 id uploadResult
 id view_description
 id view_image
+id weight
 id workout
 id workoutPlan
+layout activity_check_bmi
 layout activity_diet
 layout activity_fast
 layout activity_home

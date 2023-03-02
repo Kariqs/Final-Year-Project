@@ -2658,6 +2658,9 @@ id beginOnFirstDraw
 id beginning
 id bestChoice
 id blocking
+id bmiContinue
+id bmiDescription
+id bmiLayout
 id bottom
 id bounce
 id bounceBoth
@@ -2675,6 +2678,7 @@ id center_vertical
 id chain
 id chain2
 id chains
+id checkBmi
 id checkbox
 id checked
 id chip
@@ -2781,6 +2785,7 @@ id grouping
 id groups
 id guideline
 id header_title
+id height
 id hideable
 id home
 id homeAsUp
@@ -3067,6 +3072,7 @@ id view_tree_saved_state_registry_owner
 id view_tree_view_model_store_owner
 id visible
 id visible_removing_fragment_view_tag
+id weight
 id west
 id wide
 id withText
@@ -3165,6 +3171,7 @@ layout abc_search_dropdown_item_icons_2line
 layout abc_search_view
 layout abc_select_dialog_material
 layout abc_tooltip
+layout activity_check_bmi
 layout activity_diet
 layout activity_fast
 layout activity_home

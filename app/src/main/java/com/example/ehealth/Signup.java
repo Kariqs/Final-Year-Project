@@ -109,7 +109,7 @@ public class Signup extends AppCompatActivity {
         Email.getEditText().setText("");
         PhoneNumber.getEditText().setText("");
         Password.getEditText().setText("");
-        Intent i = new Intent(Signup.this, Login.class);
+        Intent i = new Intent(Signup.this, CheckBmi.class);
         startActivity(i);
         finish();
     }

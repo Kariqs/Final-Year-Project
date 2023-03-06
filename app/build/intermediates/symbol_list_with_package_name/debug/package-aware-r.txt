@@ -2780,6 +2780,7 @@ id goBack
 id gone
 id graph
 id graph_wrap
+id greet
 id greetings
 id group_divider
 id grouping
@@ -2969,6 +2970,7 @@ id showHome
 id showTitle
 id signUpButton
 id signUpEmail
+id signUpName
 id signUpPassword
 id signUpPhoneNo
 id sin

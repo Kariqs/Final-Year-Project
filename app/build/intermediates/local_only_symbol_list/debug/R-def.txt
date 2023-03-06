@@ -43,6 +43,7 @@ id email
 id explain
 id fast
 id goBack
+id greet
 id greetings
 id height
 id image
@@ -57,6 +58,7 @@ id recyclerView
 id results
 id signUpButton
 id signUpEmail
+id signUpName
 id signUpPassword
 id signUpPhoneNo
 id sixteenEight

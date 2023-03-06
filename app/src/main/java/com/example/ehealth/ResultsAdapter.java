@@ -14,8 +14,8 @@ import com.squareup.picasso.Picasso;
 import java.util.List;
 
 public class ResultsAdapter extends RecyclerView.Adapter<ResultsViewHolder> {
-    private Context context;
-    private List<Upload> uploadList;
+    private final Context context;
+    private final List<Upload> uploadList;
 
     public ResultsAdapter(Context context, List<Upload> uploadList) {
         this.context = context;

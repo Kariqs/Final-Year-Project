@@ -1,20 +1,21 @@
 package com.example.ehealth;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
 import android.os.Bundle;
-import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 import com.google.android.material.textfield.TextInputLayout;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 
+import java.util.Objects;
+
 public class Signup extends AppCompatActivity {
-    TextInputLayout Email, PhoneNumber, Password;
+    TextInputLayout Name,Email, PhoneNumber, Password;
     Button Go;
     TextView AlreadyHaveAccount;
 
@@ -27,6 +28,7 @@ public class Signup extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_signup);
 
+        Name = findViewById(R.id.signUpName);
         Email = findViewById(R.id.signUpEmail);
         PhoneNumber = findViewById(R.id.signUpPhoneNo);
         Password = findViewById(R.id.signUpPassword);
@@ -34,31 +36,25 @@ public class Signup extends AppCompatActivity {
         AlreadyHaveAccount = findViewById(R.id.alreadyHaveAccount);
 
 
-        Go.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                if (!validateEmail() | !validatePhoneNumber() | !validatePassword()) {
-                    return;
-                } else {
-                    registerUser();
-                }
+        Go.setOnClickListener(view -> {
+            if (!validateEmail() | !validatePhoneNumber() | !validatePassword() | !validateName()) {
+                return;
+            } else {
+                registerUser();
             }
         });
 
 
-        AlreadyHaveAccount.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent i = new Intent(Signup.this, Login.class);
-                startActivity(i);
-                finish();
-            }
+        AlreadyHaveAccount.setOnClickListener(view -> {
+            Intent i = new Intent(Signup.this, Login.class);
+            startActivity(i);
+            finish();
         });
 
     }
 
     private boolean validateEmail() {
-        String value = Email.getEditText().getText().toString();
+        String value = Objects.requireNonNull(Email.getEditText()).getText().toString();
         if (value.isEmpty()) {
             Email.setError("Field cannot be empty");
             return false;
@@ -68,9 +64,20 @@ public class Signup extends AppCompatActivity {
             return true;
         }
     }
+    private boolean validateName() {
+        String value = Objects.requireNonNull(Name.getEditText()).getText().toString();
+        if (value.isEmpty()) {
+            Name.setError("Field cannot be empty");
+            return false;
+        } else {
+            Name.setError(null);
+            Name.setErrorEnabled(false);
+            return true;
+        }
+    }
 
     private boolean validatePhoneNumber() {
-        String value = PhoneNumber.getEditText().getText().toString();
+        String value = Objects.requireNonNull(PhoneNumber.getEditText()).getText().toString();
         if (value.isEmpty()) {
             PhoneNumber.setError("Field cannot be empty");
             return false;
@@ -82,7 +89,7 @@ public class Signup extends AppCompatActivity {
     }
 
     private boolean validatePassword() {
-        String value = Password.getEditText().getText().toString();
+        String value = Objects.requireNonNull(Password.getEditText()).getText().toString();
         if (value.isEmpty()) {
             Password.setError("Field cannot be empty");
             return false;
@@ -94,14 +101,15 @@ public class Signup extends AppCompatActivity {
     }
 
     private void registerUser() {
-        String EMAIL = Email.getEditText().getText().toString();
-        String PHONENUMBER = PhoneNumber.getEditText().getText().toString();
-        String PASSWORD = Password.getEditText().getText().toString();
+        String NAME = Objects.requireNonNull(Name.getEditText()).getText().toString();
+        String EMAIL = Objects.requireNonNull(Email.getEditText()).getText().toString();
+        String PHONENUMBER = Objects.requireNonNull(PhoneNumber.getEditText()).getText().toString();
+        String PASSWORD = Objects.requireNonNull(Password.getEditText()).getText().toString();
 
         firebaseDatabase = FirebaseDatabase.getInstance();
         databaseReference = firebaseDatabase.getReference("users");
 
-        userHelperClass userhelper = new userHelperClass(EMAIL, PHONENUMBER, PASSWORD);
+        userHelperClass userhelper = new userHelperClass(NAME, EMAIL, PHONENUMBER, PASSWORD);
 
         databaseReference.child(PHONENUMBER).setValue(userhelper);
 
@@ -110,6 +118,7 @@ public class Signup extends AppCompatActivity {
         PhoneNumber.getEditText().setText("");
         Password.getEditText().setText("");
         Intent i = new Intent(Signup.this, CheckBmi.class);
+        i.putExtra("keyname",NAME);
         startActivity(i);
         finish();
     }

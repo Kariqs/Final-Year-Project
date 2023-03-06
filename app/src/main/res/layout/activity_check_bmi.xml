@@ -13,11 +13,11 @@
     android:layout_height="wrap_content"
     android:orientation="vertical">
     <TextView
+        android:id="@+id/greet"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:fontFamily="@font/font2"
         android:textStyle="bold"
-        android:text="LET'S CHECK YOUR BMI"
         android:textAlignment="center"
         android:textColor="@color/black"
         android:textSize="20dp" />

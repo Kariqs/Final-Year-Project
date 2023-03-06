@@ -1,15 +1,24 @@
 package com.example.ehealth;
 
 public class userHelperClass {
-    String email,phoneNumber,password;
+    String name, email, phoneNumber, password;
 
     public userHelperClass() {
     }
 
-    public userHelperClass(String email, String phoneNumber, String password) {
+    public userHelperClass(String name, String email, String phoneNumber, String password) {
+        this.name = name;
         this.email = email;
         this.phoneNumber = phoneNumber;
         this.password = password;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
     }
 
     public String getEmail() {

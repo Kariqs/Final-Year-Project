@@ -7,6 +7,7 @@ import androidx.annotation.RequiresApi;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Build;
 import android.os.Bundle;
 import android.view.View;
@@ -29,7 +30,7 @@ public class Login extends AppCompatActivity {
     TextInputLayout Email, Password;
     Button Go;
     TextView dontHaveAccount;
-
+    public static String PREFS_NAME = "myPref";
 
     @RequiresApi(api = Build.VERSION_CODES.O)
     @Override
@@ -42,20 +43,20 @@ public class Login extends AppCompatActivity {
         Go = findViewById(R.id.login);
         dontHaveAccount = findViewById(R.id.dontHaveAccount);
 
-        if (now().isBefore(LocalTime.of(12,00))){
+        if (now().isBefore(LocalTime.of(12, 00))) {
             Greetings.setText("Good Morning, Login to continue.");
-        }else if (now().isAfter(LocalTime.of(12,00)) && now().isBefore(LocalTime.of(16,00))){
+        } else if (now().isAfter(LocalTime.of(12, 00)) && now().isBefore(LocalTime.of(16, 00))) {
             Greetings.setText("Good Afternoon, Login to continue");
-        }else if (now().isAfter(LocalTime.of(16,00))){
+        } else if (now().isAfter(LocalTime.of(16, 00))) {
             Greetings.setText("Good Evening, Login to continue.");
         }
 
         Go.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                if (!validateEmail() | !validatePassword()){
+                if (!validateEmail() | !validatePassword()) {
                     return;
-                }else{
+                } else {
                     validateUser();
                 }
             }
@@ -71,7 +72,7 @@ public class Login extends AppCompatActivity {
         });
     }
 
-    private void clear(){
+    private void clear() {
         Email.getEditText().setText("");
         Password.getEditText().setText("");
     }
@@ -100,7 +101,9 @@ public class Login extends AppCompatActivity {
         }
     }
 
-    private void validateUser(){
+    private void validateUser() {
+
+
         String enteredEmail = Email.getEditText().getText().toString();
         String enteredPassword = Password.getEditText().getText().toString();
 
@@ -109,22 +112,31 @@ public class Login extends AppCompatActivity {
         checkUser.addListenerForSingleValueEvent(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot snapshot) {
-                if (snapshot.exists()){
+                if (snapshot.exists()) {
 
                     Email.setError(null);
                     Email.setErrorEnabled(false);
 
-                    String passwordFromDatabase=snapshot.child(enteredEmail).child("password").getValue(String.class);
-                    if (passwordFromDatabase.equals(enteredPassword)){
-                        Intent intent = new Intent(Login.this,Home.class);
+                    String passwordFromDatabase = snapshot.child(enteredEmail).child("password").getValue(String.class);
+                    if (passwordFromDatabase.equals(enteredPassword)) {
+
+
+                        SharedPreferences sharedPreferences = getSharedPreferences(Login.PREFS_NAME, 0);
+                        SharedPreferences.Editor editor = sharedPreferences.edit();
+
+                        editor.putBoolean("hasLoggedIn", true);
+                        editor.commit();
+
+
+                        Intent intent = new Intent(Login.this, Home.class);
                         startActivity(intent);
                         finish();
                         clear();
-                    }else{
+                    } else {
                         Password.setError("wrong password.");
                         Password.requestFocus();
                     }
-                }else{
+                } else {
                     Email.setError("The phone number doesn't exist.");
                     Email.requestFocus();
                 }

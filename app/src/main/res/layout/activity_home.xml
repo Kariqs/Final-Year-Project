@@ -1,13 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:background="#DCDBD8"
-    android:orientation="vertical"
     android:padding="15dp"
     tools:context=".Home">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
 
     <TextView
         android:id="@+id/greetings"
@@ -33,6 +37,7 @@
 involves several practises-Fasting,Working out and Dieting. You can select where you need to be guided below.
 The results of others can also motivate you to work on yourself. Click Results to see how others have gone with weight loss."
         android:textColor="@color/black"
+        android:scrollbarAlwaysDrawVerticalTrack="false"
         android:textSize="20sp" />
 
     <LinearLayout
@@ -188,5 +193,6 @@ The results of others can also motivate you to work on yourself. Click Results t
 
 
     </LinearLayout>
+    </LinearLayout>
 
-</LinearLayout>
+</ScrollView>

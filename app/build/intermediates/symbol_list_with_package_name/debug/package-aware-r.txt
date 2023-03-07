@@ -2505,6 +2505,7 @@ drawable ic_mtrl_chip_checked_black
 drawable ic_mtrl_chip_checked_circle
 drawable ic_mtrl_chip_close_circle
 drawable imf
+drawable logo
 drawable lunge
 drawable m3_appbar_background
 drawable m3_popupmenu_background_overlay
@@ -3181,6 +3182,7 @@ layout activity_home
 layout activity_login
 layout activity_results
 layout activity_signup
+layout activity_splash
 layout activity_upload_results
 layout activity_workout
 layout activity_workout_plan

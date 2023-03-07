@@ -2504,6 +2504,7 @@ int drawable ic_mtrl_chip_checked_black 0x7f070087
 int drawable ic_mtrl_chip_checked_circle 0x7f070088
 int drawable ic_mtrl_chip_close_circle 0x7f070089
 int drawable imf 0x7f07008a
+int drawable logo 0x7f0700c1
 int drawable lunge 0x7f07008b
 int drawable m3_appbar_background 0x7f07008c
 int drawable m3_popupmenu_background_overlay 0x7f07008d
@@ -3180,6 +3181,7 @@ int layout activity_home 0x7f0c001f
 int layout activity_login 0x7f0c0020
 int layout activity_results 0x7f0c0021
 int layout activity_signup 0x7f0c0022
+int layout activity_splash 0x7f0c0080
 int layout activity_upload_results 0x7f0c0023
 int layout activity_workout 0x7f0c0024
 int layout activity_workout_plan 0x7f0c0025

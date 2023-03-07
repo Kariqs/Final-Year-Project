@@ -41,245 +41,244 @@
 26-->/home/kariuki/StudioProjects/Final-Year-Project/app/src/main/AndroidManifest.xml:14:9-54
 27        android:supportsRtl="true"
 27-->/home/kariuki/StudioProjects/Final-Year-Project/app/src/main/AndroidManifest.xml:15:9-35
-28        android:testOnly="true"
-29        android:theme="@style/Theme.EHealth" >
-29-->/home/kariuki/StudioProjects/Final-Year-Project/app/src/main/AndroidManifest.xml:16:9-45
-30        <activity
-30-->/home/kariuki/StudioProjects/Final-Year-Project/app/src/main/AndroidManifest.xml:18:9-24:20
-31            android:name="com.example.ehealth.Login"
-31-->/home/kariuki/StudioProjects/Final-Year-Project/app/src/main/AndroidManifest.xml:19:13-34
-32            android:exported="false" >
-32-->/home/kariuki/StudioProjects/Final-Year-Project/app/src/main/AndroidManifest.xml:20:13-37
-33            <meta-data
-33-->/home/kariuki/StudioProjects/Final-Year-Project/app/src/main/AndroidManifest.xml:21:13-23:36
-34                android:name="android.app.lib_name"
-34-->/home/kariuki/StudioProjects/Final-Year-Project/app/src/main/AndroidManifest.xml:22:17-52
-35                android:value="" />
-35-->/home/kariuki/StudioProjects/Final-Year-Project/app/src/main/AndroidManifest.xml:23:17-33
-36        </activity>
-37        <activity
-37-->/home/kariuki/StudioProjects/Final-Year-Project/app/src/main/AndroidManifest.xml:25:9-31:20
-38            android:name="com.example.ehealth.CheckBmi"
-38-->/home/kariuki/StudioProjects/Final-Year-Project/app/src/main/AndroidManifest.xml:26:13-37
-39            android:exported="false" >
-39-->/home/kariuki/StudioProjects/Final-Year-Project/app/src/main/AndroidManifest.xml:27:13-37
-40            <meta-data
-40-->/home/kariuki/StudioProjects/Final-Year-Project/app/src/main/AndroidManifest.xml:21:13-23:36
-41                android:name="android.app.lib_name"
-41-->/home/kariuki/StudioProjects/Final-Year-Project/app/src/main/AndroidManifest.xml:22:17-52
-42                android:value="" />
-42-->/home/kariuki/StudioProjects/Final-Year-Project/app/src/main/AndroidManifest.xml:23:17-33
-43        </activity>
-44        <activity
-44-->/home/kariuki/StudioProjects/Final-Year-Project/app/src/main/AndroidManifest.xml:32:9-38:20
-45            android:name="com.example.ehealth.UploadResults"
-45-->/home/kariuki/StudioProjects/Final-Year-Project/app/src/main/AndroidManifest.xml:33:13-42
-46            android:exported="false" >
-46-->/home/kariuki/StudioProjects/Final-Year-Project/app/src/main/AndroidManifest.xml:34:13-37
-47            <meta-data
-47-->/home/kariuki/StudioProjects/Final-Year-Project/app/src/main/AndroidManifest.xml:21:13-23:36
-48                android:name="android.app.lib_name"
-48-->/home/kariuki/StudioProjects/Final-Year-Project/app/src/main/AndroidManifest.xml:22:17-52
-49                android:value="" />
-49-->/home/kariuki/StudioProjects/Final-Year-Project/app/src/main/AndroidManifest.xml:23:17-33
-50        </activity>
-51        <activity
-51-->/home/kariuki/StudioProjects/Final-Year-Project/app/src/main/AndroidManifest.xml:39:9-45:20
-52            android:name="com.example.ehealth.WorkoutPlan"
-52-->/home/kariuki/StudioProjects/Final-Year-Project/app/src/main/AndroidManifest.xml:40:13-40
-53            android:exported="false" >
-53-->/home/kariuki/StudioProjects/Final-Year-Project/app/src/main/AndroidManifest.xml:41:13-37
-54            <meta-data
-54-->/home/kariuki/StudioProjects/Final-Year-Project/app/src/main/AndroidManifest.xml:21:13-23:36
-55                android:name="android.app.lib_name"
-55-->/home/kariuki/StudioProjects/Final-Year-Project/app/src/main/AndroidManifest.xml:22:17-52
-56                android:value="" />
-56-->/home/kariuki/StudioProjects/Final-Year-Project/app/src/main/AndroidManifest.xml:23:17-33
-57        </activity>
-58        <activity
-58-->/home/kariuki/StudioProjects/Final-Year-Project/app/src/main/AndroidManifest.xml:46:9-52:20
-59            android:name="com.example.ehealth.Results"
-59-->/home/kariuki/StudioProjects/Final-Year-Project/app/src/main/AndroidManifest.xml:47:13-36
-60            android:exported="false" >
-60-->/home/kariuki/StudioProjects/Final-Year-Project/app/src/main/AndroidManifest.xml:48:13-37
-61            <meta-data
-61-->/home/kariuki/StudioProjects/Final-Year-Project/app/src/main/AndroidManifest.xml:21:13-23:36
-62                android:name="android.app.lib_name"
-62-->/home/kariuki/StudioProjects/Final-Year-Project/app/src/main/AndroidManifest.xml:22:17-52
-63                android:value="" />
-63-->/home/kariuki/StudioProjects/Final-Year-Project/app/src/main/AndroidManifest.xml:23:17-33
-64        </activity>
-65        <activity
-65-->/home/kariuki/StudioProjects/Final-Year-Project/app/src/main/AndroidManifest.xml:53:9-59:20
-66            android:name="com.example.ehealth.Diet"
-66-->/home/kariuki/StudioProjects/Final-Year-Project/app/src/main/AndroidManifest.xml:54:13-33
-67            android:exported="false" >
-67-->/home/kariuki/StudioProjects/Final-Year-Project/app/src/main/AndroidManifest.xml:55:13-37
-68            <meta-data
-68-->/home/kariuki/StudioProjects/Final-Year-Project/app/src/main/AndroidManifest.xml:21:13-23:36
-69                android:name="android.app.lib_name"
-69-->/home/kariuki/StudioProjects/Final-Year-Project/app/src/main/AndroidManifest.xml:22:17-52
-70                android:value="" />
-70-->/home/kariuki/StudioProjects/Final-Year-Project/app/src/main/AndroidManifest.xml:23:17-33
-71        </activity>
-72        <activity
-72-->/home/kariuki/StudioProjects/Final-Year-Project/app/src/main/AndroidManifest.xml:60:9-66:20
-73            android:name="com.example.ehealth.Workout"
-73-->/home/kariuki/StudioProjects/Final-Year-Project/app/src/main/AndroidManifest.xml:61:13-36
-74            android:exported="false" >
-74-->/home/kariuki/StudioProjects/Final-Year-Project/app/src/main/AndroidManifest.xml:62:13-37
-75            <meta-data
-75-->/home/kariuki/StudioProjects/Final-Year-Project/app/src/main/AndroidManifest.xml:21:13-23:36
-76                android:name="android.app.lib_name"
-76-->/home/kariuki/StudioProjects/Final-Year-Project/app/src/main/AndroidManifest.xml:22:17-52
-77                android:value="" />
-77-->/home/kariuki/StudioProjects/Final-Year-Project/app/src/main/AndroidManifest.xml:23:17-33
-78        </activity>
-79        <activity
-79-->/home/kariuki/StudioProjects/Final-Year-Project/app/src/main/AndroidManifest.xml:67:9-73:20
-80            android:name="com.example.ehealth.Fast"
-80-->/home/kariuki/StudioProjects/Final-Year-Project/app/src/main/AndroidManifest.xml:68:13-33
-81            android:exported="false" >
-81-->/home/kariuki/StudioProjects/Final-Year-Project/app/src/main/AndroidManifest.xml:69:13-37
-82            <meta-data
-82-->/home/kariuki/StudioProjects/Final-Year-Project/app/src/main/AndroidManifest.xml:21:13-23:36
-83                android:name="android.app.lib_name"
-83-->/home/kariuki/StudioProjects/Final-Year-Project/app/src/main/AndroidManifest.xml:22:17-52
-84                android:value="" />
-84-->/home/kariuki/StudioProjects/Final-Year-Project/app/src/main/AndroidManifest.xml:23:17-33
-85        </activity>
-86        <activity
-86-->/home/kariuki/StudioProjects/Final-Year-Project/app/src/main/AndroidManifest.xml:74:9-80:20
-87            android:name="com.example.ehealth.Home"
-87-->/home/kariuki/StudioProjects/Final-Year-Project/app/src/main/AndroidManifest.xml:75:13-33
-88            android:exported="false" >
-88-->/home/kariuki/StudioProjects/Final-Year-Project/app/src/main/AndroidManifest.xml:76:13-37
-89            <meta-data
-89-->/home/kariuki/StudioProjects/Final-Year-Project/app/src/main/AndroidManifest.xml:21:13-23:36
-90                android:name="android.app.lib_name"
-90-->/home/kariuki/StudioProjects/Final-Year-Project/app/src/main/AndroidManifest.xml:22:17-52
-91                android:value="" />
-91-->/home/kariuki/StudioProjects/Final-Year-Project/app/src/main/AndroidManifest.xml:23:17-33
-92        </activity>
-93        <activity
-93-->/home/kariuki/StudioProjects/Final-Year-Project/app/src/main/AndroidManifest.xml:81:9-87:20
-94            android:name="com.example.ehealth.Signup"
-94-->/home/kariuki/StudioProjects/Final-Year-Project/app/src/main/AndroidManifest.xml:82:13-35
-95            android:exported="false" >
-95-->/home/kariuki/StudioProjects/Final-Year-Project/app/src/main/AndroidManifest.xml:83:13-37
-96            <meta-data
-96-->/home/kariuki/StudioProjects/Final-Year-Project/app/src/main/AndroidManifest.xml:21:13-23:36
-97                android:name="android.app.lib_name"
-97-->/home/kariuki/StudioProjects/Final-Year-Project/app/src/main/AndroidManifest.xml:22:17-52
-98                android:value="" />
-98-->/home/kariuki/StudioProjects/Final-Year-Project/app/src/main/AndroidManifest.xml:23:17-33
-99        </activity>
-100        <activity
-100-->/home/kariuki/StudioProjects/Final-Year-Project/app/src/main/AndroidManifest.xml:88:9-100:20
-101            android:name="com.example.ehealth.Splash"
-101-->/home/kariuki/StudioProjects/Final-Year-Project/app/src/main/AndroidManifest.xml:89:13-35
-102            android:exported="true" >
-102-->/home/kariuki/StudioProjects/Final-Year-Project/app/src/main/AndroidManifest.xml:90:13-36
-103            <intent-filter>
-103-->/home/kariuki/StudioProjects/Final-Year-Project/app/src/main/AndroidManifest.xml:91:13-95:29
-104                <action android:name="android.intent.action.MAIN" />
-104-->/home/kariuki/StudioProjects/Final-Year-Project/app/src/main/AndroidManifest.xml:92:17-69
-104-->/home/kariuki/StudioProjects/Final-Year-Project/app/src/main/AndroidManifest.xml:92:25-66
-105
-106                <category android:name="android.intent.category.LAUNCHER" />
-106-->/home/kariuki/StudioProjects/Final-Year-Project/app/src/main/AndroidManifest.xml:94:17-77
-106-->/home/kariuki/StudioProjects/Final-Year-Project/app/src/main/AndroidManifest.xml:94:27-74
-107            </intent-filter>
-108
-109            <meta-data
-109-->/home/kariuki/StudioProjects/Final-Year-Project/app/src/main/AndroidManifest.xml:21:13-23:36
-110                android:name="android.app.lib_name"
-110-->/home/kariuki/StudioProjects/Final-Year-Project/app/src/main/AndroidManifest.xml:22:17-52
-111                android:value="" />
-111-->/home/kariuki/StudioProjects/Final-Year-Project/app/src/main/AndroidManifest.xml:23:17-33
-112        </activity>
-113
-114        <service
-114-->[com.google.firebase:firebase-database:20.0.4] /home/kariuki/.gradle/caches/transforms-3/2a4f28dd1934774b9d5631c66a766843/transformed/firebase-database-20.0.4/AndroidManifest.xml:29:9-35:19
-115            android:name="com.google.firebase.components.ComponentDiscoveryService"
-115-->[com.google.firebase:firebase-database:20.0.4] /home/kariuki/.gradle/caches/transforms-3/2a4f28dd1934774b9d5631c66a766843/transformed/firebase-database-20.0.4/AndroidManifest.xml:30:13-84
-116            android:directBootAware="true"
-116-->[com.google.firebase:firebase-common:20.2.0] /home/kariuki/.gradle/caches/transforms-3/480b3dae7120d0220412229c8f9a6223/transformed/firebase-common-20.2.0/AndroidManifest.xml:34:13-43
-117            android:exported="false" >
-117-->[com.google.firebase:firebase-database:20.0.4] /home/kariuki/.gradle/caches/transforms-3/2a4f28dd1934774b9d5631c66a766843/transformed/firebase-database-20.0.4/AndroidManifest.xml:31:13-37
-118            <meta-data
-118-->[com.google.firebase:firebase-database:20.0.4] /home/kariuki/.gradle/caches/transforms-3/2a4f28dd1934774b9d5631c66a766843/transformed/firebase-database-20.0.4/AndroidManifest.xml:32:13-34:85
-119                android:name="com.google.firebase.components:com.google.firebase.database.DatabaseRegistrar"
-119-->[com.google.firebase:firebase-database:20.0.4] /home/kariuki/.gradle/caches/transforms-3/2a4f28dd1934774b9d5631c66a766843/transformed/firebase-database-20.0.4/AndroidManifest.xml:33:17-109
-120                android:value="com.google.firebase.components.ComponentRegistrar" />
-120-->[com.google.firebase:firebase-database:20.0.4] /home/kariuki/.gradle/caches/transforms-3/2a4f28dd1934774b9d5631c66a766843/transformed/firebase-database-20.0.4/AndroidManifest.xml:34:17-82
-121            <meta-data
-121-->[com.google.firebase:firebase-storage:20.1.0] /home/kariuki/.gradle/caches/transforms-3/79dc1955f4d9724194dd8a9809fbc5ab/transformed/firebase-storage-20.1.0/AndroidManifest.xml:32:13-34:85
-122                android:name="com.google.firebase.components:com.google.firebase.storage.StorageRegistrar"
-122-->[com.google.firebase:firebase-storage:20.1.0] /home/kariuki/.gradle/caches/transforms-3/79dc1955f4d9724194dd8a9809fbc5ab/transformed/firebase-storage-20.1.0/AndroidManifest.xml:33:17-107
-123                android:value="com.google.firebase.components.ComponentRegistrar" />
-123-->[com.google.firebase:firebase-storage:20.1.0] /home/kariuki/.gradle/caches/transforms-3/79dc1955f4d9724194dd8a9809fbc5ab/transformed/firebase-storage-20.1.0/AndroidManifest.xml:34:17-82
-124        </service>
-125
-126        <provider
-126-->[com.squareup.picasso:picasso:2.71828] /home/kariuki/.gradle/caches/transforms-3/875f3f41a57f110266fa6f71bec2d3f5/transformed/picasso-2.71828/AndroidManifest.xml:8:9-11:40
-127            android:name="com.squareup.picasso.PicassoProvider"
-127-->[com.squareup.picasso:picasso:2.71828] /home/kariuki/.gradle/caches/transforms-3/875f3f41a57f110266fa6f71bec2d3f5/transformed/picasso-2.71828/AndroidManifest.xml:9:13-64
-128            android:authorities="com.example.ehealth.com.squareup.picasso"
-128-->[com.squareup.picasso:picasso:2.71828] /home/kariuki/.gradle/caches/transforms-3/875f3f41a57f110266fa6f71bec2d3f5/transformed/picasso-2.71828/AndroidManifest.xml:10:13-72
-129            android:exported="false" />
-129-->[com.squareup.picasso:picasso:2.71828] /home/kariuki/.gradle/caches/transforms-3/875f3f41a57f110266fa6f71bec2d3f5/transformed/picasso-2.71828/AndroidManifest.xml:11:13-37
-130
-131        <activity
-131-->[com.google.android.gms:play-services-base:18.0.1] /home/kariuki/.gradle/caches/transforms-3/26b3666345201c303a3333024bb53271/transformed/play-services-base-18.0.1/AndroidManifest.xml:20:9-22:45
-132            android:name="com.google.android.gms.common.api.GoogleApiActivity"
-132-->[com.google.android.gms:play-services-base:18.0.1] /home/kariuki/.gradle/caches/transforms-3/26b3666345201c303a3333024bb53271/transformed/play-services-base-18.0.1/AndroidManifest.xml:20:19-85
-133            android:exported="false"
-133-->[com.google.android.gms:play-services-base:18.0.1] /home/kariuki/.gradle/caches/transforms-3/26b3666345201c303a3333024bb53271/transformed/play-services-base-18.0.1/AndroidManifest.xml:22:19-43
-134            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
-134-->[com.google.android.gms:play-services-base:18.0.1] /home/kariuki/.gradle/caches/transforms-3/26b3666345201c303a3333024bb53271/transformed/play-services-base-18.0.1/AndroidManifest.xml:21:19-78
-135
-136        <provider
-136-->[com.google.firebase:firebase-common:20.2.0] /home/kariuki/.gradle/caches/transforms-3/480b3dae7120d0220412229c8f9a6223/transformed/firebase-common-20.2.0/AndroidManifest.xml:25:9-30:39
-137            android:name="com.google.firebase.provider.FirebaseInitProvider"
-137-->[com.google.firebase:firebase-common:20.2.0] /home/kariuki/.gradle/caches/transforms-3/480b3dae7120d0220412229c8f9a6223/transformed/firebase-common-20.2.0/AndroidManifest.xml:26:13-77
-138            android:authorities="com.example.ehealth.firebaseinitprovider"
-138-->[com.google.firebase:firebase-common:20.2.0] /home/kariuki/.gradle/caches/transforms-3/480b3dae7120d0220412229c8f9a6223/transformed/firebase-common-20.2.0/AndroidManifest.xml:27:13-72
-139            android:directBootAware="true"
-139-->[com.google.firebase:firebase-common:20.2.0] /home/kariuki/.gradle/caches/transforms-3/480b3dae7120d0220412229c8f9a6223/transformed/firebase-common-20.2.0/AndroidManifest.xml:28:13-43
-140            android:exported="false"
-140-->[com.google.firebase:firebase-common:20.2.0] /home/kariuki/.gradle/caches/transforms-3/480b3dae7120d0220412229c8f9a6223/transformed/firebase-common-20.2.0/AndroidManifest.xml:29:13-37
-141            android:initOrder="100" />
-141-->[com.google.firebase:firebase-common:20.2.0] /home/kariuki/.gradle/caches/transforms-3/480b3dae7120d0220412229c8f9a6223/transformed/firebase-common-20.2.0/AndroidManifest.xml:30:13-36
-142
-143        <meta-data
-143-->[com.google.android.gms:play-services-basement:18.1.0] /home/kariuki/.gradle/caches/transforms-3/0ccd676f36a88f843cf47f86b0f66e38/transformed/play-services-basement-18.1.0/AndroidManifest.xml:21:9-23:69
-144            android:name="com.google.android.gms.version"
-144-->[com.google.android.gms:play-services-basement:18.1.0] /home/kariuki/.gradle/caches/transforms-3/0ccd676f36a88f843cf47f86b0f66e38/transformed/play-services-basement-18.1.0/AndroidManifest.xml:22:13-58
-145            android:value="@integer/google_play_services_version" />
-145-->[com.google.android.gms:play-services-basement:18.1.0] /home/kariuki/.gradle/caches/transforms-3/0ccd676f36a88f843cf47f86b0f66e38/transformed/play-services-basement-18.1.0/AndroidManifest.xml:23:13-66
-146
-147        <provider
-147-->[androidx.emoji2:emoji2:1.0.0] /home/kariuki/.gradle/caches/transforms-3/dd8d034f2ef3bb750af774315540fdc2/transformed/emoji2-1.0.0/AndroidManifest.xml:26:9-34:20
-148            android:name="androidx.startup.InitializationProvider"
-148-->[androidx.emoji2:emoji2:1.0.0] /home/kariuki/.gradle/caches/transforms-3/dd8d034f2ef3bb750af774315540fdc2/transformed/emoji2-1.0.0/AndroidManifest.xml:27:13-67
-149            android:authorities="com.example.ehealth.androidx-startup"
-149-->[androidx.emoji2:emoji2:1.0.0] /home/kariuki/.gradle/caches/transforms-3/dd8d034f2ef3bb750af774315540fdc2/transformed/emoji2-1.0.0/AndroidManifest.xml:28:13-68
-150            android:exported="false" >
-150-->[androidx.emoji2:emoji2:1.0.0] /home/kariuki/.gradle/caches/transforms-3/dd8d034f2ef3bb750af774315540fdc2/transformed/emoji2-1.0.0/AndroidManifest.xml:29:13-37
-151            <meta-data
-151-->[androidx.emoji2:emoji2:1.0.0] /home/kariuki/.gradle/caches/transforms-3/dd8d034f2ef3bb750af774315540fdc2/transformed/emoji2-1.0.0/AndroidManifest.xml:31:13-33:52
-152                android:name="androidx.emoji2.text.EmojiCompatInitializer"
-152-->[androidx.emoji2:emoji2:1.0.0] /home/kariuki/.gradle/caches/transforms-3/dd8d034f2ef3bb750af774315540fdc2/transformed/emoji2-1.0.0/AndroidManifest.xml:32:17-75
-153                android:value="androidx.startup" />
-153-->[androidx.emoji2:emoji2:1.0.0] /home/kariuki/.gradle/caches/transforms-3/dd8d034f2ef3bb750af774315540fdc2/transformed/emoji2-1.0.0/AndroidManifest.xml:33:17-49
-154            <meta-data
-154-->[androidx.lifecycle:lifecycle-process:2.4.0] /home/kariuki/.gradle/caches/transforms-3/e1acb8a47af4616b7f57c12b903cf6df/transformed/lifecycle-process-2.4.0/AndroidManifest.xml:31:13-33:52
-155                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
-155-->[androidx.lifecycle:lifecycle-process:2.4.0] /home/kariuki/.gradle/caches/transforms-3/e1acb8a47af4616b7f57c12b903cf6df/transformed/lifecycle-process-2.4.0/AndroidManifest.xml:32:17-78
-156                android:value="androidx.startup" />
-156-->[androidx.lifecycle:lifecycle-process:2.4.0] /home/kariuki/.gradle/caches/transforms-3/e1acb8a47af4616b7f57c12b903cf6df/transformed/lifecycle-process-2.4.0/AndroidManifest.xml:33:17-49
-157        </provider>
-158    </application>
-159
-160</manifest>
+28        android:theme="@style/Theme.EHealth" >
+28-->/home/kariuki/StudioProjects/Final-Year-Project/app/src/main/AndroidManifest.xml:16:9-45
+29        <activity
+29-->/home/kariuki/StudioProjects/Final-Year-Project/app/src/main/AndroidManifest.xml:18:9-24:20
+30            android:name="com.example.ehealth.Login"
+30-->/home/kariuki/StudioProjects/Final-Year-Project/app/src/main/AndroidManifest.xml:19:13-34
+31            android:exported="false" >
+31-->/home/kariuki/StudioProjects/Final-Year-Project/app/src/main/AndroidManifest.xml:20:13-37
+32            <meta-data
+32-->/home/kariuki/StudioProjects/Final-Year-Project/app/src/main/AndroidManifest.xml:21:13-23:36
+33                android:name="android.app.lib_name"
+33-->/home/kariuki/StudioProjects/Final-Year-Project/app/src/main/AndroidManifest.xml:22:17-52
+34                android:value="" />
+34-->/home/kariuki/StudioProjects/Final-Year-Project/app/src/main/AndroidManifest.xml:23:17-33
+35        </activity>
+36        <activity
+36-->/home/kariuki/StudioProjects/Final-Year-Project/app/src/main/AndroidManifest.xml:25:9-31:20
+37            android:name="com.example.ehealth.CheckBmi"
+37-->/home/kariuki/StudioProjects/Final-Year-Project/app/src/main/AndroidManifest.xml:26:13-37
+38            android:exported="false" >
+38-->/home/kariuki/StudioProjects/Final-Year-Project/app/src/main/AndroidManifest.xml:27:13-37
+39            <meta-data
+39-->/home/kariuki/StudioProjects/Final-Year-Project/app/src/main/AndroidManifest.xml:21:13-23:36
+40                android:name="android.app.lib_name"
+40-->/home/kariuki/StudioProjects/Final-Year-Project/app/src/main/AndroidManifest.xml:22:17-52
+41                android:value="" />
+41-->/home/kariuki/StudioProjects/Final-Year-Project/app/src/main/AndroidManifest.xml:23:17-33
+42        </activity>
+43        <activity
+43-->/home/kariuki/StudioProjects/Final-Year-Project/app/src/main/AndroidManifest.xml:32:9-38:20
+44            android:name="com.example.ehealth.UploadResults"
+44-->/home/kariuki/StudioProjects/Final-Year-Project/app/src/main/AndroidManifest.xml:33:13-42
+45            android:exported="false" >
+45-->/home/kariuki/StudioProjects/Final-Year-Project/app/src/main/AndroidManifest.xml:34:13-37
+46            <meta-data
+46-->/home/kariuki/StudioProjects/Final-Year-Project/app/src/main/AndroidManifest.xml:21:13-23:36
+47                android:name="android.app.lib_name"
+47-->/home/kariuki/StudioProjects/Final-Year-Project/app/src/main/AndroidManifest.xml:22:17-52
+48                android:value="" />
+48-->/home/kariuki/StudioProjects/Final-Year-Project/app/src/main/AndroidManifest.xml:23:17-33
+49        </activity>
+50        <activity
+50-->/home/kariuki/StudioProjects/Final-Year-Project/app/src/main/AndroidManifest.xml:39:9-45:20
+51            android:name="com.example.ehealth.WorkoutPlan"
+51-->/home/kariuki/StudioProjects/Final-Year-Project/app/src/main/AndroidManifest.xml:40:13-40
+52            android:exported="false" >
+52-->/home/kariuki/StudioProjects/Final-Year-Project/app/src/main/AndroidManifest.xml:41:13-37
+53            <meta-data
+53-->/home/kariuki/StudioProjects/Final-Year-Project/app/src/main/AndroidManifest.xml:21:13-23:36
+54                android:name="android.app.lib_name"
+54-->/home/kariuki/StudioProjects/Final-Year-Project/app/src/main/AndroidManifest.xml:22:17-52
+55                android:value="" />
+55-->/home/kariuki/StudioProjects/Final-Year-Project/app/src/main/AndroidManifest.xml:23:17-33
+56        </activity>
+57        <activity
+57-->/home/kariuki/StudioProjects/Final-Year-Project/app/src/main/AndroidManifest.xml:46:9-52:20
+58            android:name="com.example.ehealth.Results"
+58-->/home/kariuki/StudioProjects/Final-Year-Project/app/src/main/AndroidManifest.xml:47:13-36
+59            android:exported="false" >
+59-->/home/kariuki/StudioProjects/Final-Year-Project/app/src/main/AndroidManifest.xml:48:13-37
+60            <meta-data
+60-->/home/kariuki/StudioProjects/Final-Year-Project/app/src/main/AndroidManifest.xml:21:13-23:36
+61                android:name="android.app.lib_name"
+61-->/home/kariuki/StudioProjects/Final-Year-Project/app/src/main/AndroidManifest.xml:22:17-52
+62                android:value="" />
+62-->/home/kariuki/StudioProjects/Final-Year-Project/app/src/main/AndroidManifest.xml:23:17-33
+63        </activity>
+64        <activity
+64-->/home/kariuki/StudioProjects/Final-Year-Project/app/src/main/AndroidManifest.xml:53:9-59:20
+65            android:name="com.example.ehealth.Diet"
+65-->/home/kariuki/StudioProjects/Final-Year-Project/app/src/main/AndroidManifest.xml:54:13-33
+66            android:exported="false" >
+66-->/home/kariuki/StudioProjects/Final-Year-Project/app/src/main/AndroidManifest.xml:55:13-37
+67            <meta-data
+67-->/home/kariuki/StudioProjects/Final-Year-Project/app/src/main/AndroidManifest.xml:21:13-23:36
+68                android:name="android.app.lib_name"
+68-->/home/kariuki/StudioProjects/Final-Year-Project/app/src/main/AndroidManifest.xml:22:17-52
+69                android:value="" />
+69-->/home/kariuki/StudioProjects/Final-Year-Project/app/src/main/AndroidManifest.xml:23:17-33
+70        </activity>
+71        <activity
+71-->/home/kariuki/StudioProjects/Final-Year-Project/app/src/main/AndroidManifest.xml:60:9-66:20
+72            android:name="com.example.ehealth.Workout"
+72-->/home/kariuki/StudioProjects/Final-Year-Project/app/src/main/AndroidManifest.xml:61:13-36
+73            android:exported="false" >
+73-->/home/kariuki/StudioProjects/Final-Year-Project/app/src/main/AndroidManifest.xml:62:13-37
+74            <meta-data
+74-->/home/kariuki/StudioProjects/Final-Year-Project/app/src/main/AndroidManifest.xml:21:13-23:36
+75                android:name="android.app.lib_name"
+75-->/home/kariuki/StudioProjects/Final-Year-Project/app/src/main/AndroidManifest.xml:22:17-52
+76                android:value="" />
+76-->/home/kariuki/StudioProjects/Final-Year-Project/app/src/main/AndroidManifest.xml:23:17-33
+77        </activity>
+78        <activity
+78-->/home/kariuki/StudioProjects/Final-Year-Project/app/src/main/AndroidManifest.xml:67:9-73:20
+79            android:name="com.example.ehealth.Fast"
+79-->/home/kariuki/StudioProjects/Final-Year-Project/app/src/main/AndroidManifest.xml:68:13-33
+80            android:exported="false" >
+80-->/home/kariuki/StudioProjects/Final-Year-Project/app/src/main/AndroidManifest.xml:69:13-37
+81            <meta-data
+81-->/home/kariuki/StudioProjects/Final-Year-Project/app/src/main/AndroidManifest.xml:21:13-23:36
+82                android:name="android.app.lib_name"
+82-->/home/kariuki/StudioProjects/Final-Year-Project/app/src/main/AndroidManifest.xml:22:17-52
+83                android:value="" />
+83-->/home/kariuki/StudioProjects/Final-Year-Project/app/src/main/AndroidManifest.xml:23:17-33
+84        </activity>
+85        <activity
+85-->/home/kariuki/StudioProjects/Final-Year-Project/app/src/main/AndroidManifest.xml:74:9-80:20
+86            android:name="com.example.ehealth.Home"
+86-->/home/kariuki/StudioProjects/Final-Year-Project/app/src/main/AndroidManifest.xml:75:13-33
+87            android:exported="false" >
+87-->/home/kariuki/StudioProjects/Final-Year-Project/app/src/main/AndroidManifest.xml:76:13-37
+88            <meta-data
+88-->/home/kariuki/StudioProjects/Final-Year-Project/app/src/main/AndroidManifest.xml:21:13-23:36
+89                android:name="android.app.lib_name"
+89-->/home/kariuki/StudioProjects/Final-Year-Project/app/src/main/AndroidManifest.xml:22:17-52
+90                android:value="" />
+90-->/home/kariuki/StudioProjects/Final-Year-Project/app/src/main/AndroidManifest.xml:23:17-33
+91        </activity>
+92        <activity
+92-->/home/kariuki/StudioProjects/Final-Year-Project/app/src/main/AndroidManifest.xml:81:9-87:20
+93            android:name="com.example.ehealth.Signup"
+93-->/home/kariuki/StudioProjects/Final-Year-Project/app/src/main/AndroidManifest.xml:82:13-35
+94            android:exported="false" >
+94-->/home/kariuki/StudioProjects/Final-Year-Project/app/src/main/AndroidManifest.xml:83:13-37
+95            <meta-data
+95-->/home/kariuki/StudioProjects/Final-Year-Project/app/src/main/AndroidManifest.xml:21:13-23:36
+96                android:name="android.app.lib_name"
+96-->/home/kariuki/StudioProjects/Final-Year-Project/app/src/main/AndroidManifest.xml:22:17-52
+97                android:value="" />
+97-->/home/kariuki/StudioProjects/Final-Year-Project/app/src/main/AndroidManifest.xml:23:17-33
+98        </activity>
+99        <activity
+99-->/home/kariuki/StudioProjects/Final-Year-Project/app/src/main/AndroidManifest.xml:88:9-100:20
+100            android:name="com.example.ehealth.Splash"
+100-->/home/kariuki/StudioProjects/Final-Year-Project/app/src/main/AndroidManifest.xml:89:13-35
+101            android:exported="true" >
+101-->/home/kariuki/StudioProjects/Final-Year-Project/app/src/main/AndroidManifest.xml:90:13-36
+102            <intent-filter>
+102-->/home/kariuki/StudioProjects/Final-Year-Project/app/src/main/AndroidManifest.xml:91:13-95:29
+103                <action android:name="android.intent.action.MAIN" />
+103-->/home/kariuki/StudioProjects/Final-Year-Project/app/src/main/AndroidManifest.xml:92:17-69
+103-->/home/kariuki/StudioProjects/Final-Year-Project/app/src/main/AndroidManifest.xml:92:25-66
+104
+105                <category android:name="android.intent.category.LAUNCHER" />
+105-->/home/kariuki/StudioProjects/Final-Year-Project/app/src/main/AndroidManifest.xml:94:17-77
+105-->/home/kariuki/StudioProjects/Final-Year-Project/app/src/main/AndroidManifest.xml:94:27-74
+106            </intent-filter>
+107
+108            <meta-data
+108-->/home/kariuki/StudioProjects/Final-Year-Project/app/src/main/AndroidManifest.xml:21:13-23:36
+109                android:name="android.app.lib_name"
+109-->/home/kariuki/StudioProjects/Final-Year-Project/app/src/main/AndroidManifest.xml:22:17-52
+110                android:value="" />
+110-->/home/kariuki/StudioProjects/Final-Year-Project/app/src/main/AndroidManifest.xml:23:17-33
+111        </activity>
+112
+113        <service
+113-->[com.google.firebase:firebase-database:20.0.4] /home/kariuki/.gradle/caches/transforms-3/2a4f28dd1934774b9d5631c66a766843/transformed/firebase-database-20.0.4/AndroidManifest.xml:29:9-35:19
+114            android:name="com.google.firebase.components.ComponentDiscoveryService"
+114-->[com.google.firebase:firebase-database:20.0.4] /home/kariuki/.gradle/caches/transforms-3/2a4f28dd1934774b9d5631c66a766843/transformed/firebase-database-20.0.4/AndroidManifest.xml:30:13-84
+115            android:directBootAware="true"
+115-->[com.google.firebase:firebase-common:20.2.0] /home/kariuki/.gradle/caches/transforms-3/480b3dae7120d0220412229c8f9a6223/transformed/firebase-common-20.2.0/AndroidManifest.xml:34:13-43
+116            android:exported="false" >
+116-->[com.google.firebase:firebase-database:20.0.4] /home/kariuki/.gradle/caches/transforms-3/2a4f28dd1934774b9d5631c66a766843/transformed/firebase-database-20.0.4/AndroidManifest.xml:31:13-37
+117            <meta-data
+117-->[com.google.firebase:firebase-database:20.0.4] /home/kariuki/.gradle/caches/transforms-3/2a4f28dd1934774b9d5631c66a766843/transformed/firebase-database-20.0.4/AndroidManifest.xml:32:13-34:85
+118                android:name="com.google.firebase.components:com.google.firebase.database.DatabaseRegistrar"
+118-->[com.google.firebase:firebase-database:20.0.4] /home/kariuki/.gradle/caches/transforms-3/2a4f28dd1934774b9d5631c66a766843/transformed/firebase-database-20.0.4/AndroidManifest.xml:33:17-109
+119                android:value="com.google.firebase.components.ComponentRegistrar" />
+119-->[com.google.firebase:firebase-database:20.0.4] /home/kariuki/.gradle/caches/transforms-3/2a4f28dd1934774b9d5631c66a766843/transformed/firebase-database-20.0.4/AndroidManifest.xml:34:17-82
+120            <meta-data
+120-->[com.google.firebase:firebase-storage:20.1.0] /home/kariuki/.gradle/caches/transforms-3/79dc1955f4d9724194dd8a9809fbc5ab/transformed/firebase-storage-20.1.0/AndroidManifest.xml:32:13-34:85
+121                android:name="com.google.firebase.components:com.google.firebase.storage.StorageRegistrar"
+121-->[com.google.firebase:firebase-storage:20.1.0] /home/kariuki/.gradle/caches/transforms-3/79dc1955f4d9724194dd8a9809fbc5ab/transformed/firebase-storage-20.1.0/AndroidManifest.xml:33:17-107
+122                android:value="com.google.firebase.components.ComponentRegistrar" />
+122-->[com.google.firebase:firebase-storage:20.1.0] /home/kariuki/.gradle/caches/transforms-3/79dc1955f4d9724194dd8a9809fbc5ab/transformed/firebase-storage-20.1.0/AndroidManifest.xml:34:17-82
+123        </service>
+124
+125        <provider
+125-->[com.squareup.picasso:picasso:2.71828] /home/kariuki/.gradle/caches/transforms-3/875f3f41a57f110266fa6f71bec2d3f5/transformed/picasso-2.71828/AndroidManifest.xml:8:9-11:40
+126            android:name="com.squareup.picasso.PicassoProvider"
+126-->[com.squareup.picasso:picasso:2.71828] /home/kariuki/.gradle/caches/transforms-3/875f3f41a57f110266fa6f71bec2d3f5/transformed/picasso-2.71828/AndroidManifest.xml:9:13-64
+127            android:authorities="com.example.ehealth.com.squareup.picasso"
+127-->[com.squareup.picasso:picasso:2.71828] /home/kariuki/.gradle/caches/transforms-3/875f3f41a57f110266fa6f71bec2d3f5/transformed/picasso-2.71828/AndroidManifest.xml:10:13-72
+128            android:exported="false" />
+128-->[com.squareup.picasso:picasso:2.71828] /home/kariuki/.gradle/caches/transforms-3/875f3f41a57f110266fa6f71bec2d3f5/transformed/picasso-2.71828/AndroidManifest.xml:11:13-37
+129
+130        <activity
+130-->[com.google.android.gms:play-services-base:18.0.1] /home/kariuki/.gradle/caches/transforms-3/26b3666345201c303a3333024bb53271/transformed/play-services-base-18.0.1/AndroidManifest.xml:20:9-22:45
+131            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+131-->[com.google.android.gms:play-services-base:18.0.1] /home/kariuki/.gradle/caches/transforms-3/26b3666345201c303a3333024bb53271/transformed/play-services-base-18.0.1/AndroidManifest.xml:20:19-85
+132            android:exported="false"
+132-->[com.google.android.gms:play-services-base:18.0.1] /home/kariuki/.gradle/caches/transforms-3/26b3666345201c303a3333024bb53271/transformed/play-services-base-18.0.1/AndroidManifest.xml:22:19-43
+133            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+133-->[com.google.android.gms:play-services-base:18.0.1] /home/kariuki/.gradle/caches/transforms-3/26b3666345201c303a3333024bb53271/transformed/play-services-base-18.0.1/AndroidManifest.xml:21:19-78
+134
+135        <provider
+135-->[com.google.firebase:firebase-common:20.2.0] /home/kariuki/.gradle/caches/transforms-3/480b3dae7120d0220412229c8f9a6223/transformed/firebase-common-20.2.0/AndroidManifest.xml:25:9-30:39
+136            android:name="com.google.firebase.provider.FirebaseInitProvider"
+136-->[com.google.firebase:firebase-common:20.2.0] /home/kariuki/.gradle/caches/transforms-3/480b3dae7120d0220412229c8f9a6223/transformed/firebase-common-20.2.0/AndroidManifest.xml:26:13-77
+137            android:authorities="com.example.ehealth.firebaseinitprovider"
+137-->[com.google.firebase:firebase-common:20.2.0] /home/kariuki/.gradle/caches/transforms-3/480b3dae7120d0220412229c8f9a6223/transformed/firebase-common-20.2.0/AndroidManifest.xml:27:13-72
+138            android:directBootAware="true"
+138-->[com.google.firebase:firebase-common:20.2.0] /home/kariuki/.gradle/caches/transforms-3/480b3dae7120d0220412229c8f9a6223/transformed/firebase-common-20.2.0/AndroidManifest.xml:28:13-43
+139            android:exported="false"
+139-->[com.google.firebase:firebase-common:20.2.0] /home/kariuki/.gradle/caches/transforms-3/480b3dae7120d0220412229c8f9a6223/transformed/firebase-common-20.2.0/AndroidManifest.xml:29:13-37
+140            android:initOrder="100" />
+140-->[com.google.firebase:firebase-common:20.2.0] /home/kariuki/.gradle/caches/transforms-3/480b3dae7120d0220412229c8f9a6223/transformed/firebase-common-20.2.0/AndroidManifest.xml:30:13-36
+141
+142        <meta-data
+142-->[com.google.android.gms:play-services-basement:18.1.0] /home/kariuki/.gradle/caches/transforms-3/0ccd676f36a88f843cf47f86b0f66e38/transformed/play-services-basement-18.1.0/AndroidManifest.xml:21:9-23:69
+143            android:name="com.google.android.gms.version"
+143-->[com.google.android.gms:play-services-basement:18.1.0] /home/kariuki/.gradle/caches/transforms-3/0ccd676f36a88f843cf47f86b0f66e38/transformed/play-services-basement-18.1.0/AndroidManifest.xml:22:13-58
+144            android:value="@integer/google_play_services_version" />
+144-->[com.google.android.gms:play-services-basement:18.1.0] /home/kariuki/.gradle/caches/transforms-3/0ccd676f36a88f843cf47f86b0f66e38/transformed/play-services-basement-18.1.0/AndroidManifest.xml:23:13-66
+145
+146        <provider
+146-->[androidx.emoji2:emoji2:1.0.0] /home/kariuki/.gradle/caches/transforms-3/dd8d034f2ef3bb750af774315540fdc2/transformed/emoji2-1.0.0/AndroidManifest.xml:26:9-34:20
+147            android:name="androidx.startup.InitializationProvider"
+147-->[androidx.emoji2:emoji2:1.0.0] /home/kariuki/.gradle/caches/transforms-3/dd8d034f2ef3bb750af774315540fdc2/transformed/emoji2-1.0.0/AndroidManifest.xml:27:13-67
+148            android:authorities="com.example.ehealth.androidx-startup"
+148-->[androidx.emoji2:emoji2:1.0.0] /home/kariuki/.gradle/caches/transforms-3/dd8d034f2ef3bb750af774315540fdc2/transformed/emoji2-1.0.0/AndroidManifest.xml:28:13-68
+149            android:exported="false" >
+149-->[androidx.emoji2:emoji2:1.0.0] /home/kariuki/.gradle/caches/transforms-3/dd8d034f2ef3bb750af774315540fdc2/transformed/emoji2-1.0.0/AndroidManifest.xml:29:13-37
+150            <meta-data
+150-->[androidx.emoji2:emoji2:1.0.0] /home/kariuki/.gradle/caches/transforms-3/dd8d034f2ef3bb750af774315540fdc2/transformed/emoji2-1.0.0/AndroidManifest.xml:31:13-33:52
+151                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+151-->[androidx.emoji2:emoji2:1.0.0] /home/kariuki/.gradle/caches/transforms-3/dd8d034f2ef3bb750af774315540fdc2/transformed/emoji2-1.0.0/AndroidManifest.xml:32:17-75
+152                android:value="androidx.startup" />
+152-->[androidx.emoji2:emoji2:1.0.0] /home/kariuki/.gradle/caches/transforms-3/dd8d034f2ef3bb750af774315540fdc2/transformed/emoji2-1.0.0/AndroidManifest.xml:33:17-49
+153            <meta-data
+153-->[androidx.lifecycle:lifecycle-process:2.4.0] /home/kariuki/.gradle/caches/transforms-3/e1acb8a47af4616b7f57c12b903cf6df/transformed/lifecycle-process-2.4.0/AndroidManifest.xml:31:13-33:52
+154                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+154-->[androidx.lifecycle:lifecycle-process:2.4.0] /home/kariuki/.gradle/caches/transforms-3/e1acb8a47af4616b7f57c12b903cf6df/transformed/lifecycle-process-2.4.0/AndroidManifest.xml:32:17-78
+155                android:value="androidx.startup" />
+155-->[androidx.lifecycle:lifecycle-process:2.4.0] /home/kariuki/.gradle/caches/transforms-3/e1acb8a47af4616b7f57c12b903cf6df/transformed/lifecycle-process-2.4.0/AndroidManifest.xml:33:17-49
+156        </provider>
+157    </application>
+158
+159</manifest>

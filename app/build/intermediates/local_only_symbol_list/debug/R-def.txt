@@ -27,6 +27,8 @@ drawable train
 drawable twentyfour
 font font1
 font font2
+id activitySpinner
+id age
 id alreadyHaveAccount
 id autophagy
 id bmiContinue
@@ -43,6 +45,7 @@ id dontHaveAccount
 id email
 id explain
 id fast
+id genderSpinner
 id goBack
 id greet
 id greetings

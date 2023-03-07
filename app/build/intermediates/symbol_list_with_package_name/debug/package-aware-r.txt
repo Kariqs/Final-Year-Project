@@ -2631,10 +2631,12 @@ id action_mode_bar_stub
 id action_mode_close_button
 id action_text
 id actions
+id activitySpinner
 id activity_chooser_view_content
 id add
 id adjust_height
 id adjust_width
+id age
 id alertTitle
 id aligned
 id all
@@ -2774,6 +2776,7 @@ id floating
 id forever
 id fragment_container_view_tag
 id frost
+id genderSpinner
 id ghost_view
 id ghost_view_holder
 id glide_custom_view_target_tag

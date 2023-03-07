@@ -15,12 +15,7 @@ import com.google.firebase.database.FirebaseDatabase;
 import java.util.Objects;
 
 public class Signup extends AppCompatActivity {
-    TextInputLayout Name,Email, PhoneNumber, Password;
-    Button Go;
-    TextView AlreadyHaveAccount;
-
-    FirebaseDatabase firebaseDatabase;
-    DatabaseReference databaseReference;
+    private TextInputLayout Name,Email, PhoneNumber, Password;
 
 
     @Override
@@ -32,11 +27,11 @@ public class Signup extends AppCompatActivity {
         Email = findViewById(R.id.signUpEmail);
         PhoneNumber = findViewById(R.id.signUpPhoneNo);
         Password = findViewById(R.id.signUpPassword);
-        Go = findViewById(R.id.signUpButton);
-        AlreadyHaveAccount = findViewById(R.id.alreadyHaveAccount);
+        Button go = findViewById(R.id.signUpButton);
+        TextView alreadyHaveAccount = findViewById(R.id.alreadyHaveAccount);
 
 
-        Go.setOnClickListener(view -> {
+        go.setOnClickListener(view -> {
             if (!validateEmail() | !validatePhoneNumber() | !validatePassword() | !validateName()) {
                 return;
             } else {
@@ -45,7 +40,7 @@ public class Signup extends AppCompatActivity {
         });
 
 
-        AlreadyHaveAccount.setOnClickListener(view -> {
+        alreadyHaveAccount.setOnClickListener(view -> {
             Intent i = new Intent(Signup.this, Login.class);
             startActivity(i);
             finish();
@@ -106,8 +101,8 @@ public class Signup extends AppCompatActivity {
         String PHONENUMBER = Objects.requireNonNull(PhoneNumber.getEditText()).getText().toString();
         String PASSWORD = Objects.requireNonNull(Password.getEditText()).getText().toString();
 
-        firebaseDatabase = FirebaseDatabase.getInstance();
-        databaseReference = firebaseDatabase.getReference("users");
+        FirebaseDatabase firebaseDatabase = FirebaseDatabase.getInstance();
+        DatabaseReference databaseReference = firebaseDatabase.getReference("users");
 
         userHelperClass userhelper = new userHelperClass(NAME, EMAIL, PHONENUMBER, PASSWORD);
 

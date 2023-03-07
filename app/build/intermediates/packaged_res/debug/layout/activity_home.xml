@@ -37,6 +37,7 @@
 involves several practises-Fasting,Working out and Dieting. You can select where you need to be guided below.
 The results of others can also motivate you to work on yourself. Click Results to see how others have gone with weight loss."
         android:textColor="@color/black"
+        android:scrollbarAlwaysDrawVerticalTrack="false"
         android:textSize="20sp" />
 
     <LinearLayout

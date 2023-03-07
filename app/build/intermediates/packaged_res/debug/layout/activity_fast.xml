@@ -1,14 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#DCDBD8"
-    android:orientation="vertical"
     android:padding="20dp"
     tools:context=".Fast">
-
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
     <TextView
         android:id="@+id/explain"
         android:layout_width="match_parent"
@@ -212,5 +214,5 @@ For 20/4 plan, you fast for 20hrs and eat within 4hrs window. You can also fast 
 
     </LinearLayout>
 
-
-</LinearLayout>
+    </LinearLayout>
+</ScrollView>

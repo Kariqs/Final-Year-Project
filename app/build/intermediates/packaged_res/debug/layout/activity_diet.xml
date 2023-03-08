@@ -5,78 +5,115 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:padding="20dp"
+    android:padding="10dp"
     tools:context=".Diet">
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
         android:fontFamily="@font/font2"
-        android:text="DAILY CALORIE INTAKE CALCULATOR"
+        android:text="LETS CALCULATE YOUR CALORIES NEED PER DAY."
         android:textAlignment="center"
         android:textColor="@color/black"
         android:textSize="20dp" />
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/age"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp">
 
         <com.google.android.material.textfield.TextInputEditText
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:fontFamily="@font/font2"
-            android:hint="What is your age?"
+            android:hint="Enter you age."
             android:inputType="number"
             android:textColor="@color/black" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/height"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp">
 
         <com.google.android.material.textfield.TextInputEditText
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:fontFamily="@font/font2"
-            android:hint="What is your height in cm?"
-            android:inputType="number"
+            android:hint="Enter your height in Cm."
+            android:inputType="numberDecimal"
             android:textColor="@color/black" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/weight"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp">
 
         <com.google.android.material.textfield.TextInputEditText
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:fontFamily="@font/font2"
-            android:hint="What is your weight in Kgs?"
-            android:inputType="number"
+            android:hint="Enter your weight in Kgs."
+            android:inputType="numberDecimal"
             android:textColor="@color/black" />
     </com.google.android.material.textfield.TextInputLayout>
+
     <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/genderSpinner"
+        android:id="@+id/gender"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-        <Spinner
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp">
+
+        <com.google.android.material.textfield.TextInputEditText
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            />
+            android:fontFamily="@font/font2"
+            android:hint="Enter your gender(Male or Female)."
+            android:inputType="textCapCharacters"
+            android:textAllCaps="true"
+            android:textColor="@color/black" />
     </com.google.android.material.textfield.TextInputLayout>
-    <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/activitySpinner"
+
+    <TextView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-        <Spinner
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/font2"
+        android:text="For activity level, if you are moderately active input 1.5, if you are very active input 1.7 and if you are extremely active input 2.0. "
+        android:textColor="@color/black"
+        android:textSize="15dp" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/activity"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp">
+
+        <com.google.android.material.textfield.TextInputEditText
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            />
+            android:fontFamily="@font/font2"
+            android:hint="What is your activity level?"
+            android:inputType="numberDecimal"
+            android:textColor="@color/black" />
     </com.google.android.material.textfield.TextInputLayout>
+
     <Button
+        android:id="@+id/calculate"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/font2"
+        android:text="GO"
+        android:textSize="20dp" />
 </LinearLayout>

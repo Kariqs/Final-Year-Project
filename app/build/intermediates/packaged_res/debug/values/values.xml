@@ -1,5 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <string-array name="Activity">
+        <item>Activity Level</item>
+        <item>Light Activity</item>
+        <item>Moderate Activity</item>
+        <item>Very Active</item>
+        <item>Extremely Active</item>
+    </string-array>
+    <string-array name="Gender">
+        <item>Gender</item>
+        <item>Male</item>
+        <item>Female</item>
+    </string-array>
     <color name="black">#FF000000</color>
     <color name="purple_200">#008577</color>
     <color name="purple_500">#008577</color>

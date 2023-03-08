@@ -80,6 +80,10 @@
         "source": "com.example.ehealth.app-main-32:/drawable/placeholder.xml"
     },
     {
+        "merged": "com.example.ehealth.app-merged_res-30:/layout_activity_diet_home.xml.flat",
+        "source": "com.example.ehealth.app-main-32:/layout/activity_diet_home.xml"
+    },
+    {
         "merged": "com.example.ehealth.app-merged_res-30:/layout_activity_signup.xml.flat",
         "source": "com.example.ehealth.app-main-32:/layout/activity_signup.xml"
     },

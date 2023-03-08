@@ -1,5 +1,7 @@
 R_DEF: Internal format may change without notice
 local
+array Activity
+array Gender
 color black
 color purple_200
 color purple_500
@@ -27,25 +29,27 @@ drawable train
 drawable twentyfour
 font font1
 font font2
-id activitySpinner
+id activity
 id age
 id alreadyHaveAccount
 id autophagy
 id bmiContinue
 id bmiDescription
 id bmiLayout
+id calculate
 id caption
 id checkBmi
 id checkLayout
 id countDownTime
 id description
 id diet
+id dietExplanation
 id display
 id dontHaveAccount
 id email
 id explain
 id fast
-id genderSpinner
+id gender
 id goBack
 id greet
 id greetings
@@ -77,6 +81,7 @@ id workout
 id workoutPlan
 layout activity_check_bmi
 layout activity_diet
+layout activity_diet_home
 layout activity_fast
 layout activity_home
 layout activity_login

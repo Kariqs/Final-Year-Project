@@ -8,8 +8,12 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.LinearLayout;
 import android.widget.TextView;
+import android.widget.Toast;
+
 
 import com.google.android.material.textfield.TextInputLayout;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
 
 public class CheckBmi extends AppCompatActivity {
 
@@ -44,9 +48,8 @@ public class CheckBmi extends AppCompatActivity {
         Continue.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(CheckBmi.this,Home.class);
-                startActivity(intent);
-                finish();
+                saveData();
+
             }
         });
 
@@ -83,5 +86,37 @@ public class CheckBmi extends AppCompatActivity {
                     "do workouts to burn fats so that you can go back to normal weight.");
         }
 
+    }
+    private void saveData(){
+        double getWeight = Double.parseDouble(Weight.getEditText().getText().toString());
+        double getHeight = Double.parseDouble(Height.getEditText().getText().toString());
+        double getBMI = getWeight / (getHeight * getHeight);
+
+        String NAME = getIntent().getStringExtra("keyname");
+        String EMAIL = getIntent().getStringExtra("keyemail");
+        String PHONE = getIntent().getStringExtra("keyphone");
+        String PASSWORD = getIntent().getStringExtra("keypassword");
+        String WEIGHT = Double.toString(getWeight);
+        String HEIGHT = Double.toString(getHeight);
+        String BMI = Double.toString(getBMI);
+
+
+        FirebaseDatabase firebaseDatabase = FirebaseDatabase.getInstance();
+        DatabaseReference databaseReference = firebaseDatabase.getReference("users");
+
+        userHelper userhelper = new userHelper(NAME,EMAIL,PHONE,PASSWORD,WEIGHT,HEIGHT,BMI);
+        databaseReference.child(PHONE).setValue(userhelper);
+        Toast.makeText(this, "Details saved successfully.", Toast.LENGTH_SHORT).show();
+
+        Intent intent = new Intent(CheckBmi.this,Home.class);
+        intent.putExtra("name",NAME);
+        intent.putExtra("email",EMAIL);
+        intent.putExtra("phone",PHONE);
+        intent.putExtra("password",PASSWORD);
+        intent.putExtra("weight",WEIGHT);
+        intent.putExtra("height",HEIGHT);
+        intent.putExtra("bmi",BMI);
+        startActivity(intent);
+        finish();
     }
 }

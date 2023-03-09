@@ -101,19 +101,14 @@ public class Signup extends AppCompatActivity {
         String PHONENUMBER = Objects.requireNonNull(PhoneNumber.getEditText()).getText().toString();
         String PASSWORD = Objects.requireNonNull(Password.getEditText()).getText().toString();
 
-        FirebaseDatabase firebaseDatabase = FirebaseDatabase.getInstance();
-        DatabaseReference databaseReference = firebaseDatabase.getReference("users");
-
-        userHelperClass userhelper = new userHelperClass(NAME, EMAIL, PHONENUMBER, PASSWORD);
-
-        databaseReference.child(PHONENUMBER).setValue(userhelper);
-
-        Toast.makeText(Signup.this, "SignUp was successful.", Toast.LENGTH_SHORT).show();
         Email.getEditText().setText("");
         PhoneNumber.getEditText().setText("");
         Password.getEditText().setText("");
         Intent i = new Intent(Signup.this, CheckBmi.class);
         i.putExtra("keyname",NAME);
+        i.putExtra("keyemail",EMAIL);
+        i.putExtra("keyphone",PHONENUMBER);
+        i.putExtra("keypassword",PASSWORD);
         startActivity(i);
         finish();
     }

@@ -17,6 +17,7 @@ public class DietHome extends AppCompatActivity {
         Explanation = findViewById(R.id.dietExplanation);
         int CALORIES_NEEDED = Integer.parseInt(getIntent().getStringExtra("calories"));
 
+
         Explanation.setText("You need "+CALORIES_NEEDED+" calories per day.");
     }
 

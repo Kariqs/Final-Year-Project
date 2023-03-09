@@ -30,12 +30,20 @@ CardView Fasting,Training,Dieting,Results;
         Dieting = findViewById(R.id.diet);
         Results = findViewById(R.id.results);
 
+        String Name = getIntent().getStringExtra("name");
+        String Email = getIntent().getStringExtra("email");
+        String Phone = getIntent().getStringExtra("phone");
+        String Password = getIntent().getStringExtra("password");
+        String Weight = getIntent().getStringExtra("weight");
+        String Height = getIntent().getStringExtra("height");
+        String Bmi = getIntent().getStringExtra("bmi");
+
         if (now().isBefore(LocalTime.of(12,00))){
-            Greetings.setText("Good Morning, Welcome.");
+            Greetings.setText("Good Morning "+Name+", Welcome.");
         }else if (now().isAfter(LocalTime.of(12,00)) && now().isBefore(LocalTime.of(16,00))){
-            Greetings.setText("Good Afternoon, Welcome");
+            Greetings.setText("Good Afternoon "+Name+", Welcome");
         }else if (now().isAfter(LocalTime.of(16,00))){
-            Greetings.setText("Good Evening, Welcome.");
+            Greetings.setText("Good Evening "+Name+", Welcome.");
         }
 
         Fasting.setOnClickListener(new View.OnClickListener() {
@@ -63,6 +71,15 @@ CardView Fasting,Training,Dieting,Results;
             @Override
             public void onClick(View view) {
                 Intent i = new Intent(Home.this, com.example.ehealth.Results.class);
+
+                i.putExtra("mname",Name);
+                i.putExtra("memail",Email);
+                i.putExtra("mphone",Phone);
+                i.putExtra("mpassword",Password);
+                i.putExtra("mweight",Weight);
+                i.putExtra("mheight",Height);
+                i.putExtra("mbmi",Bmi);
+
                 startActivity(i);
             }
         });

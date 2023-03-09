@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content"
+    android:layout_height="match_parent"
     android:background="#DCDBD8"
     android:padding="15dp"
     tools:context=".Home">
@@ -181,7 +181,7 @@ The results of others can also motivate you to work on yourself. Click Results t
                         android:layout_height="wrap_content"
                         android:fontFamily="@font/font1"
                         android:padding="5dp"
-                        android:text="RESULTS"
+                        android:text="PROGRESS"
                         android:textAlignment="center"
                         android:textColor="@color/black"
                         android:textSize="30sp" />

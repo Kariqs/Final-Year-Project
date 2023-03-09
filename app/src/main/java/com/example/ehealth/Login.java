@@ -108,7 +108,7 @@ public class Login extends AppCompatActivity {
         String enteredPassword = Password.getEditText().getText().toString();
 
         DatabaseReference databaseReference = FirebaseDatabase.getInstance().getReference("users");
-        Query checkUser = databaseReference.orderByChild("phoneNumber").equalTo(enteredEmail);
+        Query checkUser = databaseReference.orderByChild("phone").equalTo(enteredEmail);
         checkUser.addListenerForSingleValueEvent(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot snapshot) {

@@ -1,7 +1,23 @@
 [
     {
+        "merged": "com.example.ehealth.app-merged_res-30:/drawable_fast.jpg.flat",
+        "source": "com.example.ehealth.app-main-32:/drawable/fast.jpg"
+    },
+    {
+        "merged": "com.example.ehealth.app-merged_res-30:/layout_workoutplan_item.xml.flat",
+        "source": "com.example.ehealth.app-main-32:/layout/workoutplan_item.xml"
+    },
+    {
         "merged": "com.example.ehealth.app-merged_res-30:/drawable_ic_launcher_background.xml.flat",
         "source": "com.example.ehealth.app-main-32:/drawable/ic_launcher_background.xml"
+    },
+    {
+        "merged": "com.example.ehealth.app-merged_res-30:/layout_activity_workout.xml.flat",
+        "source": "com.example.ehealth.app-main-32:/layout/activity_workout.xml"
+    },
+    {
+        "merged": "com.example.ehealth.app-merged_res-30:/drawable_logo.jpg.flat",
+        "source": "com.example.ehealth.app-main-32:/drawable/logo.jpg"
     },
     {
         "merged": "com.example.ehealth.app-merged_res-30:/mipmap-mdpi_ic_launcher_round.webp.flat",
@@ -12,6 +28,10 @@
         "source": "com.example.ehealth.app-main-32:/layout/activity_fast.xml"
     },
     {
+        "merged": "com.example.ehealth.app-merged_res-30:/drawable-anydpi-v24_ic_launcher_foreground.xml.flat",
+        "source": "com.example.ehealth.app-pngs-25:/drawable-anydpi-v24/ic_launcher_foreground.xml"
+    },
+    {
         "merged": "com.example.ehealth.app-merged_res-30:/drawable_omad.jpg.flat",
         "source": "com.example.ehealth.app-main-32:/drawable/omad.jpg"
     },
@@ -20,20 +40,24 @@
         "source": "com.example.ehealth.app-main-32:/layout/activity_results.xml"
     },
     {
+        "merged": "com.example.ehealth.app-merged_res-30:/font_font2.ttf.flat",
+        "source": "com.example.ehealth.app-main-32:/font/font2.ttf"
+    },
+    {
         "merged": "com.example.ehealth.app-merged_res-30:/mipmap-xxhdpi_ic_launcher_round.webp.flat",
         "source": "com.example.ehealth.app-main-32:/mipmap-xxhdpi/ic_launcher_round.webp"
     },
     {
-        "merged": "com.example.ehealth.app-merged_res-30:/layout_activity_upload_results.xml.flat",
-        "source": "com.example.ehealth.app-main-32:/layout/activity_upload_results.xml"
+        "merged": "com.example.ehealth.app-merged_res-30:/font_font1.ttf.flat",
+        "source": "com.example.ehealth.app-main-32:/font/font1.ttf"
     },
     {
         "merged": "com.example.ehealth.app-merged_res-30:/layout_results_item.xml.flat",
         "source": "com.example.ehealth.app-main-32:/layout/results_item.xml"
     },
     {
-        "merged": "com.example.ehealth.app-merged_res-30:/font_font1.ttf.flat",
-        "source": "com.example.ehealth.app-main-32:/font/font1.ttf"
+        "merged": "com.example.ehealth.app-merged_res-30:/drawable_sixteeneight.png.flat",
+        "source": "com.example.ehealth.app-main-32:/drawable/sixteeneight.png"
     },
     {
         "merged": "com.example.ehealth.app-merged_res-30:/drawable_deadlift.jpg.flat",
@@ -60,6 +84,10 @@
         "source": "com.example.ehealth.app-main-32:/layout/activity_home.xml"
     },
     {
+        "merged": "com.example.ehealth.app-merged_res-30:/layout_workout_item.xml.flat",
+        "source": "com.example.ehealth.app-main-32:/layout/workout_item.xml"
+    },
+    {
         "merged": "com.example.ehealth.app-merged_res-30:/mipmap-hdpi_ic_launcher.webp.flat",
         "source": "com.example.ehealth.app-main-32:/mipmap-hdpi/ic_launcher.webp"
     },
@@ -68,68 +96,20 @@
         "source": "com.example.ehealth.app-main-32:/drawable/twentyfour.jpeg"
     },
     {
-        "merged": "com.example.ehealth.app-merged_res-30:/drawable_results.jpg.flat",
-        "source": "com.example.ehealth.app-main-32:/drawable/results.jpg"
-    },
-    {
-        "merged": "com.example.ehealth.app-merged_res-30:/drawable_imf.png.flat",
-        "source": "com.example.ehealth.app-main-32:/drawable/imf.png"
-    },
-    {
-        "merged": "com.example.ehealth.app-merged_res-30:/drawable_placeholder.xml.flat",
-        "source": "com.example.ehealth.app-main-32:/drawable/placeholder.xml"
-    },
-    {
-        "merged": "com.example.ehealth.app-merged_res-30:/layout_activity_diet_home.xml.flat",
-        "source": "com.example.ehealth.app-main-32:/layout/activity_diet_home.xml"
-    },
-    {
-        "merged": "com.example.ehealth.app-merged_res-30:/layout_activity_signup.xml.flat",
-        "source": "com.example.ehealth.app-main-32:/layout/activity_signup.xml"
-    },
-    {
-        "merged": "com.example.ehealth.app-merged_res-30:/mipmap-xhdpi_ic_launcher_round.webp.flat",
-        "source": "com.example.ehealth.app-main-32:/mipmap-xhdpi/ic_launcher_round.webp"
-    },
-    {
-        "merged": "com.example.ehealth.app-merged_res-30:/drawable_fast.jpg.flat",
-        "source": "com.example.ehealth.app-main-32:/drawable/fast.jpg"
-    },
-    {
-        "merged": "com.example.ehealth.app-merged_res-30:/layout_workoutplan_item.xml.flat",
-        "source": "com.example.ehealth.app-main-32:/layout/workoutplan_item.xml"
-    },
-    {
-        "merged": "com.example.ehealth.app-merged_res-30:/layout_activity_workout.xml.flat",
-        "source": "com.example.ehealth.app-main-32:/layout/activity_workout.xml"
-    },
-    {
-        "merged": "com.example.ehealth.app-merged_res-30:/drawable_logo.jpg.flat",
-        "source": "com.example.ehealth.app-main-32:/drawable/logo.jpg"
-    },
-    {
-        "merged": "com.example.ehealth.app-merged_res-30:/drawable-anydpi-v24_ic_launcher_foreground.xml.flat",
-        "source": "com.example.ehealth.app-pngs-25:/drawable-anydpi-v24/ic_launcher_foreground.xml"
-    },
-    {
-        "merged": "com.example.ehealth.app-merged_res-30:/font_font2.ttf.flat",
-        "source": "com.example.ehealth.app-main-32:/font/font2.ttf"
-    },
-    {
-        "merged": "com.example.ehealth.app-merged_res-30:/drawable_sixteeneight.png.flat",
-        "source": "com.example.ehealth.app-main-32:/drawable/sixteeneight.png"
-    },
-    {
-        "merged": "com.example.ehealth.app-merged_res-30:/layout_workout_item.xml.flat",
-        "source": "com.example.ehealth.app-main-32:/layout/workout_item.xml"
-    },
-    {
         "merged": "com.example.ehealth.app-merged_res-30:/drawable_overhead_press.png.flat",
         "source": "com.example.ehealth.app-main-32:/drawable/overhead_press.png"
     },
     {
         "merged": "com.example.ehealth.app-merged_res-30:/layout_activity_splash.xml.flat",
         "source": "com.example.ehealth.app-main-32:/layout/activity_splash.xml"
+    },
+    {
+        "merged": "com.example.ehealth.app-merged_res-30:/drawable_results.jpg.flat",
+        "source": "com.example.ehealth.app-main-32:/drawable/results.jpg"
+    },
+    {
+        "merged": "com.example.ehealth.app-merged_res-30:/drawable_imf.png.flat",
+        "source": "com.example.ehealth.app-main-32:/drawable/imf.png"
     },
     {
         "merged": "com.example.ehealth.app-merged_res-30:/drawable_benchpress.jpg.flat",
@@ -168,8 +148,16 @@
         "source": "com.example.ehealth.app-main-32:/xml/backup_rules.xml"
     },
     {
+        "merged": "com.example.ehealth.app-merged_res-30:/layout_activity_diet_home.xml.flat",
+        "source": "com.example.ehealth.app-main-32:/layout/activity_diet_home.xml"
+    },
+    {
         "merged": "com.example.ehealth.app-merged_res-30:/layout_activity_login.xml.flat",
         "source": "com.example.ehealth.app-main-32:/layout/activity_login.xml"
+    },
+    {
+        "merged": "com.example.ehealth.app-merged_res-30:/layout_activity_signup.xml.flat",
+        "source": "com.example.ehealth.app-main-32:/layout/activity_signup.xml"
     },
     {
         "merged": "com.example.ehealth.app-merged_res-30:/layout_activity_diet.xml.flat",
@@ -186,6 +174,10 @@
     {
         "merged": "com.example.ehealth.app-merged_res-30:/drawable_lunge.png.flat",
         "source": "com.example.ehealth.app-main-32:/drawable/lunge.png"
+    },
+    {
+        "merged": "com.example.ehealth.app-merged_res-30:/mipmap-xhdpi_ic_launcher_round.webp.flat",
+        "source": "com.example.ehealth.app-main-32:/mipmap-xhdpi/ic_launcher_round.webp"
     },
     {
         "merged": "com.example.ehealth.app-merged_res-30:/layout_activity_check_bmi.xml.flat",

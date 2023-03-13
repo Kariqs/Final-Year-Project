@@ -64,20 +64,20 @@
         "source": "/home/kariuki/.gradle/daemon/7.4/com.example.ehealth.app-main-32:/drawable/squat.jpg"
     },
     {
+        "merged": "com.example.ehealth.app-merged_res-30:/layout_activity_diet_home.xml.flat",
+        "source": "com.example.ehealth.app-main-32:/layout/activity_diet_home.xml"
+    },
+    {
         "merged": "/home/kariuki/.gradle/daemon/7.4/com.example.ehealth.app-merged_res-30:/layout_activity_splash.xml.flat",
         "source": "/home/kariuki/.gradle/daemon/7.4/com.example.ehealth.app-main-32:/layout/activity_splash.xml"
     },
     {
-        "merged": "com.example.ehealth.app-merged_res-30:/layout_diet_item.xml.flat",
-        "source": "com.example.ehealth.app-main-32:/layout/diet_item.xml"
+        "merged": "/home/kariuki/.gradle/daemon/7.4/com.example.ehealth.app-merged_res-30:/layout_activity_diet_home.xml.flat",
+        "source": "/home/kariuki/.gradle/daemon/7.4/com.example.ehealth.app-main-32:/layout/activity_diet_home.xml"
     },
     {
         "merged": "/home/kariuki/.gradle/daemon/7.4/com.example.ehealth.app-merged_res-30:/drawable_imf.png.flat",
         "source": "/home/kariuki/.gradle/daemon/7.4/com.example.ehealth.app-main-32:/drawable/imf.png"
-    },
-    {
-        "merged": "/home/kariuki/.gradle/daemon/7.4/com.example.ehealth.app-merged_res-30:/layout_activity_diet_home.xml.flat",
-        "source": "/home/kariuki/.gradle/daemon/7.4/com.example.ehealth.app-main-32:/layout/activity_diet_home.xml"
     },
     {
         "merged": "/home/kariuki/.gradle/daemon/7.4/com.example.ehealth.app-merged_res-30:/mipmap-xhdpi_ic_launcher_round.webp.flat",
@@ -124,12 +124,12 @@
         "source": "/home/kariuki/.gradle/daemon/7.4/com.example.ehealth.app-main-32:/layout/activity_diet.xml"
     },
     {
-        "merged": "/home/kariuki/.gradle/daemon/7.4/com.example.ehealth.app-merged_res-30:/layout_activity_fast.xml.flat",
-        "source": "/home/kariuki/.gradle/daemon/7.4/com.example.ehealth.app-main-32:/layout/activity_fast.xml"
-    },
-    {
         "merged": "/home/kariuki/.gradle/daemon/7.4/com.example.ehealth.app-merged_res-30:/layout_diet_item.xml.flat",
         "source": "/home/kariuki/.gradle/daemon/7.4/com.example.ehealth.app-main-32:/layout/diet_item.xml"
+    },
+    {
+        "merged": "/home/kariuki/.gradle/daemon/7.4/com.example.ehealth.app-merged_res-30:/layout_activity_fast.xml.flat",
+        "source": "/home/kariuki/.gradle/daemon/7.4/com.example.ehealth.app-main-32:/layout/activity_fast.xml"
     },
     {
         "merged": "/home/kariuki/.gradle/daemon/7.4/com.example.ehealth.app-merged_res-30:/font_font2.ttf.flat",

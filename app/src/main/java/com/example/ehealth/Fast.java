@@ -1,5 +1,8 @@
 package com.example.ehealth;
 
+import android.app.NotificationChannel;
+import android.app.NotificationManager;
+import android.os.Build;
 import android.os.Bundle;
 import android.os.CountDownTimer;
 import android.widget.Button;
@@ -8,6 +11,8 @@ import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.cardview.widget.CardView;
+import androidx.core.app.NotificationCompat;
+import androidx.core.app.NotificationManagerCompat;
 
 import java.util.Locale;
 
@@ -31,6 +36,12 @@ public class Fast extends AppCompatActivity {
         Omad = findViewById(R.id.omad);
         TwentyFour = findViewById(R.id.twentyFour);
         Autophagy = findViewById(R.id.autophagy);
+
+        if (Build.VERSION.SDK_INT>=Build.VERSION_CODES.O){
+            NotificationChannel channel = new NotificationChannel("Break Fast","Break Fast", NotificationManager.IMPORTANCE_DEFAULT);
+            NotificationManager manager = getSystemService(NotificationManager.class);
+            manager.createNotificationChannel(channel);
+        }
 
         StartEnd.setOnClickListener(view -> {
             String time = Countdown.getText().toString();
@@ -100,6 +111,7 @@ public class Fast extends AppCompatActivity {
         @Override
         public void onFinish() {
             countDownTimer.cancel();
+            notifyFastIsOver();
         }
     };}
     public void updateCountDownText() {
@@ -114,5 +126,16 @@ public class Fast extends AppCompatActivity {
         Countdown.setText(timeLeftFormated);
 
 
+    }
+
+    public void notifyFastIsOver(){
+        NotificationCompat.Builder builder = new NotificationCompat.Builder(getApplicationContext(),"Break Fast");
+        builder.setContentTitle("eHealth Fast Ended");
+        builder.setContentText("CONGRATULATIONS! You have ended your fast.");
+        builder.setSmallIcon(R.drawable.logo);
+        builder.setAutoCancel(true);
+
+        NotificationManagerCompat managerCompat = NotificationManagerCompat.from(getApplicationContext());
+        managerCompat.notify(1,builder.build());
     }
 }

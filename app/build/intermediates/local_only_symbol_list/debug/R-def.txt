@@ -1,7 +1,5 @@
 R_DEF: Internal format may change without notice
 local
-array Activity
-array Gender
 color black
 color purple_200
 color purple_500
@@ -54,6 +52,8 @@ id height
 id image
 id login
 id name
+id nutrient_description
+id nutrient_name
 id omad
 id password
 id plan
@@ -68,10 +68,10 @@ id signUpPhoneNo
 id sixteenEight
 id startEnd
 id twentyFour
-id uploadResult
 id user_bmi
 id user_email
 id user_height
+id user_logout
 id user_name
 id user_password
 id user_phone
@@ -90,7 +90,7 @@ layout activity_signup
 layout activity_splash
 layout activity_workout
 layout activity_workout_plan
-layout results_item
+layout diet_item
 layout workout_item
 layout workoutplan_item
 mipmap ic_launcher

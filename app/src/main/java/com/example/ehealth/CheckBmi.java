@@ -43,13 +43,19 @@ public class CheckBmi extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 checkBmi();
+
             }
         });
         Continue.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                saveData();
 
+                if (!validateWeight()|!validateHeight()){
+                    return;
+                }else {
+                    saveData();
+                    finish();
+                }
             }
         });
 
@@ -108,15 +114,32 @@ public class CheckBmi extends AppCompatActivity {
         databaseReference.child(PHONE).setValue(userhelper);
         Toast.makeText(this, "Details saved successfully.", Toast.LENGTH_SHORT).show();
 
-        Intent intent = new Intent(CheckBmi.this,Home.class);
-        intent.putExtra("name",NAME);
-        intent.putExtra("email",EMAIL);
-        intent.putExtra("phone",PHONE);
-        intent.putExtra("password",PASSWORD);
-        intent.putExtra("weight",WEIGHT);
-        intent.putExtra("height",HEIGHT);
-        intent.putExtra("bmi",BMI);
+        Intent intent = new Intent(CheckBmi.this,Login.class);
+        //intent.putExtra("name",NAME);
         startActivity(intent);
         finish();
     }
-}
+
+    private boolean validateWeight() {
+        String val = Weight.getEditText().getText().toString();
+        if (val.isEmpty()) {
+            Weight.setError("Field cannot be empty");
+            return false;
+        } else {
+            Weight.setError(null);
+            Weight.setErrorEnabled(false);
+            return true;
+        }
+    }
+    private boolean validateHeight() {
+        String val = Height.getEditText().getText().toString();
+        if (val.isEmpty()) {
+            Height.setError("Field cannot be empty");
+            return false;
+        } else{
+                Height.setError(null);
+                Height.setErrorEnabled(false);
+                return true;
+            }
+        }
+    }

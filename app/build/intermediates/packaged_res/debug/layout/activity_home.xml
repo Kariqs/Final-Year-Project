@@ -181,7 +181,7 @@ The results of others can also motivate you to work on yourself. Click Results t
                         android:layout_height="wrap_content"
                         android:fontFamily="@font/font1"
                         android:padding="5dp"
-                        android:text="PROGRESS"
+                        android:text="MY ACCOUNT"
                         android:textAlignment="center"
                         android:textColor="@color/black"
                         android:textSize="30sp" />

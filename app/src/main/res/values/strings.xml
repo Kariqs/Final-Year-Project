@@ -2,17 +2,21 @@
     <string name="app_name">eHealth</string>
     <!-- TODO: Remove or change this placeholder text -->
     <!--names of the workouts-->
-    <string-array name="Gender">
-        <item>Gender</item>
-        <item>Male</item>
-        <item>Female</item>
-    </string-array>
-
-    <string-array name="Activity">
-        <item>Activity Level</item>
-        <item>Light Activity</item>
-        <item>Moderate Activity</item>
-        <item>Very Active</item>
-        <item>Extremely Active</item>
-    </string-array>
+<!--    <string name="Proteins">-->
+<!--        Proteins are large, complex molecules made up of amino acids, which are linked together in a long chain. They are one of the three macronutrients that are essential to human health, along with carbohydrates and fats.-->
+<!--        Proteins are involved in many important functions in the body, such as building and repairing tissues, making enzymes and hormones, transporting molecules, and maintaining the body's fluid balance..-->
+<!--        Proteins can be found in a variety of foods, such as meat, fish, eggs, beans, and nuts. They are essential for growth, development, and overall health, and are an important part of a balanced diet.-->
+<!--    </string>-->
+<!--    <string name="Carbohydrates">-->
+<!--        Carbohydrates are one of the three main macronutrients that the body needs to function properly, along with proteins and fats. They are found in many foods such as grains, fruits, vegetables, and dairy products.-->
+<!--        Carbohydrates can be classified as simple or complex. Simple carbohydrates, also known as sugars, are broken down quickly by the body and include glucose, fructose, and lactose. Complex carbohydrates, such as sweet potatoes, pumpkins,arrow roots and cassava, take longer to digest and provide more sustained energy.-->
+<!--        We are supposed to avoid simple carbs as much as possible and take much of complex carbohydrates.-->
+<!--        Carbohydrates are a primary source of energy for the body and play an important role in maintaining blood glucose levels, which is especially important for brain function. They also have a variety of other important functions, such as helping with digestion, supporting the immune system, and promoting healthy bowel movements. However, it is important to consume carbohydrates in moderation, as consuming too much can lead to weight gain and other health issues.-->
+<!--    </string>-->
+<!--    <string name="Fats">-->
+<!--        Fats are a type of nutrient that provide the body with a source of energy.-->
+<!--        They are also essential for the proper functioning of many body processes, such as the absorption of certain vitamins and the production of hormones. Fats are made up of fatty acids, which can be saturated or unsaturated.-->
+<!--        Saturated fats are typically solid at room temperature and are found in animal products such as meat and dairy, as well as in some plant-based oils like coconut oil. Unsaturated fats are typically liquid at room temperature and are found in plant-based oils such as olive oil, avocado oil, and canola oil, as well as in nuts, seeds, and fatty fish.-->
+<!--        Some types of unsaturated fats, such as omega-3 fatty acids, are considered to be particularly beneficial for heart health. However, it is important to consume fats in moderation, as consuming too much can lead to weight gain and other health problems.-->
+<!--    </string>-->
 </resources>

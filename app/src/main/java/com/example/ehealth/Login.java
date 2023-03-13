@@ -120,15 +120,16 @@ public class Login extends AppCompatActivity {
                     String passwordFromDatabase = snapshot.child(enteredEmail).child("password").getValue(String.class);
                     if (passwordFromDatabase.equals(enteredPassword)) {
 
-
                         SharedPreferences sharedPreferences = getSharedPreferences(Login.PREFS_NAME, 0);
                         SharedPreferences.Editor editor = sharedPreferences.edit();
-
+                        editor.putString("PhoneNumber",enteredEmail);
+                        editor.apply();
                         editor.putBoolean("hasLoggedIn", true);
                         editor.commit();
 
 
                         Intent intent = new Intent(Login.this, Home.class);
+                        intent.putExtra("phone", enteredEmail);
                         startActivity(intent);
                         finish();
                         clear();

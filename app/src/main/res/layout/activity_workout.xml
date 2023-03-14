@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:background="#DCDBD8"
     android:orientation="vertical"
-    android:padding="2dp"
+    android:padding="10dp"
     tools:context=".Workout">
 
     <TextView
@@ -15,13 +15,14 @@
         android:layout_height="wrap_content"
         android:textAlignment="center"
         android:textSize="30dp"
-        android:background="@color/black"
+        android:background="#008577"
         android:textColor="@color/white"
-        android:text="VIEW WORKOUT PLANS"
+        android:text="VIEW MY WORKOUT PLAN"
         android:fontFamily="@font/font2"
         />
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recyclerView"
+        android:layout_marginTop="10dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         tools:listitem="@layout/workout_item"/>

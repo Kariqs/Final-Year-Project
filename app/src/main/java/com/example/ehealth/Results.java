@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 
 import android.view.View;
@@ -30,6 +31,9 @@ public class Results extends AppCompatActivity {
     private TextInputLayout Email,Phone,Password,Weight,Height,Bmi;
     private Button Update;
 
+
+
+
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_results);
@@ -42,8 +46,11 @@ public class Results extends AppCompatActivity {
         Height =  findViewById(R.id.user_height);
         Bmi = findViewById(R.id.user_bmi);
         Logout = findViewById(R.id.user_logout);
+        Update = findViewById(R.id.update_details);
 
-        String PHONE = getIntent().getStringExtra("Phone");
+       // String PHONE = getIntent().getStringExtra("Phone");
+        SharedPreferences sharedPreferences = getSharedPreferences(Login.PREFS_NAME,0);
+        String PHONE = sharedPreferences.getString("PhoneNumber","");
 
         FirebaseDatabase firebaseDatabase = FirebaseDatabase.getInstance();
         DatabaseReference databaseReference = firebaseDatabase.getReference("users");
@@ -92,11 +99,23 @@ public class Results extends AppCompatActivity {
             public void onClick(View v) {
                 Intent intent = new Intent(Results.this,Login.class);
                 startActivity(intent);
-                finish();
+                SharedPreferences sharedPreferences = getSharedPreferences(Login.PREFS_NAME, 0);
+                SharedPreferences.Editor editor = sharedPreferences.edit();
+                editor.putBoolean("hasLoggedIn", false);
+                editor.commit();
+                finishAffinity();
             }
         });
 
-    }
+        Update.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
 
+            }
+        });
+
+
+
+    }
 
 }

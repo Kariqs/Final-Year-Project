@@ -64,7 +64,7 @@ public class Fast extends AppCompatActivity {
                toastMessage();
            }else {
                Countdown.setText("16:00:00");
-               TimeLeftInMillis = 57600000;
+               TimeLeftInMillis = 3000;
                countDown();
            }
         });
@@ -112,6 +112,9 @@ public class Fast extends AppCompatActivity {
         public void onFinish() {
             countDownTimer.cancel();
             notifyFastIsOver();
+            StartEnd.setText("START FAST");
+            Explain.setText("SELECT A FASTING PLAN AND CLICK START FAST TO CONTINUE WITH YOUR FAST.");
+            TimerRunning=false;
         }
     };}
     public void updateCountDownText() {
@@ -130,7 +133,7 @@ public class Fast extends AppCompatActivity {
 
     public void notifyFastIsOver(){
         NotificationCompat.Builder builder = new NotificationCompat.Builder(getApplicationContext(),"Break Fast");
-        builder.setContentTitle("eHealth Fast Ended");
+        builder.setContentTitle("eHealth");
         builder.setContentText("CONGRATULATIONS! You have ended your fast.");
         builder.setSmallIcon(R.drawable.logo);
         builder.setAutoCancel(true);

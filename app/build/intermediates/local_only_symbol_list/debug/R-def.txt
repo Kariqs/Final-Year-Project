@@ -68,6 +68,11 @@ id signUpPhoneNo
 id sixteenEight
 id startEnd
 id twentyFour
+id update_details
+id update_email
+id update_password
+id update_phone
+id update_weight
 id user_bmi
 id user_email
 id user_height
@@ -79,6 +84,7 @@ id user_weight
 id weight
 id workout
 id workoutPlan
+id workout_plan
 layout activity_check_bmi
 layout activity_diet
 layout activity_diet_home
@@ -88,8 +94,10 @@ layout activity_login
 layout activity_results
 layout activity_signup
 layout activity_splash
+layout activity_update
 layout activity_workout
 layout activity_workout_plan
+layout activity_workout_plans
 layout diet_item
 layout workout_item
 layout workoutplan_item

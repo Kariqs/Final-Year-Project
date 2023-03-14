@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#DCDBD8"
-    android:padding="15dp"
+    android:padding="10dp"
     tools:context=".Home">
     <LinearLayout
         android:layout_width="match_parent"
@@ -35,7 +35,7 @@
         android:fontFamily="@font/font2"
         android:text="Weight loss is a process that
 involves several practises-Fasting,Working out and Dieting. You can select where you need to be guided below.
-The results of others can also motivate you to work on yourself. Click Results to see how others have gone with weight loss."
+ Click my account to see and update your details."
         android:textColor="@color/black"
         android:scrollbarAlwaysDrawVerticalTrack="false"
         android:textSize="20sp" />
@@ -193,6 +193,16 @@ The results of others can also motivate you to work on yourself. Click Results t
 
 
     </LinearLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="About and Contact"
+            android:textStyle="bold"
+            android:fontFamily="@font/font2"
+            android:textAlignment="center"
+            android:textSize="20dp"
+            android:textColor="#008577"
+            />
     </LinearLayout>
 
 </ScrollView>

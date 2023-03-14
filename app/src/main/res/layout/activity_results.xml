@@ -157,13 +157,15 @@
                     android:editable="false"
                     android:textStyle="bold" />
             </com.google.android.material.textfield.TextInputLayout>
+
             <Button
+                android:id="@+id/update_details"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="update"
-                android:fontFamily="@font/font2"
                 android:layout_marginTop="10dp"
-                android:textSize="20dp"/>
+                android:fontFamily="@font/font2"
+                android:text="update"
+                android:textSize="20dp" />
             <TextView
                 android:id="@+id/user_logout"
                 android:layout_width="match_parent"

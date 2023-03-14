@@ -1,6 +1,8 @@
 package com.example.ehealth;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -31,6 +33,16 @@ public class Workout extends AppCompatActivity {
 
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
         recyclerView.setAdapter(new WorkoutAdapter(getApplicationContext(),workOutList));
+
+
+        WorkoutPlan.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent;
+                intent = new Intent(Workout.this,WorkoutPlans.class);
+                startActivity(intent);
+            }
+        });
     }
 
 

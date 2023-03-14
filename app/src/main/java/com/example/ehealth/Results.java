@@ -1,9 +1,11 @@
 package com.example.ehealth;
 
 import androidx.annotation.NonNull;
+import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Context;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
@@ -97,20 +99,41 @@ public class Results extends AppCompatActivity {
         Logout.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(Results.this,Login.class);
-                startActivity(intent);
-                SharedPreferences sharedPreferences = getSharedPreferences(Login.PREFS_NAME, 0);
-                SharedPreferences.Editor editor = sharedPreferences.edit();
-                editor.putBoolean("hasLoggedIn", false);
-                editor.commit();
-                finishAffinity();
+                AlertDialog.Builder builder = new AlertDialog.Builder(Results.this);
+                builder.setMessage("Are you sure you want to Logout?");
+                builder.setTitle("Logout");
+                builder.setPositiveButton("Yes", new DialogInterface.OnClickListener() {
+                    public void onClick(DialogInterface dialog, int which) {
+                        Intent intent = new Intent(Results.this,Login.class);
+                        startActivity(intent);
+                        SharedPreferences sharedPreferences = getSharedPreferences(Login.PREFS_NAME, 0);
+                        SharedPreferences.Editor editor = sharedPreferences.edit();
+                        editor.putBoolean("hasLoggedIn", false);
+                        editor.commit();
+                        finishAffinity();
+                    }
+                });
+
+                builder.setNegativeButton("No", new DialogInterface.OnClickListener() {
+                    public void onClick(DialogInterface dialog, int which) {
+
+                    }
+                });
+
+                AlertDialog dialog = builder.create();
+                dialog.show();
+
+
             }
         });
 
         Update.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
+            Intent intent;
+            intent= new Intent(Results.this, com.example.ehealth.Update.class);
+            startActivity(intent);
+            finish();
             }
         });
 

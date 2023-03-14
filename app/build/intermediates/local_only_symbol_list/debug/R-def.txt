@@ -75,9 +75,6 @@ id startEnd
 id twentyFour
 id update_details
 id update_email
-id update_password
-id update_phone
-id update_weight
 id user_bmi
 id user_email
 id user_height

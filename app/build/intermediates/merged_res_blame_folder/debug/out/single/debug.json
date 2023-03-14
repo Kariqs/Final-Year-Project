@@ -100,10 +100,6 @@
         "source": "/home/kariuki/.gradle/daemon/7.4/com.example.ehealth.app-main-32:/drawable/whatsapp.png"
     },
     {
-        "merged": "com.example.ehealth.app-merged_res-30:/layout_activity_about.xml.flat",
-        "source": "com.example.ehealth.app-main-32:/layout/activity_about.xml"
-    },
-    {
         "merged": "/home/kariuki/.gradle/daemon/7.4/com.example.ehealth.app-merged_res-30:/mipmap-hdpi_ic_launcher.webp.flat",
         "source": "/home/kariuki/.gradle/daemon/7.4/com.example.ehealth.app-main-32:/mipmap-hdpi/ic_launcher.webp"
     },
@@ -134,6 +130,10 @@
     {
         "merged": "/home/kariuki/.gradle/daemon/7.4/com.example.ehealth.app-merged_res-30:/drawable_results.jpg.flat",
         "source": "/home/kariuki/.gradle/daemon/7.4/com.example.ehealth.app-main-32:/drawable/results.jpg"
+    },
+    {
+        "merged": "com.example.ehealth.app-merged_res-30:/drawable_results.png.flat",
+        "source": "com.example.ehealth.app-main-32:/drawable/results.png"
     },
     {
         "merged": "/home/kariuki/.gradle/daemon/7.4/com.example.ehealth.app-merged_res-30:/drawable_benchpress.jpg.flat",

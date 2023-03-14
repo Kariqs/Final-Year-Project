@@ -28,6 +28,13 @@
         android:testOnly="true"
         android:theme="@style/Theme.EHealth" >
         <activity
+            android:name="com.example.ehealth.About"
+            android:exported="false" >
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
             android:name="com.example.ehealth.Update"
             android:exported="false" >
             <meta-data

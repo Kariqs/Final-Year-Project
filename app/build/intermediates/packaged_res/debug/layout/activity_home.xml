@@ -194,6 +194,7 @@ involves several practises-Fasting,Working out and Dieting. You can select where
 
     </LinearLayout>
         <TextView
+            android:id="@+id/about"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="About and Contact"

@@ -26,7 +26,7 @@ import com.google.firebase.database.ValueEventListener;
 import java.time.LocalTime;
 
 public class Home extends AppCompatActivity {
-    TextView Greetings;
+    TextView Greetings,About;
 CardView Fasting,Training,Dieting,Results;
     @RequiresApi(api = Build.VERSION_CODES.O)
     @Override
@@ -39,6 +39,7 @@ CardView Fasting,Training,Dieting,Results;
         Training = findViewById(R.id.workout);
         Dieting = findViewById(R.id.diet);
         Results = findViewById(R.id.results);
+        About = findViewById(R.id.about);
 
        // String Phone = getIntent().getStringExtra("phone");
 
@@ -104,6 +105,15 @@ CardView Fasting,Training,Dieting,Results;
                 Intent i = new Intent(Home.this, com.example.ehealth.Results.class);
                 i.putExtra("Phone",Phone);
                 startActivity(i);
+            }
+        });
+
+        About.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent;
+                intent = new Intent(Home.this, com.example.ehealth.About.class);
+                startActivity(intent);
             }
         });
 

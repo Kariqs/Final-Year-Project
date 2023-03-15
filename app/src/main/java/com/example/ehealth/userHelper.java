@@ -1,7 +1,8 @@
 package com.example.ehealth;
+
 public class userHelper {
-    String Name,Email,Phone,Password;
-    double Weight,Height,BMI;
+    String Name, Email, Phone, Password;
+    double Weight, Height, BMI;
 
     public userHelper() {
     }

@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -16,7 +15,7 @@
         android:text="LETS CALCULATE YOUR CALORIES NEED PER DAY AND GENERATE YOU A DIET PLAN."
         android:textAlignment="center"
         android:textColor="@color/black"
-        android:textSize="20dp" />
+        android:textSize="20sp" />
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/age"
@@ -90,7 +89,7 @@
         android:fontFamily="@font/font2"
         android:text="For activity level, if you are moderately active input 1.5, if you are very active input 1.7 and if you are extremely active input 2.0. "
         android:textColor="@color/black"
-        android:textSize="15dp" />
+        android:textSize="15sp" />
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/activity"
@@ -115,5 +114,5 @@
         android:layout_marginTop="20dp"
         android:fontFamily="@font/font2"
         android:text="GENERATE PLAN"
-        android:textSize="20dp" />
+        android:textSize="20sp" />
 </LinearLayout>

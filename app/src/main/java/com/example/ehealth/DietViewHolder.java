@@ -7,7 +7,8 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 public class DietViewHolder extends RecyclerView.ViewHolder {
-    TextView Name,Description;
+    TextView Name, Description;
+
     public DietViewHolder(@NonNull View itemView) {
         super(itemView);
         Name = itemView.findViewById(R.id.nutrient_name);

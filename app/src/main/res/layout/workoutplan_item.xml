@@ -3,17 +3,18 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical">
-   <TextView
-       android:id="@+id/plan"
-       android:layout_width="match_parent"
-       android:layout_height="wrap_content"
-       android:text="PLAN"
-       android:textSize="30dp"
-       android:textAlignment="center"
-       android:textColor="@color/black"
-       android:fontFamily="@font/font2"/>
-    <TableLayout
+
+    <TextView
+        android:id="@+id/plan"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        />
+        android:fontFamily="@font/font2"
+        android:text="PLAN"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="30dp" />
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
 </LinearLayout>

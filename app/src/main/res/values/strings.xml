@@ -1,5 +1,8 @@
 <resources>
     <string name="app_name">eHealth</string>
+    <string name="enter_new_weight">Enter new weight.</string>
+    <string name="save">SAVE</string>
+    <string name="update_weight">UPDATE WEIGHT</string>
     <!-- TODO: Remove or change this placeholder text -->
     <!--names of the workouts-->
     <!--    <string name="Proteins">-->

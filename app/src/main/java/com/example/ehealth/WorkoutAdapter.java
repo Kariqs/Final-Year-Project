@@ -27,9 +27,9 @@ public class WorkoutAdapter extends RecyclerView.Adapter<WorkoutViewHolder> {
 
     @Override
     public void onBindViewHolder(@NonNull WorkoutViewHolder holder, int position) {
-     holder.name.setText(workOutList.get(position).getName());
-     holder.description.setText(workOutList.get(position).getDescription());
-     holder.image.setImageResource(workOutList.get(position).getImage());
+        holder.name.setText(workOutList.get(position).getName());
+        holder.description.setText(workOutList.get(position).getDescription());
+        holder.image.setImageResource(workOutList.get(position).getImage());
     }
 
     @Override

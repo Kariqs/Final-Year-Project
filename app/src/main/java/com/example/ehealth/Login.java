@@ -2,10 +2,6 @@ package com.example.ehealth;
 
 import static java.time.LocalTime.now;
 
-import androidx.annotation.NonNull;
-import androidx.annotation.RequiresApi;
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Build;
@@ -14,7 +10,10 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
-import com.google.android.material.textfield.TextInputEditText;
+import androidx.annotation.NonNull;
+import androidx.annotation.RequiresApi;
+import androidx.appcompat.app.AppCompatActivity;
+
 import com.google.android.material.textfield.TextInputLayout;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
@@ -26,11 +25,11 @@ import com.google.firebase.database.ValueEventListener;
 import java.time.LocalTime;
 
 public class Login extends AppCompatActivity {
+    public static String PREFS_NAME = "myPref";
     TextView Greetings;
     TextInputLayout Email, Password;
     Button Go;
     TextView dontHaveAccount;
-    public static String PREFS_NAME = "myPref";
 
     @RequiresApi(api = Build.VERSION_CODES.O)
     @Override
@@ -122,7 +121,7 @@ public class Login extends AppCompatActivity {
 
                         SharedPreferences sharedPreferences = getSharedPreferences(Login.PREFS_NAME, 0);
                         SharedPreferences.Editor editor = sharedPreferences.edit();
-                        editor.putString("PhoneNumber",enteredEmail);
+                        editor.putString("PhoneNumber", enteredEmail);
                         editor.apply();
                         editor.putBoolean("hasLoggedIn", true);
                         editor.commit();

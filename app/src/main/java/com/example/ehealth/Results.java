@@ -1,20 +1,17 @@
 package com.example.ehealth;
 
-import androidx.annotation.NonNull;
-import androidx.appcompat.app.AlertDialog;
-import androidx.appcompat.app.AppCompatActivity;
-
-import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
-
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import androidx.annotation.NonNull;
+import androidx.appcompat.app.AlertDialog;
+import androidx.appcompat.app.AppCompatActivity;
 
 import com.google.android.material.textfield.TextInputLayout;
 import com.google.firebase.database.DataSnapshot;
@@ -28,11 +25,10 @@ import java.text.DecimalFormat;
 
 
 public class Results extends AppCompatActivity {
-
-    private TextView Name,Logout;
-    private TextInputLayout Email,Phone,Password,Weight,Height,Bmi;
-    private Button Update;
-
+    public static String PREFS_HEIGHT = "myPref";
+    private TextView Name,UpdatePassword,UpdateWeight;
+    private TextInputLayout Email, Phone, Password, Weight, Height, Bmi;
+    Button Logout;
 
 
 
@@ -45,14 +41,14 @@ public class Results extends AppCompatActivity {
         Phone = findViewById(R.id.user_phone);
         Password = findViewById(R.id.user_password);
         Weight = findViewById(R.id.user_weight);
-        Height =  findViewById(R.id.user_height);
+        Height = findViewById(R.id.user_height);
         Bmi = findViewById(R.id.user_bmi);
         Logout = findViewById(R.id.user_logout);
-        Update = findViewById(R.id.update_details);
+        UpdatePassword = findViewById(R.id.update_my_password);
+        UpdateWeight = findViewById(R.id.update_my_weight);
 
-       // String PHONE = getIntent().getStringExtra("Phone");
-        SharedPreferences sharedPreferences = getSharedPreferences(Login.PREFS_NAME,0);
-        String PHONE = sharedPreferences.getString("PhoneNumber","");
+        SharedPreferences sharedPreferences = getSharedPreferences(Login.PREFS_NAME, 0);
+        String PHONE = sharedPreferences.getString("PhoneNumber", "");
 
         FirebaseDatabase firebaseDatabase = FirebaseDatabase.getInstance();
         DatabaseReference databaseReference = firebaseDatabase.getReference("users");
@@ -61,7 +57,7 @@ public class Results extends AppCompatActivity {
         goToNumber.addListenerForSingleValueEvent(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot snapshot) {
-                if (snapshot.exists()){
+                if (snapshot.exists()) {
                     String nameFromDatabase = snapshot.child(PHONE).child("name").getValue(String.class);
                     String emailFromDatabase = snapshot.child(PHONE).child("email").getValue(String.class);
                     String phoneFromDatabase = snapshot.child(PHONE).child("phone").getValue(String.class);
@@ -78,7 +74,7 @@ public class Results extends AppCompatActivity {
                     Height.getEditText().setText(new DecimalFormat("#.##").format(heightFromDatabase));
                     Bmi.getEditText().setText(new DecimalFormat("#.##").format(bmiFromDatabase));
 
-                }else{
+                } else {
                     Name.setText("");
                     Email.getEditText().setText("");
                     Phone.getEditText().setText("");
@@ -92,7 +88,7 @@ public class Results extends AppCompatActivity {
 
             @Override
             public void onCancelled(@NonNull DatabaseError error) {
-                Toast.makeText((Context) Results.this, (CharSequence) error, Toast.LENGTH_SHORT).show();
+                Toast.makeText(Results.this, (CharSequence) error, Toast.LENGTH_SHORT).show();
             }
         });
 
@@ -104,7 +100,7 @@ public class Results extends AppCompatActivity {
                 builder.setTitle("Logout");
                 builder.setPositiveButton("Yes", new DialogInterface.OnClickListener() {
                     public void onClick(DialogInterface dialog, int which) {
-                        Intent intent = new Intent(Results.this,Login.class);
+                        Intent intent = new Intent(Results.this, Login.class);
                         startActivity(intent);
                         SharedPreferences sharedPreferences = getSharedPreferences(Login.PREFS_NAME, 0);
                         SharedPreferences.Editor editor = sharedPreferences.edit();
@@ -127,16 +123,31 @@ public class Results extends AppCompatActivity {
             }
         });
 
-        Update.setOnClickListener(new View.OnClickListener() {
+        UpdatePassword.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-            Intent intent;
-            intent= new Intent(Results.this, com.example.ehealth.Update.class);
-            startActivity(intent);
-            finish();
+                String height = Height.getEditText().getText().toString();
+                Intent intent;
+                intent = new Intent(Results.this, Change_password.class);
+                startActivity(intent);
+                intent.putExtra("height", height);
+                finish();
             }
         });
 
+        UpdateWeight.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                double height = Double.parseDouble(Height.getEditText().getText().toString());
+                SharedPreferences sharedPreferences = getSharedPreferences(Results.PREFS_HEIGHT, 0);
+                SharedPreferences.Editor editor = sharedPreferences.edit();
+                editor.putString("Height", String.valueOf(height));
+                editor.apply();
+                Intent intent;
+                intent = new Intent(Results.this,Update_Weight.class);
+                startActivity(intent);
+            }
+        });
 
 
     }

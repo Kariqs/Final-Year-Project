@@ -9,7 +9,7 @@ import androidx.recyclerview.widget.RecyclerView;
 
 public class WorkoutViewHolder extends RecyclerView.ViewHolder {
 
-    TextView name,description;
+    TextView name, description;
     ImageView image;
 
     public WorkoutViewHolder(@NonNull View itemView) {

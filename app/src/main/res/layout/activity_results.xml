@@ -7,9 +7,9 @@
     android:padding="10dp">
 
     <LinearLayout
-        android:orientation="vertical"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:orientation="vertical">
 
 
         <RelativeLayout
@@ -35,7 +35,7 @@
                 android:fontFamily="@font/font2"
                 android:text="NAME"
                 android:textColor="@color/black"
-                android:textSize="25dp"
+                android:textSize="25sp"
                 android:textStyle="bold" />
         </RelativeLayout>
 
@@ -58,8 +58,7 @@
                     android:fontFamily="@font/font2"
                     android:textAlignment="center"
                     android:textColor="@color/black"
-                    android:textSize="20dp"
-                    android:inputType="none"
+                    android:textSize="20sp"
                     android:textStyle="bold" />
             </com.google.android.material.textfield.TextInputLayout>
 
@@ -74,10 +73,10 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:fontFamily="@font/font2"
+                    android:inputType="none"
                     android:textAlignment="center"
                     android:textColor="@color/black"
-                    android:textSize="20dp"
-                    android:inputType="none"
+                    android:textSize="20sp"
                     android:textStyle="bold" />
             </com.google.android.material.textfield.TextInputLayout>
 
@@ -96,8 +95,7 @@
                     android:inputType="textPassword"
                     android:textAlignment="center"
                     android:textColor="@color/black"
-                    android:textSize="20dp"
-                    android:editable="false"
+                    android:textSize="20sp"
                     android:textStyle="bold" />
             </com.google.android.material.textfield.TextInputLayout>
 
@@ -114,9 +112,8 @@
                     android:fontFamily="@font/font2"
                     android:inputType="numberDecimal"
                     android:textAlignment="center"
-                    android:editable="false"
                     android:textColor="@color/black"
-                    android:textSize="20dp"
+                    android:textSize="20sp"
                     android:textStyle="bold" />
             </com.google.android.material.textfield.TextInputLayout>
 
@@ -134,8 +131,7 @@
                     android:inputType="numberDecimal"
                     android:textAlignment="center"
                     android:textColor="@color/black"
-                    android:textSize="20dp"
-                    android:editable="false"
+                    android:textSize="20sp"
                     android:textStyle="bold" />
             </com.google.android.material.textfield.TextInputLayout>
 
@@ -153,29 +149,42 @@
                     android:inputType="numberDecimal"
                     android:textAlignment="center"
                     android:textColor="@color/black"
-                    android:textSize="20dp"
-                    android:editable="false"
+                    android:textSize="20sp"
                     android:textStyle="bold" />
             </com.google.android.material.textfield.TextInputLayout>
 
-            <Button
-                android:id="@+id/update_details"
+            <TextView
+                android:id="@+id/update_my_password"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
                 android:fontFamily="@font/font2"
-                android:text="update"
-                android:textSize="20dp" />
+                android:text="CHANGE PASSWORD"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="15dp" />
+
             <TextView
+                android:id="@+id/update_my_weight"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/font2"
+                android:text="UPDATE MY WEIGHT"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="15sp" />
+
+
+            <Button
                 android:id="@+id/user_logout"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="LOGOUT"
-                android:textColor="@color/black"
-                android:fontFamily="@font/font2"
                 android:layout_marginTop="10dp"
-                android:textSize="20dp"
-                android:textAlignment="center"/>
+                android:fontFamily="@font/font2"
+                android:text="LOGOUT"
+                android:textAlignment="center"
+                android:textSize="20sp" />
 
         </LinearLayout>
 

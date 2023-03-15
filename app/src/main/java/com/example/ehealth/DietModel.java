@@ -1,7 +1,7 @@
 package com.example.ehealth;
 
 public class DietModel {
-    String dietName,dietDescription;
+    String dietName, dietDescription;
 
     public DietModel(String dietName, String dietDescription) {
         this.dietName = dietName;

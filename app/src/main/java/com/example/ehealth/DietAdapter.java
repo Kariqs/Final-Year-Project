@@ -22,7 +22,7 @@ public class DietAdapter extends RecyclerView.Adapter<DietViewHolder> {
     @NonNull
     @Override
     public DietViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        return new DietViewHolder(LayoutInflater.from(context).inflate(R.layout.diet_item,parent,false));
+        return new DietViewHolder(LayoutInflater.from(context).inflate(R.layout.diet_item, parent, false));
     }
 
     @Override

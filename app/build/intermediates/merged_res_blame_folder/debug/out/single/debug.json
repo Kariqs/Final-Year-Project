@@ -24,6 +24,10 @@
         "source": "/home/kariuki/.gradle/daemon/7.4/com.example.ehealth.app-main-32:/drawable/omad.jpg"
     },
     {
+        "merged": "com.example.ehealth.app-merged_res-30:/layout_activity_home.xml.flat",
+        "source": "com.example.ehealth.app-main-32:/layout/activity_home.xml"
+    },
+    {
         "merged": "/home/kariuki/.gradle/daemon/7.4/com.example.ehealth.app-merged_res-30:/mipmap-xxhdpi_ic_launcher.webp.flat",
         "source": "/home/kariuki/.gradle/daemon/7.4/com.example.ehealth.app-main-32:/mipmap-xxhdpi/ic_launcher.webp"
     },
@@ -52,8 +56,8 @@
         "source": "/home/kariuki/.gradle/daemon/7.4/com.example.ehealth.app-main-32:/layout/activity_workout_plan.xml"
     },
     {
-        "merged": "/home/kariuki/.gradle/daemon/7.4/com.example.ehealth.app-merged_res-30:/layout_activity_update.xml.flat",
-        "source": "/home/kariuki/.gradle/daemon/7.4/com.example.ehealth.app-main-32:/layout/activity_update.xml"
+        "merged": "/home/kariuki/.gradle/daemon/7.4/com.example.ehealth.app-merged_res-30:/layout_activity_change_password.xml.flat",
+        "source": "/home/kariuki/.gradle/daemon/7.4/com.example.ehealth.app-main-32:/layout/activity_change_password.xml"
     },
     {
         "merged": "/home/kariuki/.gradle/daemon/7.4/com.example.ehealth.app-merged_res-30:/layout_activity_about.xml.flat",
@@ -92,6 +96,10 @@
         "source": "/home/kariuki/.gradle/daemon/7.4/com.example.ehealth.app-main-32:/layout/activity_diet_home.xml"
     },
     {
+        "merged": "/home/kariuki/.gradle/daemon/7.4/com.example.ehealth.app-merged_res-30:/layout_activity_update_weight.xml.flat",
+        "source": "/home/kariuki/.gradle/daemon/7.4/com.example.ehealth.app-main-32:/layout/activity_update_weight.xml"
+    },
+    {
         "merged": "/home/kariuki/.gradle/daemon/7.4/com.example.ehealth.app-merged_res-30:/mipmap-xhdpi_ic_launcher_round.webp.flat",
         "source": "/home/kariuki/.gradle/daemon/7.4/com.example.ehealth.app-main-32:/mipmap-xhdpi/ic_launcher_round.webp"
     },
@@ -112,6 +120,10 @@
         "source": "/home/kariuki/.gradle/daemon/7.4/com.example.ehealth.app-main-32:/drawable/sixteeneight.png"
     },
     {
+        "merged": "/home/kariuki/.gradle/daemon/7.4/com.example.ehealth.app-merged_res-30:/drawable_results.png.flat",
+        "source": "/home/kariuki/.gradle/daemon/7.4/com.example.ehealth.app-main-32:/drawable/results.png"
+    },
+    {
         "merged": "/home/kariuki/.gradle/daemon/7.4/com.example.ehealth.app-merged_res-30:/drawable_deadlift.jpg.flat",
         "source": "/home/kariuki/.gradle/daemon/7.4/com.example.ehealth.app-main-32:/drawable/deadlift.jpg"
     },
@@ -126,14 +138,6 @@
     {
         "merged": "/home/kariuki/.gradle/daemon/7.4/com.example.ehealth.app-merged_res-30:/mipmap-anydpi-v26_ic_launcher.xml.flat",
         "source": "/home/kariuki/.gradle/daemon/7.4/com.example.ehealth.app-main-32:/mipmap-anydpi-v26/ic_launcher.xml"
-    },
-    {
-        "merged": "/home/kariuki/.gradle/daemon/7.4/com.example.ehealth.app-merged_res-30:/drawable_results.jpg.flat",
-        "source": "/home/kariuki/.gradle/daemon/7.4/com.example.ehealth.app-main-32:/drawable/results.jpg"
-    },
-    {
-        "merged": "com.example.ehealth.app-merged_res-30:/drawable_results.png.flat",
-        "source": "com.example.ehealth.app-main-32:/drawable/results.png"
     },
     {
         "merged": "/home/kariuki/.gradle/daemon/7.4/com.example.ehealth.app-merged_res-30:/drawable_benchpress.jpg.flat",

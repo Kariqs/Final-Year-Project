@@ -1,18 +1,18 @@
 package com.example.ehealth;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
 
+import androidx.appcompat.app.AppCompatActivity;
+
 import com.google.android.material.textfield.TextInputLayout;
 
 public class Diet extends AppCompatActivity {
 
-    private TextInputLayout Age,Height,Weight,Gender,Activity;
+    private TextInputLayout Age, Height, Weight, Gender, Activity;
     private Button Calculate;
 
     @Override
@@ -25,17 +25,15 @@ public class Diet extends AppCompatActivity {
         Weight = findViewById(R.id.weight);
         Gender = findViewById(R.id.gender);
         Activity = findViewById(R.id.activity);
-        Calculate= findViewById(R.id.calculate);
-
-
+        Calculate = findViewById(R.id.calculate);
 
 
         Calculate.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if (!validateAge()|!validateWeight()|!validateHeight()|!validateGender()|!validateActivity()){
+                if (!validateAge() | !validateWeight() | !validateHeight() | !validateGender() | !validateActivity()) {
                     return;
-                }else {
+                } else {
                     calculateCaloriesNeeded();
                 }
             }
@@ -44,10 +42,9 @@ public class Diet extends AppCompatActivity {
 
     }
 
-    public void calculateCaloriesNeeded(){
+    public void calculateCaloriesNeeded() {
         //Take inputs.
-        String PHONE = getIntent().getStringExtra("Phone");
-        Toast.makeText(this,PHONE, Toast.LENGTH_SHORT).show();
+
         int inputAge = Integer.parseInt(Age.getEditText().getText().toString());
         double inputHeight = Double.parseDouble(Height.getEditText().getText().toString());
         double inputWeight = Double.parseDouble(Weight.getEditText().getText().toString());
@@ -55,25 +52,28 @@ public class Diet extends AppCompatActivity {
         double inputActivityLevel = Double.parseDouble(Activity.getEditText().getText().toString());
 
         //calculate daily calories need.
-        int maleCaloriesNeeded = (int) ((88.362 + (13.397*inputWeight) + (4.799*inputHeight) - (5.677*inputAge))*inputActivityLevel);
-        int femaleCaloriesNeeded = (int) ((447.593 + (9.247*inputWeight) + (3.098*inputHeight) - (4.330*inputAge))*inputActivityLevel);
+        int maleCaloriesNeeded = (int) ((88.362 + (13.397 * inputWeight) + (4.799 * inputHeight) - (5.677 * inputAge)) * inputActivityLevel);
+        int femaleCaloriesNeeded = (int) ((447.593 + (9.247 * inputWeight) + (3.098 * inputHeight) - (4.330 * inputAge)) * inputActivityLevel);
 
         //Toast daily calories needed
 
-        if (inputGender.equals("MALE")){
-            String maleCalories =Integer.toString(maleCaloriesNeeded);
+        if (inputGender.equals("MALE")) {
+            String maleCalories = Integer.toString(maleCaloriesNeeded);
             Intent intent = new Intent(Diet.this, DietHome.class);
-            intent.putExtra("calories",maleCalories);
+            intent.putExtra("calories", maleCalories);
             //intent.putExtra("phone",PHONE);
             startActivity(intent);
-        }else{
+            finish();
+        } else {
             String femaleCalories = Integer.toString(femaleCaloriesNeeded);
-            Intent intent = new Intent(Diet.this,DietHome.class);
-            intent.putExtra("calories",femaleCalories);
+            Intent intent = new Intent(Diet.this, DietHome.class);
+            intent.putExtra("calories", femaleCalories);
             //intent.putExtra("phone",PHONE);
             startActivity(intent);
+            finish();
         }
     }
+
     private boolean validateAge() {
         String val = Age.getEditText().getText().toString();
         if (val.isEmpty()) {
@@ -85,6 +85,7 @@ public class Diet extends AppCompatActivity {
             return true;
         }
     }
+
     private boolean validateWeight() {
         String val = Weight.getEditText().getText().toString();
         if (val.isEmpty()) {
@@ -96,6 +97,7 @@ public class Diet extends AppCompatActivity {
             return true;
         }
     }
+
     private boolean validateHeight() {
         String val = Height.getEditText().getText().toString();
         if (val.isEmpty()) {
@@ -107,17 +109,19 @@ public class Diet extends AppCompatActivity {
             return true;
         }
     }
+
     private boolean validateGender() {
         String val = Gender.getEditText().getText().toString();
         if (val.isEmpty()) {
             Gender.setError("Field cannot be empty");
             return false;
-        }
-        else{
+        } else {
             Gender.setError(null);
             Gender.setErrorEnabled(false);
             return true;
-        }}
+        }
+    }
+
     private boolean validateActivity() {
         String val = Activity.getEditText().getText().toString();
         if (val.isEmpty()) {

@@ -4,18 +4,15 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.widget.Button;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.google.android.material.textfield.TextInputLayout;
-import com.google.firebase.database.DatabaseReference;
-import com.google.firebase.database.FirebaseDatabase;
 
 import java.util.Objects;
 
 public class Signup extends AppCompatActivity {
-    private TextInputLayout Name,Email, PhoneNumber, Password;
+    private TextInputLayout Name, Email, PhoneNumber, Password;
 
 
     @Override
@@ -59,6 +56,7 @@ public class Signup extends AppCompatActivity {
             return true;
         }
     }
+
     private boolean validateName() {
         String value = Objects.requireNonNull(Name.getEditText()).getText().toString();
         if (value.isEmpty()) {
@@ -105,10 +103,10 @@ public class Signup extends AppCompatActivity {
         PhoneNumber.getEditText().setText("");
         Password.getEditText().setText("");
         Intent i = new Intent(Signup.this, CheckBmi.class);
-        i.putExtra("keyname",NAME);
-        i.putExtra("keyemail",EMAIL);
-        i.putExtra("keyphone",PHONENUMBER);
-        i.putExtra("keypassword",PASSWORD);
+        i.putExtra("keyname", NAME);
+        i.putExtra("keyemail", EMAIL);
+        i.putExtra("keyphone", PHONENUMBER);
+        i.putExtra("keypassword", PASSWORD);
         startActivity(i);
         finish();
     }

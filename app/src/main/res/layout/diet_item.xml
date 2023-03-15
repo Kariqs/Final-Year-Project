@@ -11,9 +11,10 @@
         android:fontFamily="@font/font2"
         android:padding="10dp"
         android:text="Name"
-        android:textStyle="bold"
         android:textColor="@color/black"
-        android:textSize="20dp" />
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
     <TextView
         android:id="@+id/nutrient_description"
         android:layout_width="match_parent"
@@ -22,6 +23,6 @@
         android:padding="10dp"
         android:text="Description"
         android:textColor="@color/black"
-        android:textSize="20dp" />
+        android:textSize="20sp" />
 
 </LinearLayout>

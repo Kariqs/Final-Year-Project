@@ -2,19 +2,17 @@ package com.example.ehealth;
 
 import static java.time.LocalTime.now;
 
-import androidx.annotation.NonNull;
-import androidx.annotation.RequiresApi;
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.cardview.widget.CardView;
-
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Build;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.ImageView;
 import android.widget.TextView;
-import android.widget.Toast;
+
+import androidx.annotation.NonNull;
+import androidx.annotation.RequiresApi;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.cardview.widget.CardView;
 
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
@@ -26,8 +24,9 @@ import com.google.firebase.database.ValueEventListener;
 import java.time.LocalTime;
 
 public class Home extends AppCompatActivity {
-    TextView Greetings,About;
-CardView Fasting,Training,Dieting,Results;
+    TextView Greetings, About;
+    CardView Fasting, Training, Dieting, Results;
+
     @RequiresApi(api = Build.VERSION_CODES.O)
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -41,10 +40,10 @@ CardView Fasting,Training,Dieting,Results;
         Results = findViewById(R.id.results);
         About = findViewById(R.id.about);
 
-       // String Phone = getIntent().getStringExtra("phone");
+        // String Phone = getIntent().getStringExtra("phone");
 
-        SharedPreferences sharedPreferences = getSharedPreferences(Login.PREFS_NAME,0);
-        String Phone = sharedPreferences.getString("PhoneNumber","");
+        SharedPreferences sharedPreferences = getSharedPreferences(Login.PREFS_NAME, 0);
+        String Phone = sharedPreferences.getString("PhoneNumber", "");
 
 
         FirebaseDatabase firebaseDatabase = FirebaseDatabase.getInstance();
@@ -54,15 +53,15 @@ CardView Fasting,Training,Dieting,Results;
         goToNumber.addListenerForSingleValueEvent(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot snapshot) {
-                if (snapshot.exists()){
-                    String Name  = snapshot.child(Phone).child("name").getValue(String.class);
+                if (snapshot.exists()) {
+                    String Name = snapshot.child(Phone).child("name").getValue(String.class);
 
-                    if (now().isBefore(LocalTime.of(12,00))){
-                        Greetings.setText("Good Morning "+Name+", Welcome.");
-                    }else if (now().isAfter(LocalTime.of(12,00)) && now().isBefore(LocalTime.of(16,00))){
-                        Greetings.setText("Good Afternoon "+Name+", Welcome");
-                    }else if (now().isAfter(LocalTime.of(16,00))){
-                        Greetings.setText("Good Evening "+Name+", Welcome.");
+                    if (now().isBefore(LocalTime.of(12, 00))) {
+                        Greetings.setText("Good Morning " + Name + ".");
+                    } else if (now().isAfter(LocalTime.of(12, 00)) && now().isBefore(LocalTime.of(16, 00))) {
+                        Greetings.setText("Good Afternoon " + Name + ".");
+                    } else if (now().isAfter(LocalTime.of(16, 00))) {
+                        Greetings.setText("Good Evening " + Name + ".");
                     }
                 }
             }
@@ -74,28 +73,25 @@ CardView Fasting,Training,Dieting,Results;
         });
 
 
-
-
-
         Fasting.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent i = new Intent(Home.this,Fast.class);
+                Intent i = new Intent(Home.this, Fast.class);
                 startActivity(i);
             }
         });
         Training.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent i = new Intent(Home.this,Workout.class);
+                Intent i = new Intent(Home.this, Workout.class);
                 startActivity(i);
             }
         });
         Dieting.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent i = new Intent(Home.this,Diet.class);
-                i.putExtra("Phone",Phone);
+                Intent i = new Intent(Home.this, Diet.class);
+                i.putExtra("Phone", Phone);
                 startActivity(i);
             }
         });
@@ -103,7 +99,7 @@ CardView Fasting,Training,Dieting,Results;
             @Override
             public void onClick(View view) {
                 Intent i = new Intent(Home.this, com.example.ehealth.Results.class);
-                i.putExtra("Phone",Phone);
+                i.putExtra("Phone", Phone);
                 startActivity(i);
             }
         });

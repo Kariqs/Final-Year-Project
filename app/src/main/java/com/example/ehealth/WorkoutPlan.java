@@ -1,12 +1,12 @@
 package com.example.ehealth;
 
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.recyclerview.widget.RecyclerView;
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
+
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.recyclerview.widget.RecyclerView;
 
 public class WorkoutPlan extends AppCompatActivity {
     TextView GoBack;
@@ -23,7 +23,7 @@ public class WorkoutPlan extends AppCompatActivity {
         GoBack.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(WorkoutPlan.this,Workout.class);
+                Intent intent = new Intent(WorkoutPlan.this, Workout.class);
                 startActivity(intent);
                 finish();
             }

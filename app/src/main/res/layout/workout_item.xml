@@ -9,30 +9,31 @@
         android:layout_height="wrap_content"
         android:orientation="vertical"
         android:padding="20dp">
+
         <TextView
             android:id="@+id/name"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:fontFamily="@font/font1"
             android:text="DEAD LIFT"
             android:textAlignment="textStart"
             android:textColor="@color/black"
-            android:fontFamily="@font/font1"
-            android:textSize="30sp"
-            />
+            android:textSize="30sp" />
+
         <TextView
             android:id="@+id/description"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:fontFamily="@font/font2"
-            android:textColor="@color/black"
-            android:textSize="20sp"
             android:text="The deadlift is a movement in which your hips hinge backward to lower down and pick up a weighted barbell or kettlebell from the floor. Your back is flat throughout the movement. Some benefits of performing deadlifts include strengthening and gaining more definition in your upper and lower back, glutes, and hamstrings."
-            />
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+
         <ImageView
             android:id="@+id/image"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:src="@drawable/deadlift"/>
+            android:src="@drawable/deadlift" />
     </LinearLayout>
 
 </LinearLayout>

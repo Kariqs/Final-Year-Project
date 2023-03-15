@@ -7,212 +7,215 @@
     android:background="#DCDBD8"
     android:padding="20dp"
     tools:context=".Fast">
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical">
-    <TextView
-        android:id="@+id/explain"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:fontFamily="@font/font2"
-        android:textStyle="bold"
-        android:textAlignment="center"
-        android:text="SELECT A FASTING PLAN AND CLICK START FAST TO CONTINUE WITH YOUR FAST."
-        android:textColor="@color/black"
-        android:textSize="16sp" />
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="150dp"
-        android:orientation="vertical"
-        android:padding="10dp">
 
         <TextView
-            android:id="@+id/countDownTime"
+            android:id="@+id/explain"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textSize="40dp"
-            android:text="00:00:00"
+            android:fontFamily="@font/font2"
+            android:text="SELECT A FASTING PLAN AND CLICK START FAST TO CONTINUE WITH YOUR FAST."
+            android:textAlignment="center"
             android:textColor="@color/black"
-            android:textAlignment="center"
-            android:textStyle="bold"/>
-        <Button
-            android:id="@+id/startEnd"
-            android:layout_width="match_parent"
-            android:layout_height="50dp"
-            android:layout_marginTop="5dp"
-            android:fontFamily="@font/font1"
-            android:text="START FAST"
-            android:textAlignment="center"
-            android:textSize="20sp" />
-    </LinearLayout>
+            android:textSize="16sp"
+            android:textStyle="bold" />
 
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Below are fasting plans. 16/8 means
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <TextView
+                android:id="@+id/countDownTime"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="00:00:00"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="40dp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/startEnd"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="5dp"
+                android:fontFamily="@font/font1"
+                android:text="START FAST"
+                android:textAlignment="center"
+                android:textSize="20sp" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/font2"
+            android:text="Below are fasting plans. 16/8 means
 you fast for 16hrs and eat within the 8hrs window. For OMAD you only eat one meal a day.
 For 20/4 plan, you fast for 20hrs and eat within 4hrs window. You can also fast for 48hrs, this is called Autophagy Marathon.
 "
-        android:fontFamily="@font/font2"
-        android:textColor="@color/black"
-        android:textSize="17sp"/>
+            android:textColor="@color/black"
+            android:textSize="17sp" />
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="490dp"
-        android:orientation="horizontal">
-
-        <GridLayout
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="400dp"
-            android:columnCount="2"
-            android:rowCount="2">
+            android:layout_height="490dp"
+            android:orientation="horizontal">
 
-            <androidx.cardview.widget.CardView
-                android:id="@+id/sixteenEight"
-                android:layout_width="0dp"
-                android:layout_height="0dp"
-                android:layout_rowWeight="1"
-                android:layout_columnWeight="1"
-                android:layout_margin="5dp"
-                app:cardBackgroundColor="@color/white"
-                app:cardCornerRadius="15dp"
-                app:cardElevation="0dp">
+            <GridLayout
+                android:layout_width="match_parent"
+                android:layout_height="400dp"
+                android:columnCount="2"
+                android:rowCount="2">
 
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:orientation="vertical">
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/sixteenEight"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_rowWeight="1"
+                    android:layout_columnWeight="1"
+                    android:layout_margin="5dp"
+                    app:cardBackgroundColor="@color/white"
+                    app:cardCornerRadius="15dp"
+                    app:cardElevation="0dp">
 
-                    <ImageView
+                    <LinearLayout
                         android:layout_width="match_parent"
-                        android:layout_height="150dp"
-                        android:padding="5dp"
-                        android:src="@drawable/sixteeneight" />
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
 
-                    <TextView
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="150dp"
+                            android:padding="5dp"
+                            android:src="@drawable/sixteeneight" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/font1"
+                            android:padding="5dp"
+                            android:text="16/8 PLAN"
+                            android:textAlignment="center"
+                            android:textColor="@color/black"
+                            android:textSize="20sp" />
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/omad"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_rowWeight="1"
+                    android:layout_columnWeight="1"
+                    android:layout_margin="5dp"
+                    app:cardBackgroundColor="@color/white"
+                    app:cardCornerRadius="15dp"
+                    app:cardElevation="0dp">
+
+                    <LinearLayout
                         android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:fontFamily="@font/font1"
-                        android:padding="5dp"
-                        android:text="16/8 PLAN"
-                        android:textAlignment="center"
-                        android:textColor="@color/black"
-                        android:textSize="20sp" />
-                </LinearLayout>
-            </androidx.cardview.widget.CardView>
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
 
-            <androidx.cardview.widget.CardView
-                android:id="@+id/omad"
-                android:layout_width="0dp"
-                android:layout_height="0dp"
-                android:layout_rowWeight="1"
-                android:layout_columnWeight="1"
-                android:layout_margin="5dp"
-                app:cardBackgroundColor="@color/white"
-                app:cardCornerRadius="15dp"
-                app:cardElevation="0dp">
+                        <ImageView
 
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:orientation="vertical">
+                            android:layout_width="match_parent"
+                            android:layout_height="150dp"
+                            android:padding="5dp"
+                            android:src="@drawable/omad" />
 
-                    <ImageView
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/font1"
+                            android:padding="5dp"
+                            android:text="OMAD PLAN"
+                            android:textAlignment="center"
+                            android:textColor="@color/black"
+                            android:textSize="20sp" />
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
 
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/twentyFour"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_rowWeight="1"
+                    android:layout_columnWeight="1"
+                    android:layout_margin="5dp"
+                    app:cardBackgroundColor="@color/white"
+                    app:cardCornerRadius="15dp"
+                    app:cardElevation="0dp">
+
+                    <LinearLayout
                         android:layout_width="match_parent"
-                        android:layout_height="150dp"
-                        android:padding="5dp"
-                        android:src="@drawable/omad" />
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
 
-                    <TextView
+                        <ImageView
+
+                            android:layout_width="match_parent"
+                            android:layout_height="150dp"
+                            android:padding="5dp"
+                            android:src="@drawable/twentyfour" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/font1"
+                            android:padding="5dp"
+                            android:text="20/4 PLAN"
+                            android:textAlignment="center"
+                            android:textColor="@color/black"
+                            android:textSize="20sp" />
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/autophagy"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_rowWeight="1"
+                    android:layout_columnWeight="1"
+                    android:layout_margin="5dp"
+                    app:cardBackgroundColor="@color/white"
+                    app:cardCornerRadius="15dp"
+                    app:cardElevation="0dp">
+
+                    <LinearLayout
                         android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:fontFamily="@font/font1"
-                        android:padding="5dp"
-                        android:text="OMAD PLAN"
-                        android:textAlignment="center"
-                        android:textColor="@color/black"
-                        android:textSize="20sp" />
-                </LinearLayout>
-            </androidx.cardview.widget.CardView>
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
 
-            <androidx.cardview.widget.CardView
-                android:id="@+id/twentyFour"
-                android:layout_width="0dp"
-                android:layout_height="0dp"
-                android:layout_rowWeight="1"
-                android:layout_columnWeight="1"
-                android:layout_margin="5dp"
-                app:cardBackgroundColor="@color/white"
-                app:cardCornerRadius="15dp"
-                app:cardElevation="0dp">
+                        <ImageView
 
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:orientation="vertical">
+                            android:layout_width="match_parent"
+                            android:layout_height="150dp"
+                            android:padding="5dp"
+                            android:src="@drawable/imf" />
 
-                    <ImageView
-
-                        android:layout_width="match_parent"
-                        android:layout_height="150dp"
-                        android:padding="5dp"
-                        android:src="@drawable/twentyfour" />
-
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:fontFamily="@font/font1"
-                        android:padding="5dp"
-                        android:text="20/4 PLAN"
-                        android:textAlignment="center"
-                        android:textColor="@color/black"
-                        android:textSize="20sp" />
-                </LinearLayout>
-            </androidx.cardview.widget.CardView>
-
-            <androidx.cardview.widget.CardView
-                android:id="@+id/autophagy"
-                android:layout_width="0dp"
-                android:layout_height="0dp"
-                android:layout_rowWeight="1"
-                android:layout_columnWeight="1"
-                android:layout_margin="5dp"
-                app:cardBackgroundColor="@color/white"
-                app:cardCornerRadius="15dp"
-                app:cardElevation="0dp">
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:orientation="vertical">
-
-                    <ImageView
-
-                        android:layout_width="match_parent"
-                        android:layout_height="150dp"
-                        android:padding="5dp"
-                        android:src="@drawable/imf" />
-
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:fontFamily="@font/font1"
-                        android:padding="5dp"
-                        android:text="48 HOURS PLAN"
-                        android:textAlignment="center"
-                        android:textColor="@color/black"
-                        android:textSize="20sp" />
-                </LinearLayout>
-            </androidx.cardview.widget.CardView>
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/font1"
+                            android:padding="5dp"
+                            android:text="48 HOURS PLAN"
+                            android:textAlignment="center"
+                            android:textColor="@color/black"
+                            android:textSize="20sp" />
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
 
 
-        </GridLayout>
+            </GridLayout>
 
-    </LinearLayout>
+        </LinearLayout>
 
     </LinearLayout>
 </ScrollView>

@@ -35,7 +35,6 @@ public class DietHome extends AppCompatActivity {
         Explanation = findViewById(R.id.dietExplanation);
         recyclerView = findViewById(R.id.recyclerView);
 
-        //String Phone = getIntent().getStringExtra("phone");
         SharedPreferences sharedPreferences = getSharedPreferences(Login.PREFS_NAME, 0);
         String Phone = sharedPreferences.getString("PhoneNumber", "");
 

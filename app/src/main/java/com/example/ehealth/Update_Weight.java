@@ -34,13 +34,13 @@ public class Update_Weight extends AppCompatActivity {
                 SharedPreferences sharedPreferences = getSharedPreferences(Login.PREFS_NAME, 0);
                 String PHONE = sharedPreferences.getString("PhoneNumber", "");
                 double myNewWeight = Double.parseDouble(NewWeight.getEditText().getText().toString());
-                double newBmi = myNewWeight/(Height*Height);
+                double newBmi = myNewWeight / (Height * Height);
 
                 String val = NewWeight.getEditText().getText().toString();
 
-                if (!validateWeight()){
-                   return;
-                }else {
+                if (val.isEmpty()) {
+                    NewWeight.setError("Field cannot be empty");
+                } else {
                     FirebaseDatabase firebaseDatabase = FirebaseDatabase.getInstance();
                     DatabaseReference databaseReference = firebaseDatabase.getReference("users").child(PHONE);
 
@@ -53,15 +53,5 @@ public class Update_Weight extends AppCompatActivity {
         });
     }
 
-    private boolean validateWeight() {
-        String val = NewWeight.getEditText().getText().toString();
-        if (val.isEmpty()) {
-            NewWeight.setError("Field cannot be empty");
-            return false;
-        } else {
-            NewWeight.setError(null);
-            NewWeight.setErrorEnabled(false);
-            return true;
-        }
-    }
+
 }

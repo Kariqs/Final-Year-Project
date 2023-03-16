@@ -41,6 +41,7 @@ id bmiLayout
 id calculate
 id checkBmi
 id checkLayout
+id confirmPassword
 id countDownTime
 id description
 id diet
@@ -49,7 +50,7 @@ id dontHaveAccount
 id email
 id explain
 id fast
-id gender
+id forgotPassword
 id goBack
 id greet
 id greetings
@@ -62,13 +63,17 @@ id nutrient_description
 id nutrient_name
 id omad
 id password
+id phone
 id plan
 id profile_image
 id recyclerView
+id reset
 id results
 id save_new_weight
 id signUpButton
+id signUpConfirmPassword
 id signUpEmail
+id signUpGender
 id signUpName
 id signUpPassword
 id signUpPhoneNo
@@ -98,6 +103,7 @@ layout activity_check_bmi
 layout activity_diet
 layout activity_diet_home
 layout activity_fast
+layout activity_forgot_password
 layout activity_home
 layout activity_login
 layout activity_results

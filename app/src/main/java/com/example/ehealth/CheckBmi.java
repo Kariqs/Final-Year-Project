@@ -37,25 +37,34 @@ public class CheckBmi extends AppCompatActivity {
 
         String NAME = getIntent().getStringExtra("keyname");
         BmiGreet.setText("HELLO " + NAME + ", LET'S CHECK YOUR BMI");
-
         CheckBmi.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                checkBmi();
+                if (Weight == null || Height == null) {
+                    // Weight or Height objects are not initialized
+                    return;
+                }
 
+                String val = Weight.getEditText().getText().toString();
+                String val1 = Height.getEditText().getText().toString();
+                double weight = Double.parseDouble(val);
+                double height = Double.parseDouble(val1);
+                if (val.isEmpty()) {
+                    Weight.setError("Field cannot be empty");
+                } else if (val1.isEmpty()) {
+                    Height.setError("Field cannot be empty.");
+                } else {
+                    checkBmi();
+                }
             }
         });
+
         Continue.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
-                if (!validateWeight() | !validateHeight()) {
-                    return;
-                } else {
                     saveData();
                     finish();
                 }
-            }
         });
 
     }
@@ -101,6 +110,7 @@ public class CheckBmi extends AppCompatActivity {
         String NAME = getIntent().getStringExtra("keyname");
         String EMAIL = getIntent().getStringExtra("keyemail");
         String PHONE = getIntent().getStringExtra("keyphone");
+        String GENDER = getIntent().getStringExtra("keygender");
         String PASSWORD = getIntent().getStringExtra("keypassword");
         String WEIGHT = Double.toString(getWeight);
         String HEIGHT = Double.toString(getHeight);
@@ -110,37 +120,14 @@ public class CheckBmi extends AppCompatActivity {
         FirebaseDatabase firebaseDatabase = FirebaseDatabase.getInstance();
         DatabaseReference databaseReference = firebaseDatabase.getReference("users");
 
-        userHelper userhelper = new userHelper(NAME, EMAIL, PHONE, PASSWORD, WEIGHT, HEIGHT, BMI);
+        userHelper userhelper = new userHelper(NAME, EMAIL, PHONE,GENDER, PASSWORD, WEIGHT, HEIGHT, BMI);
         databaseReference.child(PHONE).setValue(userhelper);
         Toast.makeText(this, "Details saved successfully.", Toast.LENGTH_SHORT).show();
 
         Intent intent = new Intent(CheckBmi.this, Login.class);
-        //intent.putExtra("name",NAME);
         startActivity(intent);
         finish();
     }
 
-    private boolean validateWeight() {
-        String val = Weight.getEditText().getText().toString();
-        if (val.isEmpty()) {
-            Weight.setError("Field cannot be empty");
-            return false;
-        } else {
-            Weight.setError(null);
-            Weight.setErrorEnabled(false);
-            return true;
-        }
-    }
 
-    private boolean validateHeight() {
-        String val = Height.getEditText().getText().toString();
-        if (val.isEmpty()) {
-            Height.setError("Field cannot be empty");
-            return false;
-        } else {
-            Height.setError(null);
-            Height.setErrorEnabled(false);
-            return true;
-        }
-    }
 }

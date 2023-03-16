@@ -1,18 +1,26 @@
 package com.example.ehealth;
 
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.google.android.material.textfield.TextInputLayout;
+import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.DatabaseError;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.Query;
+import com.google.firebase.database.ValueEventListener;
 
 public class Diet extends AppCompatActivity {
 
-    private TextInputLayout Age, Height, Weight, Gender, Activity;
+    private TextInputLayout Age, Activity;
     private Button Calculate;
 
     @Override
@@ -21,9 +29,6 @@ public class Diet extends AppCompatActivity {
         setContentView(R.layout.activity_diet);
 
         Age = findViewById(R.id.age);
-        Height = findViewById(R.id.height);
-        Weight = findViewById(R.id.weight);
-        Gender = findViewById(R.id.gender);
         Activity = findViewById(R.id.activity);
         Calculate = findViewById(R.id.calculate);
 
@@ -31,7 +36,7 @@ public class Diet extends AppCompatActivity {
         Calculate.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if (!validateAge() | !validateWeight() | !validateHeight() | !validateGender() | !validateActivity()) {
+                if (!validateAge() | !validateActivity()) {
                     return;
                 } else {
                     calculateCaloriesNeeded();
@@ -43,35 +48,50 @@ public class Diet extends AppCompatActivity {
     }
 
     public void calculateCaloriesNeeded() {
-        //Take inputs.
+        SharedPreferences sharedPreferences = getSharedPreferences(Login.PREFS_NAME, 0);
+        String Phone = sharedPreferences.getString("PhoneNumber", "");
 
-        int inputAge = Integer.parseInt(Age.getEditText().getText().toString());
-        double inputHeight = Double.parseDouble(Height.getEditText().getText().toString());
-        double inputWeight = Double.parseDouble(Weight.getEditText().getText().toString());
-        String inputGender = Gender.getEditText().getText().toString();
-        double inputActivityLevel = Double.parseDouble(Activity.getEditText().getText().toString());
+        FirebaseDatabase firebaseDatabase = FirebaseDatabase.getInstance();
+        DatabaseReference databaseReference = firebaseDatabase.getReference("users");
 
-        //calculate daily calories need.
-        int maleCaloriesNeeded = (int) ((88.362 + (13.397 * inputWeight) + (4.799 * inputHeight) - (5.677 * inputAge)) * inputActivityLevel);
-        int femaleCaloriesNeeded = (int) ((447.593 + (9.247 * inputWeight) + (3.098 * inputHeight) - (4.330 * inputAge)) * inputActivityLevel);
+        Query goToNumber = databaseReference.orderByChild("phone").equalTo(Phone);
 
-        //Toast daily calories needed
+        goToNumber.addListenerForSingleValueEvent(new ValueEventListener() {
+            @Override
+            public void onDataChange(@NonNull DataSnapshot snapshot) {
+                if (snapshot.exists()){
+                    int inputAge = Integer.parseInt(Age.getEditText().getText().toString());
+                    double inputHeight = snapshot.child(Phone).child("height").getValue(double.class);
+                    double heightInCm = inputHeight*100;
+                    double inputWeight = snapshot.child(Phone).child("weight").getValue(double.class);
+                    String inputGender = snapshot.child(Phone).child("gender").getValue(String.class);
+                    double inputActivityLevel = Double.parseDouble(Activity.getEditText().getText().toString());
 
-        if (inputGender.equals("MALE")) {
-            String maleCalories = Integer.toString(maleCaloriesNeeded);
-            Intent intent = new Intent(Diet.this, DietHome.class);
-            intent.putExtra("calories", maleCalories);
-            //intent.putExtra("phone",PHONE);
-            startActivity(intent);
-            finish();
-        } else {
-            String femaleCalories = Integer.toString(femaleCaloriesNeeded);
-            Intent intent = new Intent(Diet.this, DietHome.class);
-            intent.putExtra("calories", femaleCalories);
-            //intent.putExtra("phone",PHONE);
-            startActivity(intent);
-            finish();
-        }
+                    int maleCaloriesNeeded = (int) ((88.362 + (13.397 * inputWeight) + (4.799 * heightInCm) - (5.677 * inputAge)) * inputActivityLevel);
+                    int femaleCaloriesNeeded = (int) ((447.593 + (9.247 * inputWeight) + (3.098 * heightInCm) - (4.330 * inputAge)) * inputActivityLevel);
+
+                    if (inputGender.equals("MALE")) {
+                        String maleCalories = Integer.toString(maleCaloriesNeeded);
+                        Intent intent = new Intent(Diet.this, DietHome.class);
+                        intent.putExtra("calories", maleCalories);
+                        startActivity(intent);
+                        finish();
+                    } else {
+                        String femaleCalories = Integer.toString(femaleCaloriesNeeded);
+                        Intent intent = new Intent(Diet.this, DietHome.class);
+                        intent.putExtra("calories", femaleCalories);
+                        startActivity(intent);
+                        finish();
+                    }
+                }
+            }
+
+            @Override
+            public void onCancelled(@NonNull DatabaseError error) {
+
+            }
+        });
+
     }
 
     private boolean validateAge() {
@@ -86,41 +106,6 @@ public class Diet extends AppCompatActivity {
         }
     }
 
-    private boolean validateWeight() {
-        String val = Weight.getEditText().getText().toString();
-        if (val.isEmpty()) {
-            Weight.setError("Field cannot be empty");
-            return false;
-        } else {
-            Weight.setError(null);
-            Weight.setErrorEnabled(false);
-            return true;
-        }
-    }
-
-    private boolean validateHeight() {
-        String val = Height.getEditText().getText().toString();
-        if (val.isEmpty()) {
-            Height.setError("Field cannot be empty");
-            return false;
-        } else {
-            Height.setError(null);
-            Height.setErrorEnabled(false);
-            return true;
-        }
-    }
-
-    private boolean validateGender() {
-        String val = Gender.getEditText().getText().toString();
-        if (val.isEmpty()) {
-            Gender.setError("Field cannot be empty");
-            return false;
-        } else {
-            Gender.setError(null);
-            Gender.setErrorEnabled(false);
-            return true;
-        }
-    }
 
     private boolean validateActivity() {
         String val = Activity.getEditText().getText().toString();

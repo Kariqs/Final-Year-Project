@@ -29,7 +29,7 @@ public class Login extends AppCompatActivity {
     TextView Greetings;
     TextInputLayout Email, Password;
     Button Go;
-    TextView dontHaveAccount;
+    TextView dontHaveAccount,Forgot;
 
     @RequiresApi(api = Build.VERSION_CODES.O)
     @Override
@@ -41,6 +41,7 @@ public class Login extends AppCompatActivity {
         Password = findViewById(R.id.password);
         Go = findViewById(R.id.login);
         dontHaveAccount = findViewById(R.id.dontHaveAccount);
+        Forgot = findViewById(R.id.forgotPassword);
 
         if (now().isBefore(LocalTime.of(12, 00))) {
             Greetings.setText("Good Morning, Login to continue.");
@@ -67,6 +68,17 @@ public class Login extends AppCompatActivity {
             public void onClick(View view) {
                 Intent i = new Intent(Login.this, Signup.class);
                 startActivity(i);
+                finish();
+            }
+        });
+
+        Forgot.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent;
+                intent = new Intent(Login.this,Forgot_Password.class);
+                startActivity(intent);
+                finish();
             }
         });
     }

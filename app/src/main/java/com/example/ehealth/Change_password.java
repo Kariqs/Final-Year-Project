@@ -34,7 +34,7 @@ public class Change_password extends AppCompatActivity {
                 if (Password.equals(NewPassword)) {
                     Toast.makeText(Change_password.this, "New password cannot be as old password.", Toast.LENGTH_SHORT).show();
                 } else {
-                    if (!TextUtils.isEmpty(Password)&&!TextUtils.isEmpty(updatedPassword)) {
+                    if (!TextUtils.isEmpty(Password) && !TextUtils.isEmpty(updatedPassword)) {
                         SharedPreferences sharedPreferences = getSharedPreferences(Login.PREFS_NAME, 0);
                         String Phone = sharedPreferences.getString("PhoneNumber", "");
                         DatabaseReference databaseReference = FirebaseDatabase.getInstance().getReference("users").child(Phone);

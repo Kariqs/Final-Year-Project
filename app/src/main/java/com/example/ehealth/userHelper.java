@@ -1,17 +1,20 @@
 package com.example.ehealth;
 
 public class userHelper {
-    String Name, Email, Phone, Password;
+    String Name, Email, Phone, Password,Gender;
     double Weight, Height, BMI;
 
     public userHelper() {
     }
 
 
-    public userHelper(String name, String email, String phone, String password, String weight, String height, String BMI) {
+
+
+    public userHelper(String name, String email, String phone, String gender, String password, String weight, String height, String BMI) {
         Name = name;
         Email = email;
         Phone = phone;
+        Gender = gender;
         Password = password;
         Weight = Double.parseDouble(weight);
         Height = Double.parseDouble(height);
@@ -40,6 +43,14 @@ public class userHelper {
 
     public void setPhone(String phone) {
         Phone = phone;
+    }
+
+    public String getGender() {
+        return Gender;
+    }
+
+    public void setGender(String gender) {
+        Gender = gender;
     }
 
     public String getPassword() {

@@ -46,15 +46,16 @@ public class Forgot_Password extends AppCompatActivity {
                         public void onDataChange(@NonNull DataSnapshot snapshot) {
                             if (snapshot.exists()) {
                                 String newPassword = Password.getEditText().getText().toString();
-                                databaseReference.child(String.valueOf(Phone)).child("password").setValue(newPassword);
+                                DatabaseReference databaseReference = FirebaseDatabase.getInstance().getReference("users").child(phone);
+                                databaseReference.child("password").setValue(newPassword);
                                 Toast.makeText(Forgot_Password.this, "Your password has been reset.", Toast.LENGTH_SHORT).show();
                                 Intent intent;
                                 intent = new Intent(Forgot_Password.this, Login.class);
                                 startActivity(intent);
                                 clear();
                                 finish();
-                            }else{
-                                Phone.setError("Phone number not registered.");
+                            } else {
+                                Phone.setError("Phone number does not exist.");
                             }
                         }
 

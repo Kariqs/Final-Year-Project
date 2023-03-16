@@ -1,13 +1,11 @@
 package com.example.ehealth;
 
 public class userHelper {
-    String Name, Email, Phone, Password,Gender;
+    String Name, Email, Phone, Password, Gender;
     double Weight, Height, BMI;
 
     public userHelper() {
     }
-
-
 
 
     public userHelper(String name, String email, String phone, String gender, String password, String weight, String height, String BMI) {

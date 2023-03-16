@@ -40,19 +40,9 @@ public class CheckBmi extends AppCompatActivity {
         CheckBmi.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                if (Weight == null || Height == null) {
-                    // Weight or Height objects are not initialized
-                    return;
-                }
 
-                String val = Weight.getEditText().getText().toString();
-                String val1 = Height.getEditText().getText().toString();
-                double weight = Double.parseDouble(val);
-                double height = Double.parseDouble(val1);
-                if (val.isEmpty()) {
-                    Weight.setError("Field cannot be empty");
-                } else if (val1.isEmpty()) {
-                    Height.setError("Field cannot be empty.");
+                if (!validateWeight() | !validateHeight()) {
+                    return;
                 } else {
                     checkBmi();
                 }
@@ -62,12 +52,47 @@ public class CheckBmi extends AppCompatActivity {
         Continue.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                    saveData();
-                    finish();
-                }
+                saveData();
+                finish();
+            }
         });
 
     }
+
+    private boolean validateWeight() {
+        String val = Weight.getEditText().getText().toString();
+        if (val.isEmpty()) {
+            Weight.setError("Field cannot be empty.");
+            return false;
+        }
+        double weight = Double.parseDouble(val);
+        if (weight <= 0 || weight > 200) {
+            Weight.setError("Invalid weight.");
+            return false;
+        } else {
+            Weight.setError(null);
+            Weight.setErrorEnabled(false);
+            return true;
+        }
+    }
+
+    private boolean validateHeight() {
+        String val = Height.getEditText().getText().toString();
+        if (val.isEmpty()) {
+            Height.setError("Field cannot be empty.");
+            return false;
+        }
+        double height = Double.parseDouble(val);
+        if (height <= 0 || height > 2.5) {
+            Height.setError("Invalid height.");
+            return false;
+        } else {
+            Height.setError(null);
+            Height.setErrorEnabled(false);
+            return true;
+        }
+    }
+
 
     private void checkBmi() {
         double getWeight = Double.parseDouble(Weight.getEditText().getText().toString());
@@ -120,7 +145,7 @@ public class CheckBmi extends AppCompatActivity {
         FirebaseDatabase firebaseDatabase = FirebaseDatabase.getInstance();
         DatabaseReference databaseReference = firebaseDatabase.getReference("users");
 
-        userHelper userhelper = new userHelper(NAME, EMAIL, PHONE,GENDER, PASSWORD, WEIGHT, HEIGHT, BMI);
+        userHelper userhelper = new userHelper(NAME, EMAIL, PHONE, GENDER, PASSWORD, WEIGHT, HEIGHT, BMI);
         databaseReference.child(PHONE).setValue(userhelper);
         Toast.makeText(this, "Details saved successfully.", Toast.LENGTH_SHORT).show();
 

@@ -26,11 +26,9 @@ import java.text.DecimalFormat;
 
 public class Results extends AppCompatActivity {
     public static String PREFS_HEIGHT = "myPref";
-    private TextView Name,UpdatePassword,UpdateWeight;
-    private TextInputLayout Email, Phone, Password, Weight, Height, Bmi;
     Button Logout;
-
-
+    private TextView Name, UpdatePassword, UpdateWeight;
+    private TextInputLayout Email, Phone, Password, Weight, Height, Bmi;
 
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -144,7 +142,7 @@ public class Results extends AppCompatActivity {
                 editor.putString("Height", String.valueOf(height));
                 editor.apply();
                 Intent intent;
-                intent = new Intent(Results.this,Update_Weight.class);
+                intent = new Intent(Results.this, Update_Weight.class);
                 startActivity(intent);
             }
         });

@@ -5,7 +5,6 @@ import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
-import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
@@ -59,10 +58,10 @@ public class Diet extends AppCompatActivity {
         goToNumber.addListenerForSingleValueEvent(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot snapshot) {
-                if (snapshot.exists()){
+                if (snapshot.exists()) {
                     int inputAge = Integer.parseInt(Age.getEditText().getText().toString());
                     double inputHeight = snapshot.child(Phone).child("height").getValue(double.class);
-                    double heightInCm = inputHeight*100;
+                    double heightInCm = inputHeight * 100;
                     double inputWeight = snapshot.child(Phone).child("weight").getValue(double.class);
                     String inputGender = snapshot.child(Phone).child("gender").getValue(String.class);
                     double inputActivityLevel = Double.parseDouble(Activity.getEditText().getText().toString());

@@ -5,9 +5,16 @@ import android.os.Bundle;
 import android.widget.Button;
 import android.widget.TextView;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.google.android.material.textfield.TextInputLayout;
+import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.DatabaseError;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.Query;
+import com.google.firebase.database.ValueEventListener;
 
 import java.util.Objects;
 
@@ -130,26 +137,45 @@ public class Signup extends AppCompatActivity {
     }
 
     private void registerUser() {
-        String NAME = Objects.requireNonNull(Name.getEditText()).getText().toString();
-        String EMAIL = Objects.requireNonNull(Email.getEditText()).getText().toString();
-        String PHONENUMBER = Objects.requireNonNull(PhoneNumber.getEditText()).getText().toString();
-        String GENDER = Gender.getEditText().getText().toString();
-        String PASSWORD = Objects.requireNonNull(Password.getEditText()).getText().toString();
+        String phone = PhoneNumber.getEditText().getText().toString();
+        FirebaseDatabase firebaseDatabase = FirebaseDatabase.getInstance();
+        DatabaseReference databaseReference = firebaseDatabase.getReference("users");
+        Query checkNumber = databaseReference.orderByChild("phone").equalTo(phone);
+        checkNumber.addListenerForSingleValueEvent(new ValueEventListener() {
+            @Override
+            public void onDataChange(@NonNull DataSnapshot snapshot) {
+                if (snapshot.exists()) {
+                    PhoneNumber.setError("Phone number already registered.");
+                } else {
+                    String NAME = Objects.requireNonNull(Name.getEditText()).getText().toString();
+                    String EMAIL = Objects.requireNonNull(Email.getEditText()).getText().toString();
+                    String PHONENUMBER = Objects.requireNonNull(PhoneNumber.getEditText()).getText().toString();
+                    String GENDER = Gender.getEditText().getText().toString();
+                    String PASSWORD = Objects.requireNonNull(Password.getEditText()).getText().toString();
 
-        Name.getEditText().setText("");
-        Email.getEditText().setText("");
-        PhoneNumber.getEditText().setText("");
-        Gender.getEditText().setText("");
-        Password.getEditText().setText("");
-        ConfirmPassword.getEditText().setText("");
-        Intent i = new Intent(Signup.this, CheckBmi.class);
-        i.putExtra("keyname", NAME);
-        i.putExtra("keyemail", EMAIL);
-        i.putExtra("keyphone", PHONENUMBER);
-        i.putExtra("keygender", GENDER);
-        i.putExtra("keypassword", PASSWORD);
-        startActivity(i);
-        finish();
+                    Name.getEditText().setText("");
+                    Email.getEditText().setText("");
+                    PhoneNumber.getEditText().setText("");
+                    Gender.getEditText().setText("");
+                    Password.getEditText().setText("");
+                    ConfirmPassword.getEditText().setText("");
+                    Intent i = new Intent(Signup.this, CheckBmi.class);
+                    i.putExtra("keyname", NAME);
+                    i.putExtra("keyemail", EMAIL);
+                    i.putExtra("keyphone", PHONENUMBER);
+                    i.putExtra("keygender", GENDER);
+                    i.putExtra("keypassword", PASSWORD);
+                    startActivity(i);
+                    finish();
+                }
+            }
+
+            @Override
+            public void onCancelled(@NonNull DatabaseError error) {
+
+            }
+        });
+
     }
 
 }

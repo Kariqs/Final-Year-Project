@@ -96,7 +96,7 @@ public class Signup extends AppCompatActivity {
         if (value.isEmpty()) {
             PhoneNumber.setError("Field cannot be empty");
             return false;
-        } else if (value.length() > 15) {
+        } else if (value.length()<10 | value.length() > 15) {
             PhoneNumber.setError("Invalid phone number.");
             return false;
         } else {

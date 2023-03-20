@@ -73,9 +73,9 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="50dp"
-        android:textAlignment="center"
         android:fontFamily="@font/font2"
         android:text="Don't have an account? Sign Up."
+        android:textAlignment="center"
         android:textColor="@color/black"
         android:textSize="20dp" />
 
@@ -84,9 +84,9 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="30dp"
-        android:textAlignment="center"
         android:fontFamily="@font/font2"
         android:text="Forgot password?"
+        android:textAlignment="center"
         android:textColor="@color/black"
         android:textSize="20dp" />
 

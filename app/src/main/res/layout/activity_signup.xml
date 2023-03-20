@@ -78,7 +78,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
-            android:hint="Gender">
+            android:hint="Gender(in upper case.)">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:layout_width="match_parent"

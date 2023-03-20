@@ -11,8 +11,6 @@ MERGED from [com.google.firebase:firebase-database:20.0.4] /home/kariuki/.gradle
 MERGED from [androidx.viewpager2:viewpager2:1.0.0] /home/kariuki/.gradle/caches/transforms-3/22f9099c2abda7fff94076f7993b08de/transformed/viewpager2-1.0.0/AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.recyclerview:recyclerview:1.1.0] /home/kariuki/.gradle/caches/transforms-3/14621a386b20c825bf62b01149912eba/transformed/recyclerview-1.1.0/AndroidManifest.xml:17:1-24:12
 MERGED from [com.google.firebase:firebase-storage:20.1.0] /home/kariuki/.gradle/caches/transforms-3/79dc1955f4d9724194dd8a9809fbc5ab/transformed/firebase-storage-20.1.0/AndroidManifest.xml:15:1-38:12
-MERGED from [com.squareup.picasso:picasso:2.71828] /home/kariuki/.gradle/caches/transforms-3/875f3f41a57f110266fa6f71bec2d3f5/transformed/picasso-2.71828/AndroidManifest.xml:2:1-14:12
-MERGED from [com.github.bumptech.glide:glide:4.11.0] /home/kariuki/.gradle/caches/transforms-3/d04c64c0861587e5405fb279bb697c68/transformed/glide-4.11.0/AndroidManifest.xml:2:1-12:12
 MERGED from [com.google.firebase:firebase-database-collection:18.0.1] /home/kariuki/.gradle/caches/transforms-3/ece501c8bc14b8defc4bb893daea818b/transformed/firebase-database-collection-18.0.1/AndroidManifest.xml:2:1-9:12
 MERGED from [com.google.firebase:firebase-appcheck-interop:16.1.0] /home/kariuki/.gradle/caches/transforms-3/684e24ee344af139115741c591540733/transformed/firebase-appcheck-interop-16.1.0/AndroidManifest.xml:15:1-25:12
 MERGED from [com.google.android.gms:play-services-base:18.0.1] /home/kariuki/.gradle/caches/transforms-3/26b3666345201c303a3333024bb53271/transformed/play-services-base-18.0.1/AndroidManifest.xml:16:1-24:12
@@ -42,8 +40,6 @@ MERGED from [androidx.savedstate:savedstate:1.1.0] /home/kariuki/.gradle/caches/
 MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.3.1] /home/kariuki/.gradle/caches/transforms-3/4f871092aa6c1435064f8f0b2dc35fc7/transformed/lifecycle-viewmodel-2.3.1/AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.cardview:cardview:1.0.0] /home/kariuki/.gradle/caches/transforms-3/132f0038de43ddeabec8a216a692e5f1/transformed/cardview-1.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [com.google.firebase:firebase-components:17.0.1] /home/kariuki/.gradle/caches/transforms-3/4718bf216e2a5b22df2f67461333564e/transformed/firebase-components-17.0.1/AndroidManifest.xml:15:1-23:12
-MERGED from [com.github.bumptech.glide:gifdecoder:4.11.0] /home/kariuki/.gradle/caches/transforms-3/cfe1c78c1f378aa32fd9d79747c74e2b/transformed/gifdecoder-4.11.0/AndroidManifest.xml:2:1-11:12
-MERGED from [androidx.exifinterface:exifinterface:1.0.0] /home/kariuki/.gradle/caches/transforms-3/4f3182744663a80c396aee38481d7f00/transformed/exifinterface-1.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /home/kariuki/.gradle/caches/transforms-3/bbdf55842576286c2d58980929d5419a/transformed/versionedparcelable-1.1.1/AndroidManifest.xml:17:1-27:12
 MERGED from [androidx.lifecycle:lifecycle-process:2.4.0] /home/kariuki/.gradle/caches/transforms-3/e1acb8a47af4616b7f57c12b903cf6df/transformed/lifecycle-process-2.4.0/AndroidManifest.xml:17:1-37:12
 MERGED from [androidx.startup:startup-runtime:1.0.0] /home/kariuki/.gradle/caches/transforms-3/fbdabed7b1884b491e9be7b0114d8617/transformed/startup-runtime-1.0.0/AndroidManifest.xml:17:1-33:12
@@ -57,7 +53,6 @@ MERGED from [androidx.documentfile:documentfile:1.0.0] /home/kariuki/.gradle/cac
 MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /home/kariuki/.gradle/caches/transforms-3/8712e245f52d045884bdb96a82b2af05/transformed/localbroadcastmanager-1.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.print:print:1.0.0] /home/kariuki/.gradle/caches/transforms-3/287e9129767688a74707308a705a82e6/transformed/print-1.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.annotation:annotation-experimental:1.1.0] /home/kariuki/.gradle/caches/transforms-3/ebc5cdc968831466331bfc76f957101c/transformed/annotation-experimental-1.1.0/AndroidManifest.xml:17:1-24:12
-MERGED from [com.android.support:exifinterface:27.1.0] /home/kariuki/.gradle/caches/transforms-3/07f3214f6ba70db1853ca45204c99d51/transformed/exifinterface-27.1.0/AndroidManifest.xml:17:1-22:12
 INJECTED from /home/kariuki/StudioProjects/Final-Year-Project/app/src/main/AndroidManifest.xml:2:1-138:12
 INJECTED from /home/kariuki/StudioProjects/Final-Year-Project/app/src/main/AndroidManifest.xml:2:1-138:12
 INJECTED from /home/kariuki/StudioProjects/Final-Year-Project/app/src/main/AndroidManifest.xml:2:1-138:12
@@ -95,10 +90,6 @@ MERGED from [com.google.firebase:firebase-database:20.0.4] /home/kariuki/.gradle
 MERGED from [com.google.firebase:firebase-database:20.0.4] /home/kariuki/.gradle/caches/transforms-3/2a4f28dd1934774b9d5631c66a766843/transformed/firebase-database-20.0.4/AndroidManifest.xml:28:5-36:19
 MERGED from [com.google.firebase:firebase-storage:20.1.0] /home/kariuki/.gradle/caches/transforms-3/79dc1955f4d9724194dd8a9809fbc5ab/transformed/firebase-storage-20.1.0/AndroidManifest.xml:28:5-36:19
 MERGED from [com.google.firebase:firebase-storage:20.1.0] /home/kariuki/.gradle/caches/transforms-3/79dc1955f4d9724194dd8a9809fbc5ab/transformed/firebase-storage-20.1.0/AndroidManifest.xml:28:5-36:19
-MERGED from [com.squareup.picasso:picasso:2.71828] /home/kariuki/.gradle/caches/transforms-3/875f3f41a57f110266fa6f71bec2d3f5/transformed/picasso-2.71828/AndroidManifest.xml:7:5-12:19
-MERGED from [com.squareup.picasso:picasso:2.71828] /home/kariuki/.gradle/caches/transforms-3/875f3f41a57f110266fa6f71bec2d3f5/transformed/picasso-2.71828/AndroidManifest.xml:7:5-12:19
-MERGED from [com.github.bumptech.glide:glide:4.11.0] /home/kariuki/.gradle/caches/transforms-3/d04c64c0861587e5405fb279bb697c68/transformed/glide-4.11.0/AndroidManifest.xml:10:5-20
-MERGED from [com.github.bumptech.glide:glide:4.11.0] /home/kariuki/.gradle/caches/transforms-3/d04c64c0861587e5405fb279bb697c68/transformed/glide-4.11.0/AndroidManifest.xml:10:5-20
 MERGED from [com.google.firebase:firebase-appcheck-interop:16.1.0] /home/kariuki/.gradle/caches/transforms-3/684e24ee344af139115741c591540733/transformed/firebase-appcheck-interop-16.1.0/AndroidManifest.xml:23:5-20
 MERGED from [com.google.firebase:firebase-appcheck-interop:16.1.0] /home/kariuki/.gradle/caches/transforms-3/684e24ee344af139115741c591540733/transformed/firebase-appcheck-interop-16.1.0/AndroidManifest.xml:23:5-20
 MERGED from [com.google.android.gms:play-services-base:18.0.1] /home/kariuki/.gradle/caches/transforms-3/26b3666345201c303a3333024bb53271/transformed/play-services-base-18.0.1/AndroidManifest.xml:19:5-23:19
@@ -115,8 +106,6 @@ MERGED from [androidx.emoji2:emoji2:1.0.0] /home/kariuki/.gradle/caches/transfor
 MERGED from [androidx.emoji2:emoji2:1.0.0] /home/kariuki/.gradle/caches/transforms-3/dd8d034f2ef3bb750af774315540fdc2/transformed/emoji2-1.0.0/AndroidManifest.xml:25:5-35:19
 MERGED from [androidx.core:core:1.7.0] /home/kariuki/.gradle/caches/transforms-3/3aade53a7b7f6f46f1b9b1793599bc6e/transformed/core-1.7.0/AndroidManifest.xml:24:5-89
 MERGED from [androidx.core:core:1.7.0] /home/kariuki/.gradle/caches/transforms-3/3aade53a7b7f6f46f1b9b1793599bc6e/transformed/core-1.7.0/AndroidManifest.xml:24:5-89
-MERGED from [com.github.bumptech.glide:gifdecoder:4.11.0] /home/kariuki/.gradle/caches/transforms-3/cfe1c78c1f378aa32fd9d79747c74e2b/transformed/gifdecoder-4.11.0/AndroidManifest.xml:9:5-20
-MERGED from [com.github.bumptech.glide:gifdecoder:4.11.0] /home/kariuki/.gradle/caches/transforms-3/cfe1c78c1f378aa32fd9d79747c74e2b/transformed/gifdecoder-4.11.0/AndroidManifest.xml:9:5-20
 MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /home/kariuki/.gradle/caches/transforms-3/bbdf55842576286c2d58980929d5419a/transformed/versionedparcelable-1.1.1/AndroidManifest.xml:24:5-25:19
 MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /home/kariuki/.gradle/caches/transforms-3/bbdf55842576286c2d58980929d5419a/transformed/versionedparcelable-1.1.1/AndroidManifest.xml:24:5-25:19
 MERGED from [androidx.lifecycle:lifecycle-process:2.4.0] /home/kariuki/.gradle/caches/transforms-3/e1acb8a47af4616b7f57c12b903cf6df/transformed/lifecycle-process-2.4.0/AndroidManifest.xml:25:5-35:19
@@ -275,10 +264,6 @@ MERGED from [androidx.recyclerview:recyclerview:1.1.0] /home/kariuki/.gradle/cac
 MERGED from [androidx.recyclerview:recyclerview:1.1.0] /home/kariuki/.gradle/caches/transforms-3/14621a386b20c825bf62b01149912eba/transformed/recyclerview-1.1.0/AndroidManifest.xml:20:5-22:41
 MERGED from [com.google.firebase:firebase-storage:20.1.0] /home/kariuki/.gradle/caches/transforms-3/79dc1955f4d9724194dd8a9809fbc5ab/transformed/firebase-storage-20.1.0/AndroidManifest.xml:19:5-21:41
 MERGED from [com.google.firebase:firebase-storage:20.1.0] /home/kariuki/.gradle/caches/transforms-3/79dc1955f4d9724194dd8a9809fbc5ab/transformed/firebase-storage-20.1.0/AndroidManifest.xml:19:5-21:41
-MERGED from [com.squareup.picasso:picasso:2.71828] /home/kariuki/.gradle/caches/transforms-3/875f3f41a57f110266fa6f71bec2d3f5/transformed/picasso-2.71828/AndroidManifest.xml:5:5-44
-MERGED from [com.squareup.picasso:picasso:2.71828] /home/kariuki/.gradle/caches/transforms-3/875f3f41a57f110266fa6f71bec2d3f5/transformed/picasso-2.71828/AndroidManifest.xml:5:5-44
-MERGED from [com.github.bumptech.glide:glide:4.11.0] /home/kariuki/.gradle/caches/transforms-3/d04c64c0861587e5405fb279bb697c68/transformed/glide-4.11.0/AndroidManifest.xml:6:5-8:41
-MERGED from [com.github.bumptech.glide:glide:4.11.0] /home/kariuki/.gradle/caches/transforms-3/d04c64c0861587e5405fb279bb697c68/transformed/glide-4.11.0/AndroidManifest.xml:6:5-8:41
 MERGED from [com.google.firebase:firebase-database-collection:18.0.1] /home/kariuki/.gradle/caches/transforms-3/ece501c8bc14b8defc4bb893daea818b/transformed/firebase-database-collection-18.0.1/AndroidManifest.xml:5:5-7:41
 MERGED from [com.google.firebase:firebase-database-collection:18.0.1] /home/kariuki/.gradle/caches/transforms-3/ece501c8bc14b8defc4bb893daea818b/transformed/firebase-database-collection-18.0.1/AndroidManifest.xml:5:5-7:41
 MERGED from [com.google.firebase:firebase-appcheck-interop:16.1.0] /home/kariuki/.gradle/caches/transforms-3/684e24ee344af139115741c591540733/transformed/firebase-appcheck-interop-16.1.0/AndroidManifest.xml:18:5-20:41
@@ -337,10 +322,6 @@ MERGED from [androidx.cardview:cardview:1.0.0] /home/kariuki/.gradle/caches/tran
 MERGED from [androidx.cardview:cardview:1.0.0] /home/kariuki/.gradle/caches/transforms-3/132f0038de43ddeabec8a216a692e5f1/transformed/cardview-1.0.0/AndroidManifest.xml:20:5-44
 MERGED from [com.google.firebase:firebase-components:17.0.1] /home/kariuki/.gradle/caches/transforms-3/4718bf216e2a5b22df2f67461333564e/transformed/firebase-components-17.0.1/AndroidManifest.xml:19:5-21:41
 MERGED from [com.google.firebase:firebase-components:17.0.1] /home/kariuki/.gradle/caches/transforms-3/4718bf216e2a5b22df2f67461333564e/transformed/firebase-components-17.0.1/AndroidManifest.xml:19:5-21:41
-MERGED from [com.github.bumptech.glide:gifdecoder:4.11.0] /home/kariuki/.gradle/caches/transforms-3/cfe1c78c1f378aa32fd9d79747c74e2b/transformed/gifdecoder-4.11.0/AndroidManifest.xml:5:5-7:41
-MERGED from [com.github.bumptech.glide:gifdecoder:4.11.0] /home/kariuki/.gradle/caches/transforms-3/cfe1c78c1f378aa32fd9d79747c74e2b/transformed/gifdecoder-4.11.0/AndroidManifest.xml:5:5-7:41
-MERGED from [androidx.exifinterface:exifinterface:1.0.0] /home/kariuki/.gradle/caches/transforms-3/4f3182744663a80c396aee38481d7f00/transformed/exifinterface-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.exifinterface:exifinterface:1.0.0] /home/kariuki/.gradle/caches/transforms-3/4f3182744663a80c396aee38481d7f00/transformed/exifinterface-1.0.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /home/kariuki/.gradle/caches/transforms-3/bbdf55842576286c2d58980929d5419a/transformed/versionedparcelable-1.1.1/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /home/kariuki/.gradle/caches/transforms-3/bbdf55842576286c2d58980929d5419a/transformed/versionedparcelable-1.1.1/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.lifecycle:lifecycle-process:2.4.0] /home/kariuki/.gradle/caches/transforms-3/e1acb8a47af4616b7f57c12b903cf6df/transformed/lifecycle-process-2.4.0/AndroidManifest.xml:21:5-23:41
@@ -367,8 +348,6 @@ MERGED from [androidx.print:print:1.0.0] /home/kariuki/.gradle/caches/transforms
 MERGED from [androidx.print:print:1.0.0] /home/kariuki/.gradle/caches/transforms-3/287e9129767688a74707308a705a82e6/transformed/print-1.0.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.annotation:annotation-experimental:1.1.0] /home/kariuki/.gradle/caches/transforms-3/ebc5cdc968831466331bfc76f957101c/transformed/annotation-experimental-1.1.0/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.annotation:annotation-experimental:1.1.0] /home/kariuki/.gradle/caches/transforms-3/ebc5cdc968831466331bfc76f957101c/transformed/annotation-experimental-1.1.0/AndroidManifest.xml:20:5-22:41
-MERGED from [com.android.support:exifinterface:27.1.0] /home/kariuki/.gradle/caches/transforms-3/07f3214f6ba70db1853ca45204c99d51/transformed/exifinterface-27.1.0/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:exifinterface:27.1.0] /home/kariuki/.gradle/caches/transforms-3/07f3214f6ba70db1853ca45204c99d51/transformed/exifinterface-27.1.0/AndroidManifest.xml:20:5-44
 INJECTED from /home/kariuki/StudioProjects/Final-Year-Project/app/src/main/AndroidManifest.xml
 INJECTED from /home/kariuki/StudioProjects/Final-Year-Project/app/src/main/AndroidManifest.xml
 	android:targetSdkVersion
@@ -411,14 +390,6 @@ ADDED from [com.google.firebase:firebase-storage:20.1.0] /home/kariuki/.gradle/c
 		ADDED from [com.google.firebase:firebase-storage:20.1.0] /home/kariuki/.gradle/caches/transforms-3/79dc1955f4d9724194dd8a9809fbc5ab/transformed/firebase-storage-20.1.0/AndroidManifest.xml:34:17-82
 	android:name
 		ADDED from [com.google.firebase:firebase-storage:20.1.0] /home/kariuki/.gradle/caches/transforms-3/79dc1955f4d9724194dd8a9809fbc5ab/transformed/firebase-storage-20.1.0/AndroidManifest.xml:33:17-107
-provider#com.squareup.picasso.PicassoProvider
-ADDED from [com.squareup.picasso:picasso:2.71828] /home/kariuki/.gradle/caches/transforms-3/875f3f41a57f110266fa6f71bec2d3f5/transformed/picasso-2.71828/AndroidManifest.xml:8:9-11:40
-	android:authorities
-		ADDED from [com.squareup.picasso:picasso:2.71828] /home/kariuki/.gradle/caches/transforms-3/875f3f41a57f110266fa6f71bec2d3f5/transformed/picasso-2.71828/AndroidManifest.xml:10:13-72
-	android:exported
-		ADDED from [com.squareup.picasso:picasso:2.71828] /home/kariuki/.gradle/caches/transforms-3/875f3f41a57f110266fa6f71bec2d3f5/transformed/picasso-2.71828/AndroidManifest.xml:11:13-37
-	android:name
-		ADDED from [com.squareup.picasso:picasso:2.71828] /home/kariuki/.gradle/caches/transforms-3/875f3f41a57f110266fa6f71bec2d3f5/transformed/picasso-2.71828/AndroidManifest.xml:9:13-64
 activity#com.google.android.gms.common.api.GoogleApiActivity
 ADDED from [com.google.android.gms:play-services-base:18.0.1] /home/kariuki/.gradle/caches/transforms-3/26b3666345201c303a3333024bb53271/transformed/play-services-base-18.0.1/AndroidManifest.xml:20:9-22:45
 	android:exported

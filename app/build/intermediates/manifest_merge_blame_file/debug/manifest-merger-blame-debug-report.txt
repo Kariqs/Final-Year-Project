@@ -286,65 +286,56 @@
 158-->[com.google.firebase:firebase-storage:20.1.0] /home/kariuki/.gradle/caches/transforms-3/79dc1955f4d9724194dd8a9809fbc5ab/transformed/firebase-storage-20.1.0/AndroidManifest.xml:34:17-82
 159        </service>
 160
-161        <provider
-161-->[com.squareup.picasso:picasso:2.71828] /home/kariuki/.gradle/caches/transforms-3/875f3f41a57f110266fa6f71bec2d3f5/transformed/picasso-2.71828/AndroidManifest.xml:8:9-11:40
-162            android:name="com.squareup.picasso.PicassoProvider"
-162-->[com.squareup.picasso:picasso:2.71828] /home/kariuki/.gradle/caches/transforms-3/875f3f41a57f110266fa6f71bec2d3f5/transformed/picasso-2.71828/AndroidManifest.xml:9:13-64
-163            android:authorities="com.example.ehealth.com.squareup.picasso"
-163-->[com.squareup.picasso:picasso:2.71828] /home/kariuki/.gradle/caches/transforms-3/875f3f41a57f110266fa6f71bec2d3f5/transformed/picasso-2.71828/AndroidManifest.xml:10:13-72
-164            android:exported="false" />
-164-->[com.squareup.picasso:picasso:2.71828] /home/kariuki/.gradle/caches/transforms-3/875f3f41a57f110266fa6f71bec2d3f5/transformed/picasso-2.71828/AndroidManifest.xml:11:13-37
+161        <activity
+161-->[com.google.android.gms:play-services-base:18.0.1] /home/kariuki/.gradle/caches/transforms-3/26b3666345201c303a3333024bb53271/transformed/play-services-base-18.0.1/AndroidManifest.xml:20:9-22:45
+162            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+162-->[com.google.android.gms:play-services-base:18.0.1] /home/kariuki/.gradle/caches/transforms-3/26b3666345201c303a3333024bb53271/transformed/play-services-base-18.0.1/AndroidManifest.xml:20:19-85
+163            android:exported="false"
+163-->[com.google.android.gms:play-services-base:18.0.1] /home/kariuki/.gradle/caches/transforms-3/26b3666345201c303a3333024bb53271/transformed/play-services-base-18.0.1/AndroidManifest.xml:22:19-43
+164            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+164-->[com.google.android.gms:play-services-base:18.0.1] /home/kariuki/.gradle/caches/transforms-3/26b3666345201c303a3333024bb53271/transformed/play-services-base-18.0.1/AndroidManifest.xml:21:19-78
 165
-166        <activity
-166-->[com.google.android.gms:play-services-base:18.0.1] /home/kariuki/.gradle/caches/transforms-3/26b3666345201c303a3333024bb53271/transformed/play-services-base-18.0.1/AndroidManifest.xml:20:9-22:45
-167            android:name="com.google.android.gms.common.api.GoogleApiActivity"
-167-->[com.google.android.gms:play-services-base:18.0.1] /home/kariuki/.gradle/caches/transforms-3/26b3666345201c303a3333024bb53271/transformed/play-services-base-18.0.1/AndroidManifest.xml:20:19-85
-168            android:exported="false"
-168-->[com.google.android.gms:play-services-base:18.0.1] /home/kariuki/.gradle/caches/transforms-3/26b3666345201c303a3333024bb53271/transformed/play-services-base-18.0.1/AndroidManifest.xml:22:19-43
-169            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
-169-->[com.google.android.gms:play-services-base:18.0.1] /home/kariuki/.gradle/caches/transforms-3/26b3666345201c303a3333024bb53271/transformed/play-services-base-18.0.1/AndroidManifest.xml:21:19-78
-170
-171        <provider
-171-->[com.google.firebase:firebase-common:20.2.0] /home/kariuki/.gradle/caches/transforms-3/480b3dae7120d0220412229c8f9a6223/transformed/firebase-common-20.2.0/AndroidManifest.xml:25:9-30:39
-172            android:name="com.google.firebase.provider.FirebaseInitProvider"
-172-->[com.google.firebase:firebase-common:20.2.0] /home/kariuki/.gradle/caches/transforms-3/480b3dae7120d0220412229c8f9a6223/transformed/firebase-common-20.2.0/AndroidManifest.xml:26:13-77
-173            android:authorities="com.example.ehealth.firebaseinitprovider"
-173-->[com.google.firebase:firebase-common:20.2.0] /home/kariuki/.gradle/caches/transforms-3/480b3dae7120d0220412229c8f9a6223/transformed/firebase-common-20.2.0/AndroidManifest.xml:27:13-72
-174            android:directBootAware="true"
-174-->[com.google.firebase:firebase-common:20.2.0] /home/kariuki/.gradle/caches/transforms-3/480b3dae7120d0220412229c8f9a6223/transformed/firebase-common-20.2.0/AndroidManifest.xml:28:13-43
-175            android:exported="false"
-175-->[com.google.firebase:firebase-common:20.2.0] /home/kariuki/.gradle/caches/transforms-3/480b3dae7120d0220412229c8f9a6223/transformed/firebase-common-20.2.0/AndroidManifest.xml:29:13-37
-176            android:initOrder="100" />
-176-->[com.google.firebase:firebase-common:20.2.0] /home/kariuki/.gradle/caches/transforms-3/480b3dae7120d0220412229c8f9a6223/transformed/firebase-common-20.2.0/AndroidManifest.xml:30:13-36
-177
-178        <meta-data
-178-->[com.google.android.gms:play-services-basement:18.1.0] /home/kariuki/.gradle/caches/transforms-3/0ccd676f36a88f843cf47f86b0f66e38/transformed/play-services-basement-18.1.0/AndroidManifest.xml:21:9-23:69
-179            android:name="com.google.android.gms.version"
-179-->[com.google.android.gms:play-services-basement:18.1.0] /home/kariuki/.gradle/caches/transforms-3/0ccd676f36a88f843cf47f86b0f66e38/transformed/play-services-basement-18.1.0/AndroidManifest.xml:22:13-58
-180            android:value="@integer/google_play_services_version" />
-180-->[com.google.android.gms:play-services-basement:18.1.0] /home/kariuki/.gradle/caches/transforms-3/0ccd676f36a88f843cf47f86b0f66e38/transformed/play-services-basement-18.1.0/AndroidManifest.xml:23:13-66
-181
-182        <provider
-182-->[androidx.emoji2:emoji2:1.0.0] /home/kariuki/.gradle/caches/transforms-3/dd8d034f2ef3bb750af774315540fdc2/transformed/emoji2-1.0.0/AndroidManifest.xml:26:9-34:20
-183            android:name="androidx.startup.InitializationProvider"
-183-->[androidx.emoji2:emoji2:1.0.0] /home/kariuki/.gradle/caches/transforms-3/dd8d034f2ef3bb750af774315540fdc2/transformed/emoji2-1.0.0/AndroidManifest.xml:27:13-67
-184            android:authorities="com.example.ehealth.androidx-startup"
-184-->[androidx.emoji2:emoji2:1.0.0] /home/kariuki/.gradle/caches/transforms-3/dd8d034f2ef3bb750af774315540fdc2/transformed/emoji2-1.0.0/AndroidManifest.xml:28:13-68
-185            android:exported="false" >
-185-->[androidx.emoji2:emoji2:1.0.0] /home/kariuki/.gradle/caches/transforms-3/dd8d034f2ef3bb750af774315540fdc2/transformed/emoji2-1.0.0/AndroidManifest.xml:29:13-37
-186            <meta-data
-186-->[androidx.emoji2:emoji2:1.0.0] /home/kariuki/.gradle/caches/transforms-3/dd8d034f2ef3bb750af774315540fdc2/transformed/emoji2-1.0.0/AndroidManifest.xml:31:13-33:52
-187                android:name="androidx.emoji2.text.EmojiCompatInitializer"
-187-->[androidx.emoji2:emoji2:1.0.0] /home/kariuki/.gradle/caches/transforms-3/dd8d034f2ef3bb750af774315540fdc2/transformed/emoji2-1.0.0/AndroidManifest.xml:32:17-75
-188                android:value="androidx.startup" />
-188-->[androidx.emoji2:emoji2:1.0.0] /home/kariuki/.gradle/caches/transforms-3/dd8d034f2ef3bb750af774315540fdc2/transformed/emoji2-1.0.0/AndroidManifest.xml:33:17-49
-189            <meta-data
-189-->[androidx.lifecycle:lifecycle-process:2.4.0] /home/kariuki/.gradle/caches/transforms-3/e1acb8a47af4616b7f57c12b903cf6df/transformed/lifecycle-process-2.4.0/AndroidManifest.xml:31:13-33:52
-190                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
-190-->[androidx.lifecycle:lifecycle-process:2.4.0] /home/kariuki/.gradle/caches/transforms-3/e1acb8a47af4616b7f57c12b903cf6df/transformed/lifecycle-process-2.4.0/AndroidManifest.xml:32:17-78
-191                android:value="androidx.startup" />
-191-->[androidx.lifecycle:lifecycle-process:2.4.0] /home/kariuki/.gradle/caches/transforms-3/e1acb8a47af4616b7f57c12b903cf6df/transformed/lifecycle-process-2.4.0/AndroidManifest.xml:33:17-49
-192        </provider>
-193    </application>
-194
-195</manifest>
+166        <provider
+166-->[com.google.firebase:firebase-common:20.2.0] /home/kariuki/.gradle/caches/transforms-3/480b3dae7120d0220412229c8f9a6223/transformed/firebase-common-20.2.0/AndroidManifest.xml:25:9-30:39
+167            android:name="com.google.firebase.provider.FirebaseInitProvider"
+167-->[com.google.firebase:firebase-common:20.2.0] /home/kariuki/.gradle/caches/transforms-3/480b3dae7120d0220412229c8f9a6223/transformed/firebase-common-20.2.0/AndroidManifest.xml:26:13-77
+168            android:authorities="com.example.ehealth.firebaseinitprovider"
+168-->[com.google.firebase:firebase-common:20.2.0] /home/kariuki/.gradle/caches/transforms-3/480b3dae7120d0220412229c8f9a6223/transformed/firebase-common-20.2.0/AndroidManifest.xml:27:13-72
+169            android:directBootAware="true"
+169-->[com.google.firebase:firebase-common:20.2.0] /home/kariuki/.gradle/caches/transforms-3/480b3dae7120d0220412229c8f9a6223/transformed/firebase-common-20.2.0/AndroidManifest.xml:28:13-43
+170            android:exported="false"
+170-->[com.google.firebase:firebase-common:20.2.0] /home/kariuki/.gradle/caches/transforms-3/480b3dae7120d0220412229c8f9a6223/transformed/firebase-common-20.2.0/AndroidManifest.xml:29:13-37
+171            android:initOrder="100" />
+171-->[com.google.firebase:firebase-common:20.2.0] /home/kariuki/.gradle/caches/transforms-3/480b3dae7120d0220412229c8f9a6223/transformed/firebase-common-20.2.0/AndroidManifest.xml:30:13-36
+172
+173        <meta-data
+173-->[com.google.android.gms:play-services-basement:18.1.0] /home/kariuki/.gradle/caches/transforms-3/0ccd676f36a88f843cf47f86b0f66e38/transformed/play-services-basement-18.1.0/AndroidManifest.xml:21:9-23:69
+174            android:name="com.google.android.gms.version"
+174-->[com.google.android.gms:play-services-basement:18.1.0] /home/kariuki/.gradle/caches/transforms-3/0ccd676f36a88f843cf47f86b0f66e38/transformed/play-services-basement-18.1.0/AndroidManifest.xml:22:13-58
+175            android:value="@integer/google_play_services_version" />
+175-->[com.google.android.gms:play-services-basement:18.1.0] /home/kariuki/.gradle/caches/transforms-3/0ccd676f36a88f843cf47f86b0f66e38/transformed/play-services-basement-18.1.0/AndroidManifest.xml:23:13-66
+176
+177        <provider
+177-->[androidx.emoji2:emoji2:1.0.0] /home/kariuki/.gradle/caches/transforms-3/dd8d034f2ef3bb750af774315540fdc2/transformed/emoji2-1.0.0/AndroidManifest.xml:26:9-34:20
+178            android:name="androidx.startup.InitializationProvider"
+178-->[androidx.emoji2:emoji2:1.0.0] /home/kariuki/.gradle/caches/transforms-3/dd8d034f2ef3bb750af774315540fdc2/transformed/emoji2-1.0.0/AndroidManifest.xml:27:13-67
+179            android:authorities="com.example.ehealth.androidx-startup"
+179-->[androidx.emoji2:emoji2:1.0.0] /home/kariuki/.gradle/caches/transforms-3/dd8d034f2ef3bb750af774315540fdc2/transformed/emoji2-1.0.0/AndroidManifest.xml:28:13-68
+180            android:exported="false" >
+180-->[androidx.emoji2:emoji2:1.0.0] /home/kariuki/.gradle/caches/transforms-3/dd8d034f2ef3bb750af774315540fdc2/transformed/emoji2-1.0.0/AndroidManifest.xml:29:13-37
+181            <meta-data
+181-->[androidx.emoji2:emoji2:1.0.0] /home/kariuki/.gradle/caches/transforms-3/dd8d034f2ef3bb750af774315540fdc2/transformed/emoji2-1.0.0/AndroidManifest.xml:31:13-33:52
+182                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+182-->[androidx.emoji2:emoji2:1.0.0] /home/kariuki/.gradle/caches/transforms-3/dd8d034f2ef3bb750af774315540fdc2/transformed/emoji2-1.0.0/AndroidManifest.xml:32:17-75
+183                android:value="androidx.startup" />
+183-->[androidx.emoji2:emoji2:1.0.0] /home/kariuki/.gradle/caches/transforms-3/dd8d034f2ef3bb750af774315540fdc2/transformed/emoji2-1.0.0/AndroidManifest.xml:33:17-49
+184            <meta-data
+184-->[androidx.lifecycle:lifecycle-process:2.4.0] /home/kariuki/.gradle/caches/transforms-3/e1acb8a47af4616b7f57c12b903cf6df/transformed/lifecycle-process-2.4.0/AndroidManifest.xml:31:13-33:52
+185                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+185-->[androidx.lifecycle:lifecycle-process:2.4.0] /home/kariuki/.gradle/caches/transforms-3/e1acb8a47af4616b7f57c12b903cf6df/transformed/lifecycle-process-2.4.0/AndroidManifest.xml:32:17-78
+186                android:value="androidx.startup" />
+186-->[androidx.lifecycle:lifecycle-process:2.4.0] /home/kariuki/.gradle/caches/transforms-3/e1acb8a47af4616b7f57c12b903cf6df/transformed/lifecycle-process-2.4.0/AndroidManifest.xml:33:17-49
+187        </provider>
+188    </application>
+189
+190</manifest>
